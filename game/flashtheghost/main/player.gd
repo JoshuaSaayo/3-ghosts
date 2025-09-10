@@ -32,15 +32,13 @@ func _ready():
 func _input(event):
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		# Horizontal rotation (left/right)
+		print(deg_to_rad(rotation.y))
 		rotate_y(deg_to_rad(-event.relative.x * mouse_sensitivity))
+		rotation.y = clamp(rotation.y, deg_to_rad(0), deg_to_rad(90))
 		
 		# Vertical rotation (up/down) - on camera pivot
 		camera_pivot.rotate_x(deg_to_rad(-event.relative.y * mouse_sensitivity))
-		camera_pivot.rotation.x = clamp(
-			camera_pivot.rotation.x, 
-			deg_to_rad(-max_pitch), 
-			deg_to_rad(max_pitch)
-		)
+		camera_pivot.rotation.x = clamp(camera_pivot.rotation.x, deg_to_rad(-max_pitch), deg_to_rad(max_pitch))
 		
 	#if Input.is_action_just_pressed("alt"):
 		#if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
@@ -48,45 +46,6 @@ func _input(event):
 		#else:
 			#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
-#func _physics_process(delta):
-	## Get input
-	#var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_back")
-	#var is_sprinting = Input.is_action_pressed("sprint")
-	#
-	## Calculate movement direction relative to character's orientation
-	#direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	#
-	##Handle action
-	#if Input.is_action_just_pressed("action"):
-		#_check_action()
-	#
-	## Handle speed
-	#target_speed = move_speed
-	#if is_sprinting and input_dir.y < 0:  # Only sprint when moving forward
-		#target_speed = sprint_speed
-	#
-	## Smooth acceleration/deceleration
-	#if direction != Vector3.ZERO:
-		#current_speed = target_speed * delta
-	#else:
-		#current_speed = 0
-		#
-	#if direction == Vector3.ZERO:
-		#play_walk(false)
-	#else:
-		#play_walk(true)
-		#
-	#
-	## Handle jump
-	#if Input.is_action_just_pressed("jump") and is_on_floor():
-		#velocity.y = jump_force
-	#
-	## Calculate velocity
-	#velocity.x = direction.x * current_speed
-	#velocity.z = direction.z * current_speed
-	#
-#
-	#move_and_slide()
 
 func play_walk(play) -> void:
 	if play and !walk_sound.playing:
@@ -96,42 +55,3 @@ func play_walk(play) -> void:
 		walk_sound.stop()
 		return
 		
-
-func _process(delta: float) -> void:
-	# Apply gravity
-	
-	if !is_on_floor() and !force_step:
-		velocity.y -= gravity * delta
-
-func object_checker() -> void:
-	print(detected_object)
-	if detected_object.is_empty():
-		return
-		
-	if delimeter_checker(detected_object[0]):
-		current_object = delimeter_checker(detected_object[0])
-	else:
-		detected_object.erase(detected_object[0])
-
-func delimeter_checker(obj_name):
-	if ! "||" in obj_name:
-		return null
-	
-	var word_arr = obj_name.split("||")
-	return word_arr
-
-func _check_action() -> void:
-	if current_object == []:
-		return
-	var node = get_tree().get_first_node_in_group(current_object[1])
-	if is_instance_valid(node):
-		node.init_action(current_object[0])
-
-func _on_player_detector_area_entered(area: Area3D) -> void:
-	detected_object.append(area.name)
-	object_checker()
-
-func _on_player_detector_area_exited(area: Area3D) -> void:
-	detected_object.erase(area.name)
-	if delimeter_checker(area.name):
-		current_object = []

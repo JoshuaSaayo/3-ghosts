@@ -11,12 +11,13 @@ config_version=5
 [application]
 
 config/name="FlashTheGhost"
+run/main_scene="uid://dkj4ghkle4kvo"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/ai_assistant_hub/plugin.cfg", "res://addons/gamedev_assistant/plugin.cfg")
+enabled=PackedStringArray()
 
 [plugins]
 
