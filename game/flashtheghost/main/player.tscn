@@ -1,11 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://bl0s82uug2re7"]
+[gd_scene load_steps=6 format=3 uid="uid://bl0s82uug2re7"]
 
 [ext_resource type="Script" uid="uid://bcqw8nq0jex86" path="res://main/player.gd" id="1_ntxbt"]
+[ext_resource type="Script" uid="uid://c7jlbxgyh3xnq" path="res://main/pov.gd" id="2_ab3tm"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ntxbt"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ntxbt"]
 height = 7.59416
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ou4ca"]
+radius = 43.9845
+height = 534.341
 
 [node name="Player" type="CharacterBody3D"]
 floor_stop_on_slope = false
@@ -26,6 +31,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.791, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
 
+[node name="Flaslight" type="SpotLight3D" parent="CameraPivot/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0220985, 0)
+shadow_enabled = true
+shadow_bias = 1.0
+spot_range = 508.519
+spot_attenuation = 0.1
+spot_angle = 20.0
+
+[node name="FlashlightHitBox" type="Area3D" parent="CameraPivot/Camera3D/Flaslight"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CameraPivot/Camera3D/Flaslight/FlashlightHitBox"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -262.997)
+shape = SubResource("CapsuleShape3D_ou4ca")
+
 [node name="POV" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 15
@@ -33,6 +52,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("2_ab3tm")
 
 [node name="ColorRect" type="ColorRect" parent="POV"]
 layout_mode = 1
@@ -48,5 +68,17 @@ offset_bottom = 2.5
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Battery" type="ProgressBar" parent="POV"]
+layout_mode = 0
+offset_left = 388.0
+offset_top = 612.0
+offset_right = 796.0
+offset_bottom = 639.0
+
 [node name="Walk" type="AudioStreamPlayer3D" parent="."]
 volume_db = 80.0
+
+[node name="BatteryLifeTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+
+[connection signal="timeout" from="BatteryLifeTimer" to="." method="_on_battery_life_timer_timeout"]

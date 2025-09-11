@@ -46,24 +46,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9948, 46.1081, -49.8945)
 mesh = SubResource("BoxMesh_0twea")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.0469284, 22.4842, -49.8945)
+transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, 0.0469284, 22.4842, -49.8945)
 mesh = SubResource("BoxMesh_eq2le")
 
 [node name="MeshInstance3D8" type="MeshInstance3D" parent="Map"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 49.7868, 22.4842, -24.8786)
 mesh = SubResource("BoxMesh_7ik47")
 
-[node name="MeshInstance3D9" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 49.7868, 22.4842, -24.8786)
-mesh = SubResource("BoxMesh_7ik47")
-
 [node name="MeshInstance3D10" type="MeshInstance3D" parent="Map"]
 transform = Transform3D(6.2251e-10, 0.0142414, 0.999899, 1, -4.37114e-08, 0, 4.3707e-08, 0.999899, -0.0142414, 2.35893, 22.4842, 24.2817)
 mesh = SubResource("BoxMesh_7ik47")
-
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.0469284, 22.4842, -49.8945)
-mesh = SubResource("BoxMesh_eq2le")
 
 [node name="MeshInstance3D6" type="MeshInstance3D" parent="Map"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -49.725, 22.4842, 0.086504)
@@ -80,18 +72,11 @@ mesh = SubResource("BoxMesh_t5pmm")
 [node name="Character" type="Node3D" parent="."]
 
 [node name="Player" parent="Character" instance=ExtResource("1_0twea")]
-transform = Transform3D(0.729661, 0, 0.683809, 0, 1, 0, -0.683809, 0, 0.729661, 48.1684, 0, 23.471)
+transform = Transform3D(0.729661, 0, 0.683809, 0, 1, 0, -0.683809, 0, 0.729661, 46.6902, 0, 20.3402)
 
 [node name="Lights" type="Node3D" parent="."]
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Lights"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.6095, 25.5085, -48.2328)
-light_energy = 6.778
-shadow_enabled = true
-omni_range = 46.7417
-
 [node name="OmniLight3D2" type="OmniLight3D" parent="Lights"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.4462, 25.5085, -0.509079)
-light_energy = 6.778
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8571, 25.5085, -0.509079)
 shadow_enabled = true
 omni_range = 46.7417
