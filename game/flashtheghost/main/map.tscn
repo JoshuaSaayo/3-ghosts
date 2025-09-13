@@ -1,24 +1,105 @@
-[gd_scene load_steps=8 format=3 uid="uid://dkj4ghkle4kvo"]
+[gd_scene load_steps=18 format=3 uid="uid://dkj4ghkle4kvo"]
 
 [ext_resource type="PackedScene" uid="uid://bl0s82uug2re7" path="res://main/player.tscn" id="1_0twea"]
+[ext_resource type="PackedScene" uid="uid://dylcgip3baxjv" path="res://gltf/bedroom.glb" id="1_7ik47"]
+[ext_resource type="PackedScene" uid="uid://c0gmxnmdyhreo" path="res://entity/entity.tscn" id="1_eq2le"]
+[ext_resource type="Shader" uid="uid://d32uu65f64asl" path="res://asset/shader/dissolve.gdshader" id="2_t5pmm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eq2le"]
 size = Vector3(10.3459, 1, 10.2891)
 
-[sub_resource type="BoxMesh" id="BoxMesh_wijl4"]
-size = Vector3(100, 0.12, 50)
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_1t10m"]
+resource_local_to_scene = true
 
-[sub_resource type="BoxMesh" id="BoxMesh_0twea"]
-size = Vector3(50, 0.12, 50)
+[sub_resource type="Image" id="Image_gmq0m"]
+data = {
+"data": PackedByteArray(255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255),
+"format": "RGBA8",
+"height": 4,
+"mipmaps": false,
+"width": 4
+}
 
-[sub_resource type="BoxMesh" id="BoxMesh_eq2le"]
-size = Vector3(50, 0.12, 50)
+[sub_resource type="Image" id="Image_swgx3"]
+data = {
+"data": PackedByteArray(0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255),
+"format": "RGBA8",
+"height": 4,
+"mipmaps": false,
+"width": 4
+}
 
-[sub_resource type="BoxMesh" id="BoxMesh_7ik47"]
-size = Vector3(50, 0.12, 115.115)
+[sub_resource type="Image" id="Image_vgsql"]
+data = {
+"data": PackedByteArray(255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255),
+"format": "RGBA8",
+"height": 4,
+"mipmaps": false,
+"width": 4
+}
 
-[sub_resource type="BoxMesh" id="BoxMesh_t5pmm"]
-size = Vector3(50, 0.12, 50)
+[sub_resource type="Image" id="Image_tm1r7"]
+data = {
+"data": PackedByteArray(0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255),
+"format": "RGBA8",
+"height": 4,
+"mipmaps": false,
+"width": 4
+}
+
+[sub_resource type="ImageTexture3D" id="ImageTexture3D_ec552"]
+_images = Array[Image]([SubResource("Image_gmq0m"), SubResource("Image_swgx3"), SubResource("Image_vgsql"), SubResource("Image_tm1r7")])
+
+[sub_resource type="Image" id="Image_45brn"]
+data = {
+"data": PackedByteArray(255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255),
+"format": "RGBA8",
+"height": 4,
+"mipmaps": false,
+"width": 4
+}
+
+[sub_resource type="Image" id="Image_2sb2l"]
+data = {
+"data": PackedByteArray(0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255),
+"format": "RGBA8",
+"height": 4,
+"mipmaps": false,
+"width": 4
+}
+
+[sub_resource type="Image" id="Image_rb70y"]
+data = {
+"data": PackedByteArray(255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255),
+"format": "RGBA8",
+"height": 4,
+"mipmaps": false,
+"width": 4
+}
+
+[sub_resource type="Image" id="Image_gml24"]
+data = {
+"data": PackedByteArray(0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255),
+"format": "RGBA8",
+"height": 4,
+"mipmaps": false,
+"width": 4
+}
+
+[sub_resource type="ImageTexture3D" id="ImageTexture3D_f6k7f"]
+_images = Array[Image]([SubResource("Image_45brn"), SubResource("Image_2sb2l"), SubResource("Image_rb70y"), SubResource("Image_gml24")])
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rb70y"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("2_t5pmm")
+shader_parameter/expansion_max = 0.2
+shader_parameter/transition_in = -1.0
+shader_parameter/transition_out = -1.0
+shader_parameter/dissolve_noise_texture = SubResource("ImageTexture3D_ec552")
+shader_parameter/hue_noise_texture = SubResource("ImageTexture3D_f6k7f")
+shader_parameter/intersector_pos = Vector3(0, 0, 0)
+shader_parameter/intersector_radius = 1.0
 
 [node name="Map" type="Node3D"]
 
@@ -30,44 +111,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.4674, -0.94178, 20.2159)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/StaticBody3D"]
 shape = SubResource("BoxShape3D_eq2le")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map"]
-mesh = SubResource("BoxMesh_wijl4")
+[node name="bedroom2" parent="Map" instance=ExtResource("1_7ik47")]
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9948, 0, -49.8945)
-mesh = SubResource("BoxMesh_0twea")
+[node name="Entity" parent="." instance=ExtResource("1_eq2le")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.6768, 14.2197, 12.511)
 
-[node name="MeshInstance3D11" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 46.1081, 0)
-mesh = SubResource("BoxMesh_wijl4")
-
-[node name="MeshInstance3D12" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9948, 46.1081, -49.8945)
-mesh = SubResource("BoxMesh_0twea")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, 0.0469284, 22.4842, -49.8945)
-mesh = SubResource("BoxMesh_eq2le")
-
-[node name="MeshInstance3D8" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 49.7868, 22.4842, -24.8786)
-mesh = SubResource("BoxMesh_7ik47")
-
-[node name="MeshInstance3D10" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(6.2251e-10, 0.0142414, 0.999899, 1, -4.37114e-08, 0, 4.3707e-08, 0.999899, -0.0142414, 2.35893, 22.4842, 24.2817)
-mesh = SubResource("BoxMesh_7ik47")
-
-[node name="MeshInstance3D6" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -49.725, 22.4842, 0.086504)
-mesh = SubResource("BoxMesh_eq2le")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, -24.9011, 22.4842, -24.9313)
-mesh = SubResource("BoxMesh_t5pmm")
-
-[node name="MeshInstance3D7" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 25.0763, 22.4842, -74.9132)
-mesh = SubResource("BoxMesh_t5pmm")
+[node name="MeshInstance3D" parent="Entity" index="0"]
+mesh = SubResource("CapsuleMesh_1t10m")
+surface_material_override/0 = SubResource("ShaderMaterial_rb70y")
 
 [node name="Character" type="Node3D" parent="."]
 
@@ -80,3 +131,5 @@ transform = Transform3D(0.729661, 0, 0.683809, 0, 1, 0, -0.683809, 0, 0.729661, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8571, 25.5085, -0.509079)
 shadow_enabled = true
 omni_range = 46.7417
+
+[editable path="Entity"]
