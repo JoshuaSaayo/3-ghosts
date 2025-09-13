@@ -1,0 +1,65 @@
+{ "skeleton": { "images": "C:/Users/Joshua PC/OneDrive/Desktop/parts/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "BG", "bone": "root", "attachment": "BG" },
+	{ "name": "empty", "bone": "root", "attachment": "empty" },
+	{ "name": "floor", "bone": "root", "attachment": "floor" },
+	{ "name": "ceiling", "bone": "root", "attachment": "ceiling" },
+	{ "name": "wall 3", "bone": "root", "attachment": "wall 3" },
+	{ "name": "wall 2", "bone": "root", "attachment": "wall 2" },
+	{ "name": "wall 1", "bone": "root", "attachment": "wall 1" },
+	{ "name": "window", "bone": "root", "attachment": "window" },
+	{ "name": "door", "bone": "root", "attachment": "door" },
+	{ "name": "bookshelf", "bone": "root", "attachment": "bookshelf" },
+	{ "name": "closet", "bone": "root", "attachment": "closet" },
+	{ "name": "table", "bone": "root", "attachment": "table" },
+	{ "name": "bed", "bone": "root", "attachment": "bed" }
+],
+"skins": {
+	"default": {
+		"BG": {
+			"BG": { "x": 640, "y": -360, "width": 1282, "height": 722 }
+		},
+		"empty": {
+			"empty": { "x": 640, "y": -360, "width": 1282, "height": 722 }
+		},
+		"floor": {
+			"floor": { "x": 640, "y": -610.5, "width": 1282, "height": 221 }
+		},
+		"ceiling": {
+			"ceiling": { "x": 640, "y": -101, "width": 1282, "height": 204 }
+		},
+		"wall 3": {
+			"wall 3": { "x": 1100, "y": -334, "width": 362, "height": 378 }
+		},
+		"wall 2": {
+			"wall 2": { "x": 182.5, "y": -340, "width": 367, "height": 440 }
+		},
+		"wall 1": {
+			"wall 1": { "x": 643, "y": -332, "width": 562, "height": 468 }
+		},
+		"window": {
+			"window": { "x": 1169.5, "y": -316, "width": 223, "height": 226 }
+		},
+		"door": {
+			"door": { "x": 171, "y": -403.5, "width": 178, "height": 287 }
+		},
+		"bookshelf": {
+			"bookshelf": { "x": 464, "y": -476, "width": 216, "height": 168 }
+		},
+		"closet": {
+			"closet": { "x": 776, "y": -378, "width": 172, "height": 370 }
+		},
+		"table": {
+			"table": { "x": 920, "y": -474, "width": 130, "height": 132 }
+		},
+		"bed": {
+			"bed": { "x": 1043, "y": -532.5, "width": 476, "height": 295 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
