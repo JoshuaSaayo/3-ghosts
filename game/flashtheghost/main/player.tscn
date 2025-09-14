@@ -9,7 +9,7 @@
 height = 7.59416
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ou4ca"]
-radius = 43.9845
+radius = 4.76555
 height = 534.341
 
 [node name="Player" type="CharacterBody3D"]
@@ -42,7 +42,7 @@ spot_angle = 20.0
 [node name="FlashlightHitBox" type="Area3D" parent="CameraPivot/Camera3D/Flaslight"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CameraPivot/Camera3D/Flaslight/FlashlightHitBox"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -262.997)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -283.059)
 shape = SubResource("CapsuleShape3D_ou4ca")
 
 [node name="POV" type="Control" parent="."]
@@ -69,11 +69,16 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Battery" type="ProgressBar" parent="POV"]
-layout_mode = 0
-offset_left = 388.0
-offset_top = 612.0
-offset_right = 796.0
-offset_bottom = 639.0
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 363.0
+offset_top = -27.0
+offset_right = -363.0
+grow_horizontal = 2
+grow_vertical = 0
 
 [node name="Walk" type="AudioStreamPlayer3D" parent="."]
 volume_db = 80.0

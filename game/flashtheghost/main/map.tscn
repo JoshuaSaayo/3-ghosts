@@ -1,108 +1,14 @@
-[gd_scene load_steps=19 format=3 uid="uid://dkj4ghkle4kvo"]
+[gd_scene load_steps=6 format=3 uid="uid://dkj4ghkle4kvo"]
 
 [ext_resource type="PackedScene" uid="uid://bl0s82uug2re7" path="res://main/player.tscn" id="1_0twea"]
 [ext_resource type="PackedScene" uid="uid://dylcgip3baxjv" path="res://gltf/bedroom.glb" id="1_7ik47"]
 [ext_resource type="PackedScene" uid="uid://c0gmxnmdyhreo" path="res://entity/entity.tscn" id="1_eq2le"]
-[ext_resource type="Shader" uid="uid://d32uu65f64asl" path="res://asset/shader/dissolve.gdshader" id="2_t5pmm"]
 
 [sub_resource type="Environment" id="Environment_7ik47"]
 volumetric_fog_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eq2le"]
 size = Vector3(10.3459, 1, 10.2891)
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_1t10m"]
-resource_local_to_scene = true
-
-[sub_resource type="Image" id="Image_7ik47"]
-data = {
-"data": PackedByteArray(255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="Image" id="Image_1t10m"]
-data = {
-"data": PackedByteArray(0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="Image" id="Image_gmq0m"]
-data = {
-"data": PackedByteArray(255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="Image" id="Image_swgx3"]
-data = {
-"data": PackedByteArray(0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="ImageTexture3D" id="ImageTexture3D_ec552"]
-_images = Array[Image]([SubResource("Image_7ik47"), SubResource("Image_1t10m"), SubResource("Image_gmq0m"), SubResource("Image_swgx3")])
-
-[sub_resource type="Image" id="Image_vgsql"]
-data = {
-"data": PackedByteArray(255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="Image" id="Image_tm1r7"]
-data = {
-"data": PackedByteArray(0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="Image" id="Image_45brn"]
-data = {
-"data": PackedByteArray(255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="Image" id="Image_2sb2l"]
-data = {
-"data": PackedByteArray(0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="ImageTexture3D" id="ImageTexture3D_f6k7f"]
-_images = Array[Image]([SubResource("Image_vgsql"), SubResource("Image_tm1r7"), SubResource("Image_45brn"), SubResource("Image_2sb2l")])
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_rb70y"]
-resource_local_to_scene = true
-render_priority = 0
-shader = ExtResource("2_t5pmm")
-shader_parameter/expansion_max = 0.2
-shader_parameter/transition_in = -1.0
-shader_parameter/transition_out = -1.0
-shader_parameter/dissolve_noise_texture = SubResource("ImageTexture3D_ec552")
-shader_parameter/hue_noise_texture = SubResource("ImageTexture3D_f6k7f")
-shader_parameter/intersector_pos = Vector3(0, 0, 0)
-shader_parameter/intersector_radius = 1.0
 
 [node name="Map" type="Node3D"]
 
@@ -122,18 +28,13 @@ shape = SubResource("BoxShape3D_eq2le")
 [node name="bedroom2" parent="Map" instance=ExtResource("1_7ik47")]
 transform = Transform3D(4.005, 0, 0, 0, 4.005, 0, 0, 0, 4.005, 4.87994, 0, -24.9208)
 
-[node name="Entity" parent="." instance=ExtResource("1_eq2le")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.6768, 14.2197, 12.511)
-
-[node name="MeshInstance3D" parent="Entity" index="0"]
-visible = false
-mesh = SubResource("CapsuleMesh_1t10m")
-surface_material_override/0 = SubResource("ShaderMaterial_rb70y")
-
 [node name="Character" type="Node3D" parent="."]
 
 [node name="Player" parent="Character" instance=ExtResource("1_0twea")]
 transform = Transform3D(0.729661, 0, 0.683809, 0, 1, 0, -0.683809, 0, 0.729661, 46.6902, 0, 20.3402)
+
+[node name="Entity" parent="Character" instance=ExtResource("1_eq2le")]
+transform = Transform3D(5.99027, 0, 4.67725, 0, 7.6, 0, -4.67725, 0, 5.99027, 28.26, 12.2221, -7.9225)
 
 [node name="Lights" type="Node3D" parent="."]
 
@@ -142,5 +43,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8571, 25.5085, -0.509079)
 visible = false
 shadow_enabled = true
 omni_range = 46.7417
-
-[editable path="Entity"]

@@ -8,7 +8,7 @@ extends CharacterBody3D
 @export var max_pitch = 20.0 # degrees
 
 @onready var walk_sound: AudioStreamPlayer3D = $Walk
-@onready var flashlight_hit_box: Area3D = $CameraPivot/Camera3D/Flaslight/FlashlightHitBox
+@onready var flashlight_hit_box: CollisionShape3D = $CameraPivot/Camera3D/Flaslight/FlashlightHitBox/CollisionShape3D
 @onready var flaslight: SpotLight3D = $CameraPivot/Camera3D/Flaslight
 @onready var battery_life_timer: Timer = %BatteryLifeTimer
 
@@ -67,6 +67,8 @@ func flash_light_toggle(force = null) -> void:
 		visibility = force
 	
 	flaslight.visible = visibility
+	
+	flashlight_hit_box.set_deferred("disabled",!visibility)
 	
 	if visibility:
 		battery_life_timer.start()

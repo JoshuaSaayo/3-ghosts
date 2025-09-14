@@ -1,104 +1,58 @@
-[gd_scene load_steps=15 format=3 uid="uid://c0gmxnmdyhreo"]
+[gd_scene load_steps=8 format=3 uid="uid://c0gmxnmdyhreo"]
 
 [ext_resource type="Shader" uid="uid://d32uu65f64asl" path="res://asset/shader/dissolve.gdshader" id="1_bclhr"]
 [ext_resource type="Script" uid="uid://cnif4ek6tjn70" path="res://entity/entity.gd" id="1_mckvm"]
+[ext_resource type="Texture2D" uid="uid://cie3ji1paeh3o" path="res://asset/test/Mafuyu_3rd_Anniversary.png" id="2_mckvm"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_mckvm"]
+[sub_resource type="QuadMesh" id="QuadMesh_glcaf"]
 resource_local_to_scene = true
+size = Vector2(1, 2.5)
 
-[sub_resource type="Image" id="Image_mckvm"]
-data = {
-"data": PackedByteArray(255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
+[sub_resource type="ViewportTexture" id="ViewportTexture_v200u"]
+viewport_path = NodePath("SubViewport")
 
-[sub_resource type="Image" id="Image_v200u"]
-data = {
-"data": PackedByteArray(0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="Image" id="Image_glcaf"]
-data = {
-"data": PackedByteArray(255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="Image" id="Image_jspmv"]
-data = {
-"data": PackedByteArray(0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="ImageTexture3D" id="ImageTexture3D_ec552"]
-_images = Array[Image]([SubResource("Image_mckvm"), SubResource("Image_v200u"), SubResource("Image_glcaf"), SubResource("Image_jspmv")])
-
-[sub_resource type="Image" id="Image_s1kue"]
-data = {
-"data": PackedByteArray(255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="Image" id="Image_ec552"]
-data = {
-"data": PackedByteArray(0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="Image" id="Image_whxwk"]
-data = {
-"data": PackedByteArray(255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="Image" id="Image_g2k83"]
-data = {
-"data": PackedByteArray(0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 255, 0, 255, 255, 0, 0, 0, 255, 255, 0, 255, 255, 0, 0, 0, 255),
-"format": "RGBA8",
-"height": 4,
-"mipmaps": false,
-"width": 4
-}
-
-[sub_resource type="ImageTexture3D" id="ImageTexture3D_f6k7f"]
-_images = Array[Image]([SubResource("Image_s1kue"), SubResource("Image_ec552"), SubResource("Image_whxwk"), SubResource("Image_g2k83")])
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_psl4n"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v200u"]
 resource_local_to_scene = true
 render_priority = 0
 shader = ExtResource("1_bclhr")
-shader_parameter/expansion_max = 0.0
-shader_parameter/transition_in = -1.0
-shader_parameter/transition_out = -1.0
-shader_parameter/dissolve_noise_texture = SubResource("ImageTexture3D_ec552")
-shader_parameter/hue_noise_texture = SubResource("ImageTexture3D_f6k7f")
-shader_parameter/intersector_pos = Vector3(0, 0, 0)
-shader_parameter/intersector_radius = 1.0
+shader_parameter/baseColor = Color(1, 1, 1, 1)
+shader_parameter/baseColorTexture = SubResource("ViewportTexture_v200u")
+shader_parameter/dissolveSlider = 0.0
+shader_parameter/dissolveNoiseScale = -30.0
+shader_parameter/edgeNoiseScale = -2.2352e-07
+shader_parameter/edgesThickness = 0.3
+shader_parameter/edgeColor = Color(0, 0, 0, 1)
+shader_parameter/edgeEmissionSlider = 10.0
+shader_parameter/enable_dissolve_animation = true
+shader_parameter/animation_speed = 1.0
+shader_parameter/animation_intensity = 0.2
+shader_parameter/alpha_threshold = 0.1
+shader_parameter/use_texture_alpha = true
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_v200u"]
 
 [node name="Entity" type="Node3D"]
 script = ExtResource("1_mckvm")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("CapsuleMesh_mckvm")
-surface_material_override/0 = SubResource("ShaderMaterial_psl4n")
+mesh = SubResource("QuadMesh_glcaf")
+surface_material_override/0 = SubResource("ShaderMaterial_v200u")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+size = Vector2i(247, 602)
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewport"]
+position = Vector2(123, 299)
+scale = Vector2(0.345, 0.345)
+texture = ExtResource("2_mckvm")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("CapsuleShape3D_v200u")
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+
+[connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]
+[connection signal="area_exited" from="Area3D" to="." method="_on_area_3d_area_exited"]
