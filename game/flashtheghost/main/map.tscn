@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dkj4ghkle4kvo"]
+[gd_scene load_steps=9 format=3 uid="uid://dkj4ghkle4kvo"]
 
 [ext_resource type="PackedScene" uid="uid://bl0s82uug2re7" path="res://main/player.tscn" id="1_0twea"]
 [ext_resource type="PackedScene" uid="uid://dylcgip3baxjv" path="res://gltf/bedroom.glb" id="1_7ik47"]
@@ -9,6 +9,68 @@ volumetric_fog_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eq2le"]
 size = Vector3(10.3459, 1, 10.2891)
+
+[sub_resource type="Animation" id="Animation_7ik47"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-20.2489, 12.2221, 6.39809)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.4748, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_t5pmm"]
+resource_name = "new_animation"
+length = 10.0
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4, 5, 9.5, 9.78335, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(-20.2489, 12.2221, 6.39809), Vector3(-17.0814, 12.2221, 13.4492), Vector3(-17.0814, -0.77604, 13.4492), Vector3(8.81607, -0.77604, 13.4492), Vector3(19.1137, 12.715, 13.4492), Vector3(38.966, 7.79237, 16.6599)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(4),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.4748, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1t10m"]
+_data = {
+&"RESET": SubResource("Animation_7ik47"),
+&"new_animation": SubResource("Animation_t5pmm")
+}
 
 [node name="Map" type="Node3D"]
 
@@ -34,7 +96,13 @@ transform = Transform3D(4.005, 0, 0, 0, 4.005, 0, 0, 0, 4.005, 4.87994, 0, -24.9
 transform = Transform3D(0.729661, 0, 0.683809, 0, 1, 0, -0.683809, 0, 0.729661, 46.6902, 0, 20.3402)
 
 [node name="Entity" parent="Character" instance=ExtResource("1_eq2le")]
-transform = Transform3D(5.99027, 0, 4.67725, 0, 7.6, 0, -4.67725, 0, 5.99027, 28.26, 12.2221, -7.9225)
+transform = Transform3D(0.728452, 0, 7.56501, 0, 7.6, 0, -7.56501, 0, 0.728452, -20.2489, 12.2221, 6.39809)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Character/Entity"]
+libraries = {
+&"": SubResource("AnimationLibrary_1t10m")
+}
+autoplay = "new_animation"
 
 [node name="Lights" type="Node3D" parent="."]
 
