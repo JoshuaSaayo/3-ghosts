@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://ftkpmqcjpqgn"
+path="res://.godot/imported/ghost1_pos1.skel-dea9f976497ebe328db231e3184f6f03.spskel"
+
+[deps]
+
+source_file="res://entity/entity_assets/ghost1_pos1/ghost1_pos1.skel"
+dest_files=["res://.godot/imported/ghost1_pos1.skel-dea9f976497ebe328db231e3184f6f03.spskel"]
+
+[params]
+

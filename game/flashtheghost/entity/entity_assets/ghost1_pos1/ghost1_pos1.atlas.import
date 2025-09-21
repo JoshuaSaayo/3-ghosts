@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://ds03kmp2rvjqe"
+path="res://.godot/imported/ghost1_pos1.atlas-1fa59809b8585eb456bf43469498f12b.spatlas"
+
+[deps]
+
+source_file="res://entity/entity_assets/ghost1_pos1/ghost1_pos1.atlas"
+dest_files=["res://.godot/imported/ghost1_pos1.atlas-1fa59809b8585eb456bf43469498f12b.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"
