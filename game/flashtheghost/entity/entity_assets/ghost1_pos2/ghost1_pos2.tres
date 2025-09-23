@@ -1,0 +1,9 @@
+[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3 uid="uid://b7omeyjj7vs2k"]
+
+[ext_resource type="SpineAtlasResource" uid="uid://c4jc5pg18e3ov" path="res://entity/entity_assets/ghost1_pos2/ghos1_pos2.atlas" id="1_jasus"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://dwuon6tvj0iym" path="res://entity/entity_assets/ghost1_pos2/ghos1_pos2.skel" id="2_41dy8"]
+
+[resource]
+atlas_res = ExtResource("1_jasus")
+skeleton_file_res = ExtResource("2_41dy8")
+default_mix = 0.25

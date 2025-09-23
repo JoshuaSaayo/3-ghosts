@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://1007hpcwoa1m"
+path="res://.godot/imported/ghost1_jumpscare.atlas-c008d7144f882f0594c206852275a951.spatlas"
+
+[deps]
+
+source_file="res://entity/entity_assets/ghost1_jumscare/ghost1_jumpscare.atlas"
+dest_files=["res://.godot/imported/ghost1_jumpscare.atlas-c008d7144f882f0594c206852275a951.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://b2dmsd0snvhw7"
+path="res://.godot/imported/ghost1_jumpscare.skel-f426d3705c6cc9242da9a4166aef250a.spskel"
+
+[deps]
+
+source_file="res://entity/entity_assets/ghost1_jumscare/ghost1_jumpscare.skel"
+dest_files=["res://.godot/imported/ghost1_jumpscare.skel-f426d3705c6cc9242da9a4166aef250a.spskel"]
+
+[params]
+

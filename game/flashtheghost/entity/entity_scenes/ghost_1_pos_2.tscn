@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1s8k3x14tywi"]
+
+[ext_resource type="SpineSkeletonDataResource" uid="uid://b7omeyjj7vs2k" path="res://entity/entity_assets/ghost1_pos2/ghost1_pos2.tres" id="1_0ge8b"]
+
+[node name="ghost1_pos2" type="SpineSprite"]
+skeleton_data_res = ExtResource("1_0ge8b")
+preview_skin = "Default"
+preview_animation = "crawling"
+preview_frame = false
+preview_time = 0.0
