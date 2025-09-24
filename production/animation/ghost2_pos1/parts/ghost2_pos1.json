@@ -1,0 +1,85 @@
+{ "skeleton": { "images": "C:/Users/Joshua PC/OneDrive/Desktop/parts/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "BG", "bone": "root", "attachment": "BG" },
+	{ "name": "back_hair", "bone": "root", "attachment": "back_hair" },
+	{ "name": "torso", "bone": "root", "attachment": "torso" },
+	{ "name": "l_arm", "bone": "root", "attachment": "l_arm" },
+	{ "name": "r_arm", "bone": "root", "attachment": "r_arm" },
+	{ "name": "hand", "bone": "root", "attachment": "hand" },
+	{ "name": "l_shoulder", "bone": "root", "attachment": "l_shoulder" },
+	{ "name": "r_shoulder", "bone": "root", "attachment": "r_shoulder" },
+	{ "name": "vine", "bone": "root", "attachment": "vine" },
+	{ "name": "l_boob", "bone": "root", "attachment": "l_boob" },
+	{ "name": "r_boob", "bone": "root", "attachment": "r_boob" },
+	{ "name": "clothes", "bone": "root", "attachment": "clothes" },
+	{ "name": "tie", "bone": "root", "attachment": "tie" },
+	{ "name": "face", "bone": "root", "attachment": "face" },
+	{ "name": "eye", "bone": "root", "attachment": "eye" },
+	{ "name": "iris", "bone": "root", "attachment": "iris" },
+	{ "name": "flower", "bone": "root", "attachment": "flower" },
+	{ "name": "bangs", "bone": "root", "attachment": "bangs" }
+],
+"skins": {
+	"default": {
+		"BG": {
+			"BG": { "x": 360, "y": -640, "width": 722, "height": 1282 }
+		},
+		"back_hair": {
+			"back_hair": { "x": 384, "y": -370, "width": 514, "height": 542 }
+		},
+		"torso": {
+			"torso": { "x": 377.5, "y": -486.5, "width": 325, "height": 457 }
+		},
+		"l_arm": {
+			"l_arm": { "x": 114, "y": -255, "width": 72, "height": 218 }
+		},
+		"r_arm": {
+			"r_arm": { "x": 599.5, "y": -567.5, "width": 207, "height": 223 }
+		},
+		"hand": {
+			"hand": { "x": 93, "y": -123, "width": 90, "height": 148 }
+		},
+		"l_shoulder": {
+			"l_shoulder": { "x": 207.5, "y": -338, "width": 263, "height": 106 }
+		},
+		"r_shoulder": {
+			"r_shoulder": { "x": 336, "y": -423.5, "width": 460, "height": 239 }
+		},
+		"vine": {
+			"vine": { "x": 168.5, "y": -293.5, "width": 235, "height": 223 }
+		},
+		"l_boob": {
+			"l_boob": { "x": 286, "y": -415, "width": 106, "height": 162 }
+		},
+		"r_boob": {
+			"r_boob": { "x": 392, "y": -427.5, "width": 120, "height": 147 }
+		},
+		"clothes": {
+			"clothes": { "x": 369, "y": -422.5, "width": 294, "height": 289 }
+		},
+		"tie": {
+			"tie": { "x": 347.5, "y": -444.5, "width": 83, "height": 157 }
+		},
+		"face": {
+			"face": { "x": 370.5, "y": -220, "width": 201, "height": 142 }
+		},
+		"eye": {
+			"eye": { "x": 329, "y": -210, "width": 48, "height": 44 }
+		},
+		"iris": {
+			"iris": { "x": 330, "y": -219.5, "width": 22, "height": 23 }
+		},
+		"flower": {
+			"flower": { "x": 386, "y": -230.5, "width": 64, "height": 81 }
+		},
+		"bangs": {
+			"bangs": { "x": 384, "y": -255.5, "width": 258, "height": 259 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
