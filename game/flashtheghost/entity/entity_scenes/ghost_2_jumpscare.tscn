@@ -1,0 +1,97 @@
+[gd_scene load_steps=22 format=3 uid="uid://bs5cy5l6vdlbd"]
+
+[ext_resource type="Texture2D" uid="uid://bp8ubsqpn58n3" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_00.png" id="1_i35sx"]
+[ext_resource type="Texture2D" uid="uid://mmtel0slby6a" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_01.png" id="2_emeqs"]
+[ext_resource type="Texture2D" uid="uid://dd8utbsndnmyj" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_02.png" id="3_h3vuj"]
+[ext_resource type="Texture2D" uid="uid://dyerkueuold5j" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_03.png" id="4_30udr"]
+[ext_resource type="Texture2D" uid="uid://c6estce23kjhi" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_04.png" id="5_vs0g3"]
+[ext_resource type="Texture2D" uid="uid://dfvc5b7q6kqx" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_05.png" id="6_fqdt7"]
+[ext_resource type="Texture2D" uid="uid://cec7f2e603ixu" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_06.png" id="7_c06ue"]
+[ext_resource type="Texture2D" uid="uid://eublajsi8j42" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_07.png" id="8_ealep"]
+[ext_resource type="Texture2D" uid="uid://b4dgbhs6t4jsb" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_08.png" id="9_co76y"]
+[ext_resource type="Texture2D" uid="uid://cnltqcqkbajjf" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_09.png" id="10_sh0pl"]
+[ext_resource type="Texture2D" uid="uid://bo7ric8blew1e" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_10.png" id="11_fiec5"]
+[ext_resource type="Texture2D" uid="uid://bshjndg2g481u" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_11.png" id="12_0mysa"]
+[ext_resource type="Texture2D" uid="uid://6w3b8l7m06y8" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_12.png" id="13_ay2f6"]
+[ext_resource type="Texture2D" uid="uid://cthd63uo7q8b0" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_13.png" id="14_lmr6t"]
+[ext_resource type="Texture2D" uid="uid://do4kwmmtuqf3f" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_14.png" id="15_naptx"]
+[ext_resource type="Texture2D" uid="uid://bbm6x2yxxgsvf" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_15.png" id="16_0pxo1"]
+[ext_resource type="Texture2D" uid="uid://caw53pi5cbest" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_16.png" id="17_busku"]
+[ext_resource type="Texture2D" uid="uid://0ms31o5kl3a6" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_17.png" id="18_x5b1s"]
+[ext_resource type="Texture2D" uid="uid://dp6k7in5o16mf" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_18.png" id="19_5q10m"]
+[ext_resource type="Texture2D" uid="uid://cswpljw32anba" path="res://entity/entity_assets/ghost2_jumscare/ghost2_jumpscare-animation_19.png" id="20_6tugv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x66xi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_i35sx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_emeqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_h3vuj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_30udr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vs0g3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fqdt7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_c06ue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ealep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_co76y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_sh0pl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_fiec5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0mysa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ay2f6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_lmr6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_naptx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0pxo1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_busku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_x5b1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_5q10m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_6tugv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ghost2_jumpscare" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_x66xi")
+frame_progress = 0.126707
+speed_scale = 3.0
