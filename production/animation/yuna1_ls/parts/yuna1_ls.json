@@ -1,0 +1,101 @@
+{ "skeleton": { "images": "C:/Users/Joshua PC/OneDrive/Desktop/parts/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "back_hair", "bone": "root", "attachment": "back_hair" },
+	{ "name": "l_shoulder", "bone": "root", "attachment": "l_shoulder" },
+	{ "name": "r_shoulder", "bone": "root", "attachment": "r_shoulder" },
+	{ "name": "arm", "bone": "root", "attachment": "arm" },
+	{ "name": "torso", "bone": "root", "attachment": "torso" },
+	{ "name": "dick", "bone": "root", "attachment": "dick" },
+	{ "name": "l_thigh", "bone": "root", "attachment": "l_thigh" },
+	{ "name": "r_thigh", "bone": "root", "attachment": "r_thigh" },
+	{ "name": "l_leg", "bone": "root", "attachment": "l_leg" },
+	{ "name": "r_leg", "bone": "root", "attachment": "r_leg" },
+	{ "name": "m_l_thigh", "bone": "root", "attachment": "m_l_thigh" },
+	{ "name": "m_r_thigh", "bone": "root", "attachment": "m_r_thigh" },
+	{ "name": "m_torso", "bone": "root", "attachment": "m_torso" },
+	{ "name": "vagina", "bone": "root", "attachment": "vagina" },
+	{ "name": "cum", "bone": "root", "attachment": "cum" },
+	{ "name": "head", "bone": "root", "attachment": "head" },
+	{ "name": "l_boob", "bone": "root", "attachment": "l_boob" },
+	{ "name": "r_boob", "bone": "root", "attachment": "r_boob" },
+	{ "name": "eyes", "bone": "root", "attachment": "eyes" },
+	{ "name": "iris", "bone": "root", "attachment": "iris" },
+	{ "name": "mouth", "bone": "root", "attachment": "mouth" },
+	{ "name": "bangs", "bone": "root", "attachment": "bangs" }
+],
+"skins": {
+	"default": {
+		"back_hair": {
+			"back_hair": { "x": 704, "y": -320, "width": 898, "height": 642 }
+		},
+		"l_shoulder": {
+			"l_shoulder": { "x": 483, "y": -334, "width": 592, "height": 214 }
+		},
+		"r_shoulder": {
+			"r_shoulder": { "x": 608, "y": -82.5, "width": 122, "height": 167 }
+		},
+		"arm": {
+			"arm": { "x": 293.5, "y": -267.5, "width": 175, "height": 211 }
+		},
+		"torso": {
+			"torso": { "x": 795, "y": -382, "width": 808, "height": 678 }
+		},
+		"dick": {
+			"dick": { "x": 947.5, "y": -542, "width": 263, "height": 216 }
+		},
+		"l_thigh": {
+			"l_thigh": { "x": 683, "y": -365.5, "width": 676, "height": 711 }
+		},
+		"r_thigh": {
+			"r_thigh": { "x": 875, "y": -308, "width": 414, "height": 600 }
+		},
+		"l_leg": {
+			"l_leg": { "x": 426.5, "y": -594, "width": 265, "height": 254 }
+		},
+		"r_leg": {
+			"r_leg": { "x": 823, "y": -75.5, "width": 294, "height": 153 }
+		},
+		"m_l_thigh": {
+			"m_l_thigh": { "x": 1021.5, "y": -401, "width": 497, "height": 640 }
+		},
+		"m_r_thigh": {
+			"m_r_thigh": { "x": 1096, "y": -370, "width": 348, "height": 464 }
+		},
+		"m_torso": {
+			"m_torso": { "x": 1067.5, "y": -564, "width": 387, "height": 322 }
+		},
+		"vagina": {
+			"vagina": { "x": 913, "y": -541.5, "width": 206, "height": 169 }
+		},
+		"cum": {
+			"cum": { "x": 950.5, "y": -537, "width": 383, "height": 368 }
+		},
+		"head": {
+			"head": { "x": 446, "y": -161.5, "width": 216, "height": 261 }
+		},
+		"l_boob": {
+			"l_boob": { "x": 573.5, "y": -399, "width": 205, "height": 232 }
+		},
+		"r_boob": {
+			"r_boob": { "x": 687.5, "y": -236.5, "width": 217, "height": 189 }
+		},
+		"eyes": {
+			"eyes": { "x": 471, "y": -165.5, "width": 94, "height": 133 }
+		},
+		"iris": {
+			"iris": { "x": 487.5, "y": -175, "width": 51, "height": 84 }
+		},
+		"mouth": {
+			"mouth": { "x": 520, "y": -218.5, "width": 78, "height": 95 }
+		},
+		"bangs": {
+			"bangs": { "x": 438, "y": -244, "width": 260, "height": 430 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
