@@ -1,0 +1,97 @@
+{ "skeleton": { "images": "C:/Users/Joshua PC/OneDrive/Desktop/parts/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "BG", "bone": "root", "attachment": "BG" },
+	{ "name": "Layer13", "bone": "root", "attachment": "Layer13" },
+	{ "name": "back_hat", "bone": "root", "attachment": "back_hat" },
+	{ "name": "back_hair", "bone": "root", "attachment": "back_hair" },
+	{ "name": "l_hand", "bone": "root", "attachment": "l_hand" },
+	{ "name": "l_sleeve", "bone": "root", "attachment": "l_sleeve" },
+	{ "name": "r_sleeve", "bone": "root", "attachment": "r_sleeve" },
+	{ "name": "l_feet", "bone": "root", "attachment": "l_feet" },
+	{ "name": "r_feet", "bone": "root", "attachment": "r_feet" },
+	{ "name": "torso", "bone": "root", "attachment": "torso" },
+	{ "name": "bottom_cloth", "bone": "root", "attachment": "bottom_cloth" },
+	{ "name": "mid_cloth", "bone": "root", "attachment": "mid_cloth" },
+	{ "name": "chest_cloth", "bone": "root", "attachment": "chest_cloth" },
+	{ "name": "r_hand", "bone": "root", "attachment": "r_hand" },
+	{ "name": "r_arm_sleeves", "bone": "root", "attachment": "r_arm_sleeves" },
+	{ "name": "top_cloth", "bone": "root", "attachment": "top_cloth" },
+	{ "name": "head", "bone": "root", "attachment": "head" },
+	{ "name": "eye", "bone": "root", "attachment": "eye" },
+	{ "name": "iris", "bone": "root", "attachment": "iris" },
+	{ "name": "bangs", "bone": "root", "attachment": "bangs" },
+	{ "name": "hat", "bone": "root", "attachment": "hat" }
+],
+"skins": {
+	"default": {
+		"BG": {
+			"BG": { "x": 360, "y": -640, "width": 722, "height": 1282 }
+		},
+		"Layer13": {
+			"Layer13": { "x": 360, "y": -640, "width": 722, "height": 1282 }
+		},
+		"back_hat": {
+			"back_hat": { "x": 266, "y": -207, "width": 290, "height": 154 }
+		},
+		"back_hair": {
+			"back_hair": { "x": 250, "y": -250.5, "width": 270, "height": 269 }
+		},
+		"l_hand": {
+			"l_hand": { "x": 111.5, "y": -684, "width": 75, "height": 138 }
+		},
+		"l_sleeve": {
+			"l_sleeve": { "x": 180.5, "y": -482.5, "width": 199, "height": 383 }
+		},
+		"r_sleeve": {
+			"r_sleeve": { "x": 376, "y": -396.5, "width": 206, "height": 167 }
+		},
+		"l_feet": {
+			"l_feet": { "x": 319, "y": -1004.5, "width": 414, "height": 485 }
+		},
+		"r_feet": {
+			"r_feet": { "x": 394.5, "y": -1115, "width": 151, "height": 280 }
+		},
+		"torso": {
+			"torso": { "x": 336.5, "y": -456.5, "width": 445, "height": 419 }
+		},
+		"bottom_cloth": {
+			"bottom_cloth": { "x": 323.5, "y": -867, "width": 341, "height": 798 }
+		},
+		"mid_cloth": {
+			"mid_cloth": { "x": 315.5, "y": -627.5, "width": 305, "height": 271 }
+		},
+		"chest_cloth": {
+			"chest_cloth": { "x": 319, "y": -455.5, "width": 302, "height": 227 }
+		},
+		"r_hand": {
+			"r_hand": { "x": 395.5, "y": -564, "width": 77, "height": 114 }
+		},
+		"r_arm_sleeves": {
+			"r_arm_sleeves": { "x": 432.5, "y": -500.5, "width": 135, "height": 159 }
+		},
+		"top_cloth": {
+			"top_cloth": { "x": 307, "y": -398.5, "width": 304, "height": 221 }
+		},
+		"head": {
+			"head": { "x": 259.5, "y": -206.5, "width": 257, "height": 175 }
+		},
+		"eye": {
+			"eye": { "x": 303.5, "y": -217.5, "width": 51, "height": 33 }
+		},
+		"iris": {
+			"iris": { "x": 300, "y": -219, "width": 22, "height": 22 }
+		},
+		"bangs": {
+			"bangs": { "x": 256.5, "y": -226, "width": 177, "height": 208 }
+		},
+		"hat": {
+			"hat": { "x": 238, "y": -211, "width": 328, "height": 180 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
