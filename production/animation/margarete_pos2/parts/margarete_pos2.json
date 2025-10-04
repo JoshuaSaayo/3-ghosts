@@ -1,0 +1,73 @@
+{ "skeleton": { "images": "C:/Users/Joshua PC/OneDrive/Desktop/parts/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "BG", "bone": "root", "attachment": "BG" },
+	{ "name": "hat_back", "bone": "root", "attachment": "hat_back" },
+	{ "name": "back_hair", "bone": "root", "attachment": "back_hair" },
+	{ "name": "torso", "bone": "root", "attachment": "torso" },
+	{ "name": "hand", "bone": "root", "attachment": "hand" },
+	{ "name": "l_arm_sleeve", "bone": "root", "attachment": "l_arm_sleeve" },
+	{ "name": "l_sleeve", "bone": "root", "attachment": "l_sleeve" },
+	{ "name": "r_sleeve", "bone": "root", "attachment": "r_sleeve" },
+	{ "name": "cloth", "bone": "root", "attachment": "cloth" },
+	{ "name": "top_cloth", "bone": "root", "attachment": "top_cloth" },
+	{ "name": "head", "bone": "root", "attachment": "head" },
+	{ "name": "eye", "bone": "root", "attachment": "eye" },
+	{ "name": "iris", "bone": "root", "attachment": "iris" },
+	{ "name": "bangs", "bone": "root", "attachment": "bangs" },
+	{ "name": "Layer28", "bone": "root", "attachment": "Layer28" }
+],
+"skins": {
+	"default": {
+		"BG": {
+			"BG": { "x": 360, "y": -640, "width": 722, "height": 1282 }
+		},
+		"hat_back": {
+			"hat_back": { "x": 362.5, "y": -202, "width": 401, "height": 120 }
+		},
+		"back_hair": {
+			"back_hair": { "x": 356, "y": -238.5, "width": 304, "height": 273 }
+		},
+		"torso": {
+			"torso": { "x": 362, "y": -430, "width": 254, "height": 386 }
+		},
+		"hand": {
+			"hand": { "x": 90, "y": -135.5, "width": 86, "height": 159 }
+		},
+		"l_arm_sleeve": {
+			"l_arm_sleeve": { "x": 109, "y": -263.5, "width": 92, "height": 193 }
+		},
+		"l_sleeve": {
+			"l_sleeve": { "x": 196, "y": -340, "width": 210, "height": 104 }
+		},
+		"r_sleeve": {
+			"r_sleeve": { "x": 517, "y": -463, "width": 230, "height": 276 }
+		},
+		"cloth": {
+			"cloth": { "x": 395, "y": -551.5, "width": 316, "height": 483 }
+		},
+		"top_cloth": {
+			"top_cloth": { "x": 357.5, "y": -364.5, "width": 395, "height": 203 }
+		},
+		"head": {
+			"head": { "x": 372, "y": -195, "width": 218, "height": 192 }
+		},
+		"eye": {
+			"eye": { "x": 430.5, "y": -318, "width": 123, "height": 260 }
+		},
+		"iris": {
+			"iris": { "x": 390.5, "y": -217.5, "width": 29, "height": 23 }
+		},
+		"bangs": {
+			"bangs": { "x": 343.5, "y": -211.5, "width": 191, "height": 197 }
+		},
+		"Layer28": {
+			"Layer28": { "x": 355.5, "y": -161.5, "width": 345, "height": 111 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

@@ -1,0 +1,97 @@
+[gd_scene load_steps=22 format=3 uid="uid://csbf0gcad0cc0"]
+
+[ext_resource type="Texture2D" uid="uid://cwfnk6fknegnw" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_00.png" id="1_px1hm"]
+[ext_resource type="Texture2D" uid="uid://combq73cdoa2e" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_01.png" id="2_bxwwn"]
+[ext_resource type="Texture2D" uid="uid://cbi411a575w80" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_02.png" id="3_rj8gh"]
+[ext_resource type="Texture2D" uid="uid://d3gmxx0r2dpvo" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_03.png" id="4_ur2am"]
+[ext_resource type="Texture2D" uid="uid://cyjtu873x146b" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_04.png" id="5_on53i"]
+[ext_resource type="Texture2D" uid="uid://2ph8ft44twrc" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_05.png" id="6_cswiv"]
+[ext_resource type="Texture2D" uid="uid://b70rk2g840se3" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_06.png" id="7_rpp68"]
+[ext_resource type="Texture2D" uid="uid://cuwi8mfvy26ed" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_07.png" id="8_eb37e"]
+[ext_resource type="Texture2D" uid="uid://bs03oe6v6oadx" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_08.png" id="9_72np2"]
+[ext_resource type="Texture2D" uid="uid://dxqa5t4r4lg44" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_09.png" id="10_l6yuf"]
+[ext_resource type="Texture2D" uid="uid://bfupjnkjl3iey" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_10.png" id="11_nuo64"]
+[ext_resource type="Texture2D" uid="uid://ctwlsn7pn55v8" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_11.png" id="12_0e5ns"]
+[ext_resource type="Texture2D" uid="uid://gg5x3q1nrbu2" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_12.png" id="13_kswvf"]
+[ext_resource type="Texture2D" uid="uid://cq8p5udqafe75" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_13.png" id="14_nkjkq"]
+[ext_resource type="Texture2D" uid="uid://4msbwxkm8kes" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_14.png" id="15_pby0y"]
+[ext_resource type="Texture2D" uid="uid://b8xlaqumwicmo" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_15.png" id="16_e1wc0"]
+[ext_resource type="Texture2D" uid="uid://bpfclrtqsqefc" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_16.png" id="17_qhhk4"]
+[ext_resource type="Texture2D" uid="uid://den3al1mb8hgd" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_17.png" id="18_1rd4u"]
+[ext_resource type="Texture2D" uid="uid://cat4uaei6wiox" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_18.png" id="19_18fmq"]
+[ext_resource type="Texture2D" uid="uid://clbaq241ls1u" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_19.png" id="20_f2sdb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2ckos"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_px1hm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_bxwwn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rj8gh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ur2am")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_on53i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_cswiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rpp68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_eb37e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_72np2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_l6yuf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_nuo64")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0e5ns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_kswvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_nkjkq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pby0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_e1wc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_qhhk4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_1rd4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_18fmq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_f2sdb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="margarete_pos1" type="Node2D"]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_2ckos")
+frame_progress = 0.223529
+speed_scale = 2.0

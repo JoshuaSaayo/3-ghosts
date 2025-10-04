@@ -1,5 +1,6 @@
-[gd_scene load_steps=175 format=3 uid="uid://u274poym1jao"]
+[gd_scene load_steps=176 format=3 uid="uid://u274poym1jao"]
 
+[ext_resource type="Texture2D" uid="uid://bhc28u7n0r0mk" path="res://lewds/lewd_assets/yuna1_ls/parts/bg_0.png" id="1_16agx"]
 [ext_resource type="Texture2D" uid="uid://dpwkebu0bmlge" path="res://lewds/lewd_assets/yuna1_ls/y_back_hair/yuna1_ls-animation_00.png" id="1_ogsh0"]
 [ext_resource type="Texture2D" uid="uid://b7v52c8h4an1h" path="res://lewds/lewd_assets/yuna1_ls/y_torso/yuna1_ls-godot_00.png" id="2_jd4av"]
 [ext_resource type="Texture2D" uid="uid://bkn3oqugnm1am" path="res://lewds/lewd_assets/yuna1_ls/parts/head.png" id="3_joftc"]
@@ -223,7 +224,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Torso/LBoob:texture")
+tracks/0/path = NodePath("Node2D/Torso/LBoob:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -235,7 +236,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Torso:texture")
+tracks/1/path = NodePath("Node2D/Torso:texture")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -247,7 +248,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Torso/Head/Bangs:texture")
+tracks/2/path = NodePath("Node2D/Torso/Head/Bangs:texture")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -259,7 +260,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Torso/LThigh:texture")
+tracks/3/path = NodePath("Node2D/Torso/LThigh:texture")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -271,7 +272,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Torso/RThigh:texture")
+tracks/4/path = NodePath("Node2D/Torso/RThigh:texture")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -283,7 +284,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Torso/Vagina:texture")
+tracks/5/path = NodePath("Node2D/Torso/Vagina:texture")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -295,7 +296,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Torso/Head/Mouth:texture")
+tracks/6/path = NodePath("Node2D/Torso/Head/Mouth:texture")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -307,7 +308,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Torso:position")
+tracks/7/path = NodePath("Node2D/Torso:position")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -319,7 +320,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("MTorso:position")
+tracks/8/path = NodePath("Node2D/MTorso:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -331,7 +332,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("MTorso/MRThigh:rotation")
+tracks/9/path = NodePath("Node2D/MTorso/MRThigh:rotation")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -343,7 +344,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("MTorso/MLThigh:rotation")
+tracks/10/path = NodePath("Node2D/MTorso/MLThigh:rotation")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -355,7 +356,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Torso/RThigh:rotation")
+tracks/11/path = NodePath("Node2D/Torso/RThigh:rotation")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -367,7 +368,7 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Torso/LThigh:rotation")
+tracks/12/path = NodePath("Node2D/Torso/LThigh:rotation")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
@@ -379,7 +380,7 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Torso/Head:rotation")
+tracks/13/path = NodePath("Node2D/Torso/Head:rotation")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
@@ -391,7 +392,7 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Torso/Arm:position")
+tracks/14/path = NodePath("Node2D/Torso/Arm:position")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
@@ -403,7 +404,7 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Torso/Arm:rotation")
+tracks/15/path = NodePath("Node2D/Torso/Arm:rotation")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
@@ -415,7 +416,7 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("Torso/RThigh/RLeg:rotation")
+tracks/16/path = NodePath("Node2D/Torso/RThigh/RLeg:rotation")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
@@ -427,7 +428,7 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("Torso/LThigh/LLeg:rotation")
+tracks/17/path = NodePath("Node2D/Torso/LThigh/LLeg:rotation")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
@@ -439,7 +440,7 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("BackHair:texture")
+tracks/18/path = NodePath("Node2D/BackHair:texture")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
@@ -456,7 +457,7 @@ step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Torso/LBoob:texture")
+tracks/0/path = NodePath("Node2D/Torso/LBoob:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -468,7 +469,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Torso:texture")
+tracks/1/path = NodePath("Node2D/Torso:texture")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -480,7 +481,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Torso/Head/Bangs:texture")
+tracks/2/path = NodePath("Node2D/Torso/Head/Bangs:texture")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -492,7 +493,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Torso/LThigh:texture")
+tracks/3/path = NodePath("Node2D/Torso/LThigh:texture")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -504,7 +505,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Torso/RThigh:texture")
+tracks/4/path = NodePath("Node2D/Torso/RThigh:texture")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -516,7 +517,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Torso/Vagina:texture")
+tracks/5/path = NodePath("Node2D/Torso/Vagina:texture")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -528,7 +529,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Torso/Head/Mouth:texture")
+tracks/6/path = NodePath("Node2D/Torso/Head/Mouth:texture")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -540,7 +541,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Torso:position")
+tracks/7/path = NodePath("Node2D/Torso:position")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -552,7 +553,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("MTorso:position")
+tracks/8/path = NodePath("Node2D/MTorso:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -564,7 +565,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("MTorso/MRThigh:rotation")
+tracks/9/path = NodePath("Node2D/MTorso/MRThigh:rotation")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -576,7 +577,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("MTorso/MLThigh:rotation")
+tracks/10/path = NodePath("Node2D/MTorso/MLThigh:rotation")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -588,7 +589,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Torso/RThigh:rotation")
+tracks/11/path = NodePath("Node2D/Torso/RThigh:rotation")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -600,7 +601,7 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Torso/LThigh:rotation")
+tracks/12/path = NodePath("Node2D/Torso/LThigh:rotation")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
@@ -612,7 +613,7 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Torso/Head:rotation")
+tracks/13/path = NodePath("Node2D/Torso/Head:rotation")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
@@ -624,7 +625,7 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Torso/Arm:position")
+tracks/14/path = NodePath("Node2D/Torso/Arm:position")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
@@ -636,7 +637,7 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Torso/Arm:rotation")
+tracks/15/path = NodePath("Node2D/Torso/Arm:rotation")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
@@ -648,7 +649,7 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("Torso/RThigh/RLeg:rotation")
+tracks/16/path = NodePath("Node2D/Torso/RThigh/RLeg:rotation")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
@@ -660,7 +661,7 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("Torso/LThigh/LLeg:rotation")
+tracks/17/path = NodePath("Node2D/Torso/LThigh/LLeg:rotation")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
@@ -672,7 +673,7 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("BackHair:texture")
+tracks/18/path = NodePath("Node2D/BackHair:texture")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
@@ -690,95 +691,103 @@ _data = {
 
 [node name="yuna1_ls" type="Node2D"]
 
-[node name="BackHair" type="Sprite2D" parent="."]
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(0, -29)
+
+[node name="Bg0" type="Sprite2D" parent="Node2D"]
+position = Vector2(663, 371)
+texture = ExtResource("1_16agx")
+
+[node name="BackHair" type="Sprite2D" parent="Node2D"]
 position = Vector2(616, 299)
 texture = ExtResource("1_ogsh0")
 
-[node name="Torso" type="Sprite2D" parent="."]
+[node name="Torso" type="Sprite2D" parent="Node2D"]
 position = Vector2(606, 353)
 texture = ExtResource("2_jd4av")
 
-[node name="Arm" type="Sprite2D" parent="Torso"]
+[node name="Arm" type="Sprite2D" parent="Node2D/Torso"]
 position = Vector2(-396, 5)
 rotation = 0.000497622
 texture = ExtResource("14_q6u4t")
 offset = Vector2(38, -70)
 
-[node name="Head" type="Sprite2D" parent="Torso"]
+[node name="Head" type="Sprite2D" parent="Node2D/Torso"]
 position = Vector2(-113, -114)
 texture = ExtResource("3_joftc")
 offset = Vector2(-81, -53)
 
-[node name="Eyes" type="AnimatedSprite2D" parent="Torso/Head"]
+[node name="Eyes" type="AnimatedSprite2D" parent="Node2D/Torso/Head"]
 position = Vector2(-58, -46)
 sprite_frames = SubResource("SpriteFrames_bohpl")
 autoplay = "default"
 frame_progress = 0.335882
 
-[node name="Bangs" type="Sprite2D" parent="Torso/Head"]
+[node name="Bangs" type="Sprite2D" parent="Node2D/Torso/Head"]
 position = Vector2(-89, -63)
 texture = ExtResource("6_smf33")
 
-[node name="Mouth" type="Sprite2D" parent="Torso/Head"]
+[node name="Mouth" type="Sprite2D" parent="Node2D/Torso/Head"]
 position = Vector2(5, -5)
 texture = ExtResource("13_mhydj")
 
-[node name="RThigh" type="Sprite2D" parent="Torso"]
+[node name="RThigh" type="Sprite2D" parent="Node2D/Torso"]
 position = Vector2(350, 152)
 rotation = 0.344968
 texture = ExtResource("7_cc1yv")
 offset = Vector2(-87, -173)
 
-[node name="RLeg" type="Sprite2D" parent="Torso/RThigh"]
+[node name="RLeg" type="Sprite2D" parent="Node2D/Torso/RThigh"]
 position = Vector2(-249.737, -390.442)
 rotation = -0.252123
 texture = ExtResource("10_ywe16")
 offset = Vector2(98.778, -7.63055)
 
-[node name="LThigh" type="Sprite2D" parent="Torso"]
+[node name="LThigh" type="Sprite2D" parent="Node2D/Torso"]
 position = Vector2(236, 296)
 rotation = -0.131301
 texture = ExtResource("9_dke13")
 offset = Vector2(-203, -10)
 
-[node name="LLeg" type="Sprite2D" parent="Torso/LThigh"]
+[node name="LLeg" type="Sprite2D" parent="Node2D/Torso/LThigh"]
 position = Vector2(-435.372, -70.4696)
 rotation = 0.161988
 texture = ExtResource("17_pajk1")
 offset = Vector2(-23.6283, 55.4696)
 
-[node name="Vagina" type="Sprite2D" parent="Torso"]
+[node name="Vagina" type="Sprite2D" parent="Node2D/Torso"]
 position = Vector2(319, 242)
 texture = ExtResource("11_tfu7d")
 
-[node name="LBoob" type="Sprite2D" parent="Torso"]
+[node name="LBoob" type="Sprite2D" parent="Node2D/Torso"]
 position = Vector2(7, 6)
 texture = ExtResource("18_k2tgf")
 
-[node name="MTorso" type="Sprite2D" parent="."]
+[node name="MTorso" type="Sprite2D" parent="Node2D"]
 position = Vector2(1059, 621)
 texture = ExtResource("19_84gdv")
 
-[node name="MLThigh" type="Sprite2D" parent="MTorso"]
+[node name="MLThigh" type="Sprite2D" parent="Node2D/MTorso"]
 show_behind_parent = true
 position = Vector2(54, 109)
 texture = ExtResource("20_wod37")
 offset = Vector2(-100, -4)
 
-[node name="MRThigh" type="Sprite2D" parent="MTorso"]
+[node name="MRThigh" type="Sprite2D" parent="Node2D/MTorso"]
 show_behind_parent = true
 position = Vector2(20, -15)
 rotation = -0.227416
 texture = ExtResource("21_vknf1")
 offset = Vector2(-14, -176)
 
-[node name="Template" type="Sprite2D" parent="."]
+[node name="Template" type="Sprite2D" parent="Node2D"]
 visible = false
 self_modulate = Color(0.556863, 1, 0.415686, 0.458824)
 position = Vector2(451, 329)
 texture = ExtResource("22_rvu7u")
 
-[node name="lewdscenes" type="AnimationPlayer" parent="."]
+[node name="lewdscenes" type="AnimationPlayer" parent="Node2D"]
+root_node = NodePath("../..")
 libraries = {
 &"": SubResource("AnimationLibrary_3yhx8")
 }
