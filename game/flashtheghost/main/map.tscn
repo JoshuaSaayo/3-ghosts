@@ -1,8 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://dkj4ghkle4kvo"]
+[gd_scene load_steps=6 format=3 uid="uid://dkj4ghkle4kvo"]
 
 [ext_resource type="PackedScene" uid="uid://bl0s82uug2re7" path="res://main/player.tscn" id="1_0twea"]
+[ext_resource type="Script" uid="uid://bcub2o0fx67wk" path="res://main/map.gd" id="1_1t10m"]
 [ext_resource type="PackedScene" uid="uid://dylcgip3baxjv" path="res://gltf/bedroom.glb" id="1_7ik47"]
-[ext_resource type="PackedScene" uid="uid://c0gmxnmdyhreo" path="res://entity/entity.tscn" id="1_eq2le"]
 
 [sub_resource type="Environment" id="Environment_7ik47"]
 volumetric_fog_enabled = true
@@ -10,69 +10,8 @@ volumetric_fog_enabled = true
 [sub_resource type="BoxShape3D" id="BoxShape3D_eq2le"]
 size = Vector3(10.3459, 1, 10.2891)
 
-[sub_resource type="Animation" id="Animation_7ik47"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-20.2489, 12.2221, 6.39809)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 1.4748, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_t5pmm"]
-resource_name = "new_animation"
-length = 10.0
-step = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 4, 5, 9.5, 9.78335, 10),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(-20.2489, 12.2221, 6.39809), Vector3(-17.0814, 12.2221, 13.4492), Vector3(-17.0814, -0.77604, 13.4492), Vector3(8.81607, -0.77604, 13.4492), Vector3(19.1137, 12.715, 13.4492), Vector3(38.966, 7.79237, 16.6599)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(4),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 1.4748, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_1t10m"]
-_data = {
-&"RESET": SubResource("Animation_7ik47"),
-&"new_animation": SubResource("Animation_t5pmm")
-}
-
 [node name="Map" type="Node3D"]
+script = ExtResource("1_1t10m")
 
 [node name="Enviroment" type="Node3D" parent="."]
 
@@ -88,26 +27,61 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.4674, -0.94178, 20.2159)
 shape = SubResource("BoxShape3D_eq2le")
 
 [node name="bedroom2" parent="Map" instance=ExtResource("1_7ik47")]
-transform = Transform3D(4.005, 0, 0, 0, 4.005, 0, 0, 0, 4.005, 4.87994, 0, -24.9208)
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 4.87994, 0, -24.9208)
 
 [node name="Character" type="Node3D" parent="."]
 
 [node name="Player" parent="Character" instance=ExtResource("1_0twea")]
-transform = Transform3D(0.729661, 0, 0.683809, 0, 1, 0, -0.683809, 0, 0.729661, 46.6902, 0, 20.3402)
-
-[node name="Entity" parent="Character" instance=ExtResource("1_eq2le")]
-transform = Transform3D(0.728452, 0, 7.56501, 0, 7.6, 0, -7.56501, 0, 0.728452, -20.2489, 12.2221, 6.39809)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Character/Entity"]
-libraries = {
-&"": SubResource("AnimationLibrary_1t10m")
-}
-autoplay = "new_animation"
+transform = Transform3D(0.729661, 0, 0.683809, 0, 1, 0, -0.683809, 0, 0.729661, 44.2348, 0, 15.156)
 
 [node name="Lights" type="Node3D" parent="."]
+visible = false
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Lights"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8571, 25.5085, -0.509079)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.6186, 40.0574, -0.509079)
+light_volumetric_fog_energy = 0.0
 shadow_enabled = true
-omni_range = 46.7417
+omni_range = 104.932
+omni_attenuation = -0.944
+
+[node name="Entity" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="Margarete" type="Node3D" parent="Entity"]
+
+[node name="Paths" type="Node3D" parent="."]
+
+[node name="DoorPath" type="Node3D" parent="Paths"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.1544, 1.04692, 0)
+
+[node name="Marker3D" type="Marker3D" parent="Paths/DoorPath"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.21306, 1.85501, 0)
+
+[node name="Marker3D2" type="Marker3D" parent="Paths/DoorPath"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.21306, 1.85501, 19.7584)
+
+[node name="TablePath" type="Node3D" parent="Paths"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.74229, 1.7267, 8.92699)
+
+[node name="Marker3D" type="Marker3D" parent="Paths/TablePath"]
+
+[node name="Marker3D2" type="Marker3D" parent="Paths/TablePath"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.4378, 0, 0)
+
+[node name="WindowPath" type="Node3D" parent="Paths"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0092, 15.1093, -81.7691)
+
+[node name="Marker3D" type="Marker3D" parent="Paths/WindowPath"]
+
+[node name="Marker3D2" type="Marker3D" parent="Paths/WindowPath"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 13.3023)
+
+[node name="BedPath" type="Node3D" parent="Paths"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0092, 1.86817, -42.0761)
+
+[node name="Marker3D" type="Marker3D" parent="Paths/BedPath"]
+
+[node name="Marker3D2" type="Marker3D" parent="Paths/BedPath"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15.9075)
+
+[node name="Timer" type="Node3D" parent="."]

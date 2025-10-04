@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://c0gmxnmdyhreo"]
+[gd_scene load_steps=7 format=3 uid="uid://c0gmxnmdyhreo"]
 
 [ext_resource type="Shader" uid="uid://d32uu65f64asl" path="res://asset/shader/dissolve.gdshader" id="1_bclhr"]
 [ext_resource type="Script" uid="uid://cnif4ek6tjn70" path="res://entity/entity.gd" id="1_mckvm"]
-[ext_resource type="Texture2D" uid="uid://cie3ji1paeh3o" path="res://asset/test/Mafuyu_3rd_Anniversary.png" id="2_mckvm"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_glcaf"]
 resource_local_to_scene = true
@@ -41,11 +40,6 @@ surface_material_override/0 = SubResource("ShaderMaterial_v200u")
 [node name="SubViewport" type="SubViewport" parent="."]
 transparent_bg = true
 size = Vector2i(247, 602)
-
-[node name="Sprite2D" type="Sprite2D" parent="SubViewport"]
-position = Vector2(123, 299)
-scale = Vector2(0.345, 0.345)
-texture = ExtResource("2_mckvm")
 
 [node name="Area3D" type="Area3D" parent="."]
 
