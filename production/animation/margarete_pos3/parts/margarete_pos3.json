@@ -1,0 +1,81 @@
+{ "skeleton": { "images": "C:/Users/Joshua PC/OneDrive/Desktop/parts/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "BG", "bone": "root", "attachment": "BG" },
+	{ "name": "bot_cloth", "bone": "root", "attachment": "bot_cloth" },
+	{ "name": "r_sleeve", "bone": "root", "attachment": "r_sleeve" },
+	{ "name": "l_sleeve", "bone": "root", "attachment": "l_sleeve" },
+	{ "name": "l_hand", "bone": "root", "attachment": "l_hand" },
+	{ "name": "r_hand", "bone": "root", "attachment": "r_hand" },
+	{ "name": "r_arm_sleeve", "bone": "root", "attachment": "r_arm_sleeve" },
+	{ "name": "l_arm_sleeve", "bone": "root", "attachment": "l_arm_sleeve" },
+	{ "name": "boobs", "bone": "root", "attachment": "boobs" },
+	{ "name": "mid_cloth", "bone": "root", "attachment": "mid_cloth" },
+	{ "name": "top_cloth", "bone": "root", "attachment": "top_cloth" },
+	{ "name": "back_hat", "bone": "root", "attachment": "back_hat" },
+	{ "name": "head", "bone": "root", "attachment": "head" },
+	{ "name": "eye", "bone": "root", "attachment": "eye" },
+	{ "name": "iris", "bone": "root", "attachment": "iris" },
+	{ "name": "bangs", "bone": "root", "attachment": "bangs" },
+	{ "name": "hat", "bone": "root", "attachment": "hat" }
+],
+"skins": {
+	"default": {
+		"BG": {
+			"BG": { "x": 640, "y": -360, "width": 1282, "height": 722 }
+		},
+		"bot_cloth": {
+			"bot_cloth": { "x": 621, "y": -318, "width": 262, "height": 244 }
+		},
+		"r_sleeve": {
+			"r_sleeve": { "x": 772.5, "y": -241, "width": 147, "height": 214 }
+		},
+		"l_sleeve": {
+			"l_sleeve": { "x": 460, "y": -338.5, "width": 252, "height": 293 }
+		},
+		"l_hand": {
+			"l_hand": { "x": 488, "y": -606, "width": 262, "height": 230 }
+		},
+		"r_hand": {
+			"r_hand": { "x": 801.5, "y": -499.5, "width": 209, "height": 187 }
+		},
+		"r_arm_sleeve": {
+			"r_arm_sleeve": { "x": 749.5, "y": -447.5, "width": 271, "height": 331 }
+		},
+		"l_arm_sleeve": {
+			"l_arm_sleeve": { "x": 448, "y": -511, "width": 172, "height": 118 }
+		},
+		"boobs": {
+			"boobs": { "x": 622.5, "y": -282, "width": 335, "height": 222 }
+		},
+		"mid_cloth": {
+			"mid_cloth": { "x": 753, "y": -272.5, "width": 808, "height": 359 }
+		},
+		"top_cloth": {
+			"top_cloth": { "x": 620.5, "y": -260, "width": 593, "height": 358 }
+		},
+		"back_hat": {
+			"back_hat": { "x": 626.5, "y": -151, "width": 417, "height": 110 }
+		},
+		"head": {
+			"head": { "x": 578, "y": -133, "width": 318, "height": 268 }
+		},
+		"eye": {
+			"eye": { "x": 628.5, "y": -185.5, "width": 79, "height": 51 }
+		},
+		"iris": {
+			"iris": { "x": 623, "y": -184.5, "width": 16, "height": 19 }
+		},
+		"bangs": {
+			"bangs": { "x": 554, "y": -153.5, "width": 324, "height": 263 }
+		},
+		"hat": {
+			"hat": { "x": 604.5, "y": -222, "width": 633, "height": 418 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
