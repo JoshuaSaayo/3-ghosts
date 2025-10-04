@@ -1,0 +1,69 @@
+{ "skeleton": { "images": "C:/Users/Joshua PC/OneDrive/Desktop/parts/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "BG", "bone": "root", "attachment": "BG" },
+	{ "name": "back_hat", "bone": "root", "attachment": "back_hat" },
+	{ "name": "back_hair", "bone": "root", "attachment": "back_hair" },
+	{ "name": "torso", "bone": "root", "attachment": "torso" },
+	{ "name": "l_sleeve", "bone": "root", "attachment": "l_sleeve" },
+	{ "name": "r_sleeve", "bone": "root", "attachment": "r_sleeve" },
+	{ "name": "cloth", "bone": "root", "attachment": "cloth" },
+	{ "name": "top_cloth", "bone": "root", "attachment": "top_cloth" },
+	{ "name": "head", "bone": "root", "attachment": "head" },
+	{ "name": "eye", "bone": "root", "attachment": "eye" },
+	{ "name": "iris", "bone": "root", "attachment": "iris" },
+	{ "name": "mouth", "bone": "root", "attachment": "mouth" },
+	{ "name": "bangs", "bone": "root", "attachment": "bangs" },
+	{ "name": "hat", "bone": "root", "attachment": "hat" }
+],
+"skins": {
+	"default": {
+		"BG": {
+			"BG": { "x": 640, "y": -360, "width": 1282, "height": 722 }
+		},
+		"back_hat": {
+			"back_hat": { "x": 712.5, "y": -216, "width": 679, "height": 310 }
+		},
+		"back_hair": {
+			"back_hair": { "x": 688.5, "y": -270, "width": 435, "height": 542 }
+		},
+		"torso": {
+			"torso": { "x": 706.5, "y": -500.5, "width": 545, "height": 441 }
+		},
+		"l_sleeve": {
+			"l_sleeve": { "x": 398, "y": -565, "width": 506, "height": 312 }
+		},
+		"r_sleeve": {
+			"r_sleeve": { "x": 987, "y": -585, "width": 506, "height": 312 }
+		},
+		"cloth": {
+			"cloth": { "x": 697, "y": -540.5, "width": 824, "height": 361 }
+		},
+		"top_cloth": {
+			"top_cloth": { "x": 702.5, "y": -531, "width": 907, "height": 234 }
+		},
+		"head": {
+			"head": { "x": 690.5, "y": -218, "width": 475, "height": 352 }
+		},
+		"eye": {
+			"eye": { "x": 756.5, "y": -237.5, "width": 101, "height": 69 }
+		},
+		"iris": {
+			"iris": { "x": 751, "y": -240.5, "width": 30, "height": 27 }
+		},
+		"mouth": {
+			"mouth": { "x": 707.5, "y": -331.5, "width": 69, "height": 65 }
+		},
+		"bangs": {
+			"bangs": { "x": 815, "y": -219.5, "width": 700, "height": 415 }
+		},
+		"hat": {
+			"hat": { "x": 669.5, "y": -232.5, "width": 721, "height": 461 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
