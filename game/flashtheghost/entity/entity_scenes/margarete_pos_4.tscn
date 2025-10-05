@@ -89,9 +89,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="margarete_pos4" type="Node2D"]
-
-[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+[node name="CrawlBed" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_h4yaa")
 frame_progress = 0.334417
 speed_scale = 2.0

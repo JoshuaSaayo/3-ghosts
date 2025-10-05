@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://cltefsq2i6o2l"]
+
+[ext_resource type="PackedScene" uid="uid://csbf0gcad0cc0" path="res://entity/entity_scenes/margarete_pos_1.tscn" id="1_v0o3n"]
+[ext_resource type="PackedScene" uid="uid://bwsukumy4nlpu" path="res://entity/entity_scenes/margarete_pos_3.tscn" id="2_0xyt7"]
+[ext_resource type="PackedScene" uid="uid://b0ug7xfjwgir7" path="res://entity/entity_scenes/margarete_pos_2.tscn" id="3_npeef"]
+[ext_resource type="PackedScene" uid="uid://cjb1y8j12ar22" path="res://entity/entity_scenes/margarete_pos_4.tscn" id="4_7q0o4"]
+
+[node name="Margarete" type="Node2D"]
+
+[node name="Stand" parent="." instance=ExtResource("1_v0o3n")]
+position = Vector2(146, 316)
+scale = Vector2(0.5, 0.5)
+
+[node name="Crawl" parent="." instance=ExtResource("2_0xyt7")]
+position = Vector2(146, 477)
+scale = Vector2(0.4, 0.4)
+
+[node name="Window" parent="." instance=ExtResource("3_npeef")]
+position = Vector2(146, 469)
+scale = Vector2(0.5, 0.5)
+
+[node name="CrawlBed" parent="." instance=ExtResource("4_7q0o4")]
+position = Vector2(104, 551)
+scale = Vector2(0.3, 0.3)

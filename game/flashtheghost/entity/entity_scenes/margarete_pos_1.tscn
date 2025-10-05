@@ -89,9 +89,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="margarete_pos1" type="Node2D"]
-
-[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+[node name="Stand" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_2ckos")
 frame_progress = 0.223529
 speed_scale = 2.0

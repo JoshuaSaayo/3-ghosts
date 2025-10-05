@@ -354,7 +354,7 @@ position = Vector2(146, 316)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_0o7up")
 animation = &"flash"
-frame_progress = 0.566199
+frame_progress = 0.12894
 speed_scale = 2.0
 
 [node name="Crawl" type="AnimatedSprite2D" parent="."]

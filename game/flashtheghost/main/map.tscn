@@ -31,8 +31,8 @@ transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 4.87994, 0, -24.9208)
 
 [node name="Character" type="Node3D" parent="."]
 
-[node name="Player" parent="Character" instance=ExtResource("1_0twea")]
-transform = Transform3D(0.729661, 0, 0.683809, 0, 1, 0, -0.683809, 0, 0.729661, 44.2348, 0, 15.156)
+[node name="Player" parent="Character" groups=["player"] instance=ExtResource("1_0twea")]
+transform = Transform3D(0.729661, 0, 0.683809, 0, 1, 0, -0.683809, 0, 0.729661, 41.4677, 3.53725, 11.739)
 
 [node name="Lights" type="Node3D" parent="."]
 visible = false
@@ -66,7 +66,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.74229, 1.7267, 8.92699)
 [node name="Marker3D" type="Marker3D" parent="Paths/TablePath"]
 
 [node name="Marker3D2" type="Marker3D" parent="Paths/TablePath"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.4378, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.172, 0, 0)
 
 [node name="WindowPath" type="Node3D" parent="Paths"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0092, 15.1093, -81.7691)
@@ -74,7 +74,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0092, 15.1093, -81.7691)
 [node name="Marker3D" type="Marker3D" parent="Paths/WindowPath"]
 
 [node name="Marker3D2" type="Marker3D" parent="Paths/WindowPath"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 13.3023)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.23733)
 
 [node name="BedPath" type="Node3D" parent="Paths"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0092, 1.86817, -42.0761)
@@ -82,6 +82,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0092, 1.86817, -42.0761)
 [node name="Marker3D" type="Marker3D" parent="Paths/BedPath"]
 
 [node name="Marker3D2" type="Marker3D" parent="Paths/BedPath"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15.9075)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10.1788)
 
 [node name="Timer" type="Node3D" parent="."]
+
+[node name="Spawn" type="Timer" parent="Timer"]
+autostart = true
+
+[connection signal="timeout" from="Timer/Spawn" to="." method="_on_spawn_timeout"]
