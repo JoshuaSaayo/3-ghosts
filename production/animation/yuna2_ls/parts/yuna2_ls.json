@@ -1,0 +1,77 @@
+{ "skeleton": { "images": "C:/Users/Joshua PC/OneDrive/Desktop/parts/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "BG", "bone": "root", "attachment": "BG" },
+	{ "name": "Layer10", "bone": "root", "attachment": "Layer10" },
+	{ "name": "back_hair", "bone": "root", "attachment": "back_hair" },
+	{ "name": "torso", "bone": "root", "attachment": "torso" },
+	{ "name": "l_shoulder", "bone": "root", "attachment": "l_shoulder" },
+	{ "name": "r_shoulder", "bone": "root", "attachment": "r_shoulder" },
+	{ "name": "m_body", "bone": "root", "attachment": "m_body" },
+	{ "name": "l_boob", "bone": "root", "attachment": "l_boob" },
+	{ "name": "r_boob", "bone": "root", "attachment": "r_boob" },
+	{ "name": "dick", "bone": "root", "attachment": "dick" },
+	{ "name": "cum", "bone": "root", "attachment": "cum" },
+	{ "name": "cum2", "bone": "root", "attachment": "cum2" },
+	{ "name": "cum3", "bone": "root", "attachment": "cum3" },
+	{ "name": "head", "bone": "root", "attachment": "head" },
+	{ "name": "o_eyes", "bone": "root", "attachment": "o_eyes" },
+	{ "name": "bangs", "bone": "root", "attachment": "bangs" }
+],
+"skins": {
+	"default": {
+		"BG": {
+			"BG": { "x": 640, "y": -360, "width": 1282, "height": 722 }
+		},
+		"Layer10": {
+			"Layer10": { "x": 640, "y": -360, "width": 1282, "height": 722 }
+		},
+		"back_hair": {
+			"back_hair": { "x": 576, "y": -360, "width": 898, "height": 722 }
+		},
+		"torso": {
+			"torso": { "x": 713, "y": -502, "width": 854, "height": 438 }
+		},
+		"l_shoulder": {
+			"l_shoulder": { "x": 364.5, "y": -544, "width": 271, "height": 348 }
+		},
+		"r_shoulder": {
+			"r_shoulder": { "x": 760, "y": -488.5, "width": 326, "height": 447 }
+		},
+		"m_body": {
+			"m_body": { "x": 595, "y": -567.5, "width": 1192, "height": 307 }
+		},
+		"l_boob": {
+			"l_boob": { "x": 381, "y": -552.5, "width": 360, "height": 249 }
+		},
+		"r_boob": {
+			"r_boob": { "x": 634.5, "y": -557, "width": 363, "height": 264 }
+		},
+		"dick": {
+			"dick": { "x": 468.5, "y": -535, "width": 227, "height": 334 }
+		},
+		"cum": {
+			"cum": { "x": 435, "y": -460, "width": 106, "height": 124 }
+		},
+		"cum2": {
+			"cum2": { "x": 456, "y": -478.5, "width": 42, "height": 69 }
+		},
+		"cum3": {
+			"cum3": { "x": 432.5, "y": -683.5, "width": 223, "height": 31 }
+		},
+		"head": {
+			"head": { "x": 424, "y": -272, "width": 414, "height": 402 }
+		},
+		"o_eyes": {
+			"o_eyes": { "x": 391, "y": -321, "width": 208, "height": 102 }
+		},
+		"bangs": {
+			"bangs": { "x": 738.5, "y": -304.5, "width": 1081, "height": 497 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
