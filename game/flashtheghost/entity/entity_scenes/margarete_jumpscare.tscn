@@ -84,17 +84,18 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("20_blmyq")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 5.0
 }]
 
 [node name="margarete_jumpscare" type="Node2D"]
 
-[node name="AnimatedSprite3D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite3D" type="AnimatedSprite2D" parent="." groups=["jumpscare_anim"]]
 position = Vector2(577, 424)
 scale = Vector2(0.865289, 0.797997)
 sprite_frames = SubResource("SpriteFrames_lxt7v")
 autoplay = "default"
-frame_progress = 0.660651
+frame = 19
+frame_progress = 1.0
 speed_scale = 3.0

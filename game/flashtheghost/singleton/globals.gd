@@ -11,3 +11,10 @@ func set_flash_ligt_life(value : int) -> void:
 	
 	if flash_ligt_life <= 0:
 		emit_signal("empty_battery")
+
+func game_end():
+	get_tree().reload_current_scene()
+	game_pause(false)
+
+func game_pause(value : bool) -> void:
+	get_tree().paused = value

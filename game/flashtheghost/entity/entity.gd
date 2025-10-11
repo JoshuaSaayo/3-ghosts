@@ -57,7 +57,7 @@ func set_shader_texture() -> void:
 func _transition_vanished() -> void:
 	if material:
 		tween = create_tween()
-		tween.tween_method(_update_shader_parameter, -0.1, 1.3, 1.0)\
+		tween.tween_method(_update_shader_parameter, -0.1, 1.5, 5.0)\
 			.set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_SINE)
 		tween.finished.connect(remove_entity)
 
@@ -84,6 +84,9 @@ func _update_shader_parameter(value: float):
 		material.set_shader_parameter("edgeColor", Color(1.0, 1.0, 1.0))
 	
 	material.set_shader_parameter("dissolveSlider", value)
+	
+	if value >= 1.3:
+		remove_entity()
 
 func _setup_path(paths,stand) -> void:
 	if !is_instance_valid(paths):
@@ -136,7 +139,6 @@ func select_ghost_position(ghost_position : String) -> void:
 	if "Crawl" in ghost_position:
 		ghost_jumpscare_timer.start()
 		ghost_quit_timer.stop()
-		
 		
 
 func _on_area_3d_area_entered(area: Area3D) -> void:

@@ -17,6 +17,7 @@ height = 534.341
 viewport_path = NodePath("SubViewport")
 
 [node name="Player" type="CharacterBody3D"]
+process_mode = 3
 floor_stop_on_slope = false
 floor_constant_speed = true
 script = ExtResource("1_ntxbt")
