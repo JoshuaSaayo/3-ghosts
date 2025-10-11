@@ -7,6 +7,8 @@ extends Node3D
 @onready var ghost_quit_timer: Timer = $GhostQuit
 @onready var ghost_jumpscare_timer: Timer = $GhostJumpscare
 
+@onready var crawl_sound: AudioStreamPlayer3D = $Sound/CrawlSound
+
 var material
 var flash : bool = false
 var tween : Tween
@@ -137,6 +139,7 @@ func select_ghost_position(ghost_position : String) -> void:
 		ghost_node.get_node(ghost_position).visible = true
 	
 	if "Crawl" in ghost_position:
+		crawl_sound.play()
 		ghost_jumpscare_timer.start()
 		ghost_quit_timer.stop()
 		

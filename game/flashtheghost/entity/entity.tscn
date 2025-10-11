@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://c0gmxnmdyhreo"]
+[gd_scene load_steps=8 format=3 uid="uid://c0gmxnmdyhreo"]
 
 [ext_resource type="Shader" uid="uid://d32uu65f64asl" path="res://asset/shader/dissolve.gdshader" id="1_bclhr"]
 [ext_resource type="Script" uid="uid://cnif4ek6tjn70" path="res://entity/entity.gd" id="1_mckvm"]
+[ext_resource type="AudioStream" uid="uid://cbrvjfraewan7" path="res://sound/crawl/crawl.wav" id="3_v200u"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_glcaf"]
 resource_local_to_scene = true
@@ -56,6 +57,14 @@ autostart = true
 [node name="GhostJumpscare" type="Timer" parent="."]
 wait_time = 15.0
 one_shot = true
+
+[node name="Sound" type="Node3D" parent="."]
+
+[node name="CrawlSound" type="AudioStreamPlayer3D" parent="Sound"]
+stream = ExtResource("3_v200u")
+volume_db = 80.0
+pitch_scale = 0.43
+max_distance = 4096.0
 
 [connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]
 [connection signal="area_exited" from="Area3D" to="." method="_on_area_3d_area_exited"]

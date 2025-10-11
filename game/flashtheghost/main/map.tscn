@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://dkj4ghkle4kvo"]
+[gd_scene load_steps=12 format=3 uid="uid://dkj4ghkle4kvo"]
 
 [ext_resource type="PackedScene" uid="uid://bl0s82uug2re7" path="res://main/player.tscn" id="1_0twea"]
 [ext_resource type="Script" uid="uid://bcub2o0fx67wk" path="res://main/map.gd" id="1_1t10m"]
 [ext_resource type="PackedScene" uid="uid://dylcgip3baxjv" path="res://gltf/bedroom.glb" id="1_7ik47"]
+[ext_resource type="AudioStream" uid="uid://dxhceeokgwjg7" path="res://sound/ambience/765421__omashau__light-rain-from-bedroom-ambience.wav" id="4_7ik47"]
+[ext_resource type="AudioStream" uid="uid://cfujqcknroyot" path="res://sound/ambience/164734__deleted_user_2104797__int-bedroom-tone-2.wav" id="5_1t10m"]
 
 [sub_resource type="Environment" id="Environment_7ik47"]
 volumetric_fog_enabled = true
@@ -86,12 +88,6 @@ transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 4.87994, 0, -24.9208)
 [node name="Player" parent="Character" groups=["player"] instance=ExtResource("1_0twea")]
 unique_name_in_owner = true
 transform = Transform3D(0.729661, 0, 0.683809, 0, 1, 0, -0.683809, 0, 0.729661, 41, 10, 11)
-move_speed = 1000
-sprint_speed = 1250
-jump_force = 2.0
-mouse_sensitivity = 0.2
-deceleration = 15.0
-max_pitch = 20.0
 
 [node name="PlayerAnim" type="AnimationPlayer" parent="Character"]
 unique_name_in_owner = true
@@ -154,5 +150,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10.1788)
 
 [node name="Spawn" type="Timer" parent="Timer"]
 autostart = true
+
+[node name="Rain" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_7ik47")
+volume_db = -35.683
+autoplay = true
+mix_target = 2
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_1t10m")
+volume_db = -20.0
+autoplay = true
+mix_target = 2
 
 [connection signal="timeout" from="Timer/Spawn" to="." method="_on_spawn_timeout"]
