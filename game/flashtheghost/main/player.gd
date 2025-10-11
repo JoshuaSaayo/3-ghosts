@@ -11,12 +11,15 @@ extends CharacterBody3D
 @onready var flashlight_hit_box: CollisionShape3D = $CameraPivot/Camera3D/Flaslight/FlashlightHitBox/CollisionShape3D
 @onready var flaslight: SpotLight3D = $CameraPivot/Camera3D/Flaslight
 @onready var battery_life_timer: Timer = %BatteryLifeTimer
+@onready var ghost_manager: Node = $GhostManager
+@onready var sub_viewport: SubViewport = %SubViewport
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var current_speed = 0.0
 var target_speed = 0.0
 var direction = Vector3.ZERO
 var force_step : bool = false
+var freeze_movement : bool = false 
 
 #detection
 var detected_object : Array = []
@@ -36,6 +39,9 @@ func connect_globals_signal() -> void:
 	Globals.empty_battery.connect(flash_light_toggle.bind(false))
 
 func _input(event):
+	if freeze_movement:
+		return
+	
 	flash_light_control()
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		# Horizontal rotation (left/right)
@@ -82,6 +88,15 @@ func play_walk(play) -> void:
 	elif !play:
 		walk_sound.stop()
 		return
+
+func _jump_scare(ghost_name) -> void:
+	var children = sub_viewport.get_children()
+	if ghost_manager.ghost_jumpscare.has(ghost_name):
+		for child in children:
+			child.queue_free()
+		
+		var I = ghost_manager.ghost_jumpscare[ghost_name].instantiate()
+		sub_viewport.add_child(I)
 
 func _on_battery_life_timer_timeout() -> void:
 	flash_light_life()

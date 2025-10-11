@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dkj4ghkle4kvo"]
+[gd_scene load_steps=10 format=3 uid="uid://dkj4ghkle4kvo"]
 
 [ext_resource type="PackedScene" uid="uid://bl0s82uug2re7" path="res://main/player.tscn" id="1_0twea"]
 [ext_resource type="Script" uid="uid://bcub2o0fx67wk" path="res://main/map.gd" id="1_1t10m"]
@@ -9,6 +9,58 @@ volumetric_fog_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eq2le"]
 size = Vector3(10.3459, 1, 10.2891)
+
+[sub_resource type="Animation" id="Animation_7ik47"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%Player:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(41, 10, 11)]
+}
+
+[sub_resource type="Animation" id="Animation_1t10m"]
+resource_name = "crouch"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%Player:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(-2, -0.5),
+"update": 0,
+"values": [Vector3(41, 20, 11), Vector3(41, 10, 11)]
+}
+
+[sub_resource type="Animation" id="Animation_t5pmm"]
+resource_name = "stand"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%Player:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(-2, 1),
+"update": 0,
+"values": [Vector3(41, 10, 11), Vector3(41, 20, 11)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gmq0m"]
+_data = {
+&"RESET": SubResource("Animation_7ik47"),
+&"crouch": SubResource("Animation_1t10m"),
+&"stand": SubResource("Animation_t5pmm")
+}
 
 [node name="Map" type="Node3D"]
 script = ExtResource("1_1t10m")
@@ -32,7 +84,15 @@ transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 4.87994, 0, -24.9208)
 [node name="Character" type="Node3D" parent="."]
 
 [node name="Player" parent="Character" groups=["player"] instance=ExtResource("1_0twea")]
-transform = Transform3D(0.729661, 0, 0.683809, 0, 1, 0, -0.683809, 0, 0.729661, 41.4677, 3.53725, 11.739)
+unique_name_in_owner = true
+transform = Transform3D(0.729661, 0, 0.683809, 0, 1, 0, -0.683809, 0, 0.729661, 41, 10, 11)
+
+[node name="PlayerAnim" type="AnimationPlayer" parent="Character"]
+unique_name_in_owner = true
+libraries = {
+&"": SubResource("AnimationLibrary_gmq0m")
+}
+speed_scale = 1.5
 
 [node name="Lights" type="Node3D" parent="."]
 visible = false
@@ -58,7 +118,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.1544, 1.04692, 0)
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.21306, 1.85501, 0)
 
 [node name="Marker3D2" type="Marker3D" parent="Paths/DoorPath"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.21306, 1.85501, 19.7584)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.9777, 1.85501, -14.1703)
 
 [node name="TablePath" type="Node3D" parent="Paths"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.74229, 1.7267, 8.92699)

@@ -4,9 +4,9 @@ extends Node3D
 @onready var table_path: Node3D = $Paths/TablePath
 @onready var window_path: Node3D = $Paths/WindowPath
 @onready var bed_path: Node3D = $Paths/BedPath
-
 @onready var margarete: Node3D = $Entity/Margarete
-
+@onready var player: CharacterBody3D = %Player
+@onready var player_anim: AnimationPlayer = %PlayerAnim
 
 @onready var ghost_map : Dictionary = {
 	"margarete_stand" : {
@@ -35,9 +35,26 @@ extends Node3D
 	
 }
 
+var char_pos : Dictionary = {
+	"stand" : Vector3(41.0, 20.0,11.0),
+	"crouch" : Vector3(41.0,10.0,11.0),
+}
+
+var previous_path 
+
 func _ready() -> void:
 	randomize()
 	
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventKey:
+		if Input.is_action_pressed("crouch"):
+			for key in char_pos.keys():
+				if char_pos[key] != player.global_position:
+					player.global_position = char_pos[key]
+					if !player_anim.is_playing():
+						player_anim.play(key)
+					return
 
 func get_rndm_ghost():
 	var keys = ghost_map.keys()
@@ -58,9 +75,14 @@ func spawn_ghost() -> void:
 	
 	
 	if parent.get_children().size() >= 1:
-		print("error1")
 		return
-		
+	
+	if previous_path == path:
+		print("error3")
+		return
+	
+	previous_path = path
+	
 	var _tscn = load(tscn)
 	var instance = _tscn.instantiate()
 	
@@ -69,6 +91,8 @@ func spawn_ghost() -> void:
 	if instance.has_method("_setup_path"):
 		instance._setup_path(path,stand)
 
+func stand_crawl() -> void:
+	pass
 
 func _on_spawn_timeout() -> void:
 	spawn_ghost()

@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bl0s82uug2re7"]
+[gd_scene load_steps=8 format=3 uid="uid://bl0s82uug2re7"]
 
 [ext_resource type="Script" uid="uid://bcqw8nq0jex86" path="res://main/player.gd" id="1_ntxbt"]
 [ext_resource type="Script" uid="uid://c7jlbxgyh3xnq" path="res://main/pov.gd" id="2_ab3tm"]
+[ext_resource type="Script" uid="uid://dibutvkuxvjw4" path="res://main/ghost_manager.gd" id="2_lat6o"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ntxbt"]
 
@@ -12,10 +13,16 @@ height = 7.59416
 radius = 4.76555
 height = 534.341
 
+[sub_resource type="ViewportTexture" id="ViewportTexture_4v151"]
+viewport_path = NodePath("SubViewport")
+
 [node name="Player" type="CharacterBody3D"]
 floor_stop_on_slope = false
 floor_constant_speed = true
 script = ExtResource("1_ntxbt")
+
+[node name="GhostManager" type="Node" parent="."]
+script = ExtResource("2_lat6o")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 6.52045, 0, 0, 0, 1, 0, 6.49057, 0)
@@ -27,7 +34,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.42296, 0)
 shape = SubResource("CapsuleShape3D_ntxbt")
 
 [node name="CameraPivot" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.791, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
 
@@ -80,10 +86,21 @@ offset_right = -363.0
 grow_horizontal = 2
 grow_vertical = 0
 
+[node name="TextureRect" type="TextureRect" parent="POV"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = SubResource("ViewportTexture_4v151")
+
 [node name="Walk" type="AudioStreamPlayer3D" parent="."]
 volume_db = 80.0
 
 [node name="BatteryLifeTimer" type="Timer" parent="."]
 unique_name_in_owner = true
+
+[node name="SubViewport" type="SubViewport" parent="."]
+unique_name_in_owner = true
+transparent_bg = true
+size = Vector2i(1280, 720)
 
 [connection signal="timeout" from="BatteryLifeTimer" to="." method="_on_battery_life_timer_timeout"]
