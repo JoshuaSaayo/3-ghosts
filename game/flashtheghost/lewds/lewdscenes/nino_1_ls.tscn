@@ -1,0 +1,1615 @@
+[gd_scene load_steps=180 format=3 uid="uid://s07b6dp145w8"]
+
+[ext_resource type="Texture2D" uid="uid://cuwi5qqi2rnwv" path="res://lewds/lewd_assets/nino1_ls/parts/head.png" id="5_ekmsh"]
+[ext_resource type="Texture2D" uid="uid://dwchtf7oalixs" path="res://lewds/lewd_assets/nino1_ls/parts/flower.png" id="6_lo2ww"]
+[ext_resource type="Texture2D" uid="uid://biblsu5ikcxri" path="res://lewds/lewd_assets/nino1_ls/parts/o_eye.png" id="7_w1fdu"]
+[ext_resource type="Texture2D" uid="uid://drke2i68a4lmu" path="res://lewds/lewd_assets/nino1_ls/parts/mouth.png" id="8_bubb2"]
+[ext_resource type="Texture2D" uid="uid://d3aclwjuyw45e" path="res://lewds/lewd_assets/nino1_ls/parts/cum2.png" id="10_gns6o"]
+[ext_resource type="Texture2D" uid="uid://ctowoakv0rpi0" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_00.png" id="10_xr0ow"]
+[ext_resource type="Texture2D" uid="uid://c23onyclj8d2e" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_00.png" id="11_0bmbl"]
+[ext_resource type="Texture2D" uid="uid://c7tvncabgn8l3" path="res://lewds/lewd_assets/nino1_ls/parts/cum.png" id="11_rp4wh"]
+[ext_resource type="Texture2D" uid="uid://b4s0qh3jehshf" path="res://lewds/lewd_assets/nino1_ls/parts/c_eye.png" id="12_6ags4"]
+[ext_resource type="Texture2D" uid="uid://3pit0m35h3kn" path="res://lewds/lewd_assets/nino1_ls/parts/l_arm.png" id="13_wd5pg"]
+[ext_resource type="Texture2D" uid="uid://d4crcb4qq2b83" path="res://lewds/lewd_assets/nino1_ls/parts/l_shoulder.png" id="14_fgcjc"]
+[ext_resource type="Texture2D" uid="uid://gmqxjj0tl52x" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_00.png" id="16_mw318"]
+[ext_resource type="Texture2D" uid="uid://mfnw2etlotcc" path="res://lewds/lewd_assets/nino1_ls/parts/m_body.png" id="16_wwuh2"]
+[ext_resource type="Texture2D" uid="uid://mro1ovp42cwj" path="res://lewds/lewd_assets/nino1_ls/parts/penis.png" id="17_0kund"]
+[ext_resource type="Texture2D" uid="uid://cxfucsc8qbadr" path="res://lewds/lewd_assets/nino1_ls/parts/r_leg.png" id="18_lgm54"]
+[ext_resource type="Texture2D" uid="uid://dlsm51mwcp80" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_01.png" id="20_6mc5n"]
+[ext_resource type="Texture2D" uid="uid://b8q8dkgjdvvv4" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_02.png" id="21_1dg4b"]
+[ext_resource type="Texture2D" uid="uid://c1lxo52k58bw" path="res://lewds/lewd_assets/nino1_ls/parts/template.png" id="22_4d2tu"]
+[ext_resource type="Texture2D" uid="uid://bq58apk17thvt" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_03.png" id="22_nufj6"]
+[ext_resource type="Texture2D" uid="uid://bt76l1c6nhemu" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_04.png" id="23_k4nd7"]
+[ext_resource type="Texture2D" uid="uid://5qpe2v32s1d" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_05.png" id="24_oawye"]
+[ext_resource type="Texture2D" uid="uid://cbt3jj021jv22" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_06.png" id="25_5ia71"]
+[ext_resource type="Texture2D" uid="uid://b5ev7smrv6c8e" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_07.png" id="26_8rm5h"]
+[ext_resource type="Texture2D" uid="uid://cxpmj7epleu0x" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_08.png" id="27_24d25"]
+[ext_resource type="Texture2D" uid="uid://daosssewbh53i" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_09.png" id="28_g1vaf"]
+[ext_resource type="Texture2D" uid="uid://co8vica8r5tmv" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_10.png" id="29_swppl"]
+[ext_resource type="Texture2D" uid="uid://c82gmt3gh5ig4" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_11.png" id="30_eppng"]
+[ext_resource type="Texture2D" uid="uid://besnju675rmja" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_12.png" id="31_coo4j"]
+[ext_resource type="Texture2D" uid="uid://c7mppj84hfyn0" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_13.png" id="32_bb1g3"]
+[ext_resource type="Texture2D" uid="uid://3tpm1wgap4hi" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_14.png" id="33_xfjk1"]
+[ext_resource type="Texture2D" uid="uid://bcsxc8dy5qlqc" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_15.png" id="34_7imj6"]
+[ext_resource type="Texture2D" uid="uid://bacaxjrif4wae" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_16.png" id="35_lx8dh"]
+[ext_resource type="Texture2D" uid="uid://bp7x01y5756ak" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_17.png" id="36_xsk71"]
+[ext_resource type="Texture2D" uid="uid://c75clkitspcbi" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_18.png" id="37_xkl55"]
+[ext_resource type="Texture2D" uid="uid://d37yb8hwdd7bl" path="res://lewds/lewd_assets/nino1_ls/n_boobs/n_boobs_19.png" id="38_hhmua"]
+[ext_resource type="Texture2D" uid="uid://ciydnqelsx8dt" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_00.png" id="39_mf656"]
+[ext_resource type="Texture2D" uid="uid://cgy0isomkf0rv" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_01.png" id="40_csrx8"]
+[ext_resource type="Texture2D" uid="uid://oicv1kjptyhe" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_02.png" id="41_b1yfc"]
+[ext_resource type="Texture2D" uid="uid://dm218amxv4sgi" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_03.png" id="42_k4jvo"]
+[ext_resource type="Texture2D" uid="uid://bo54xathovnmo" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_04.png" id="43_f3yfj"]
+[ext_resource type="Texture2D" uid="uid://c20quqeaw7dnp" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_05.png" id="44_c8fka"]
+[ext_resource type="Texture2D" uid="uid://c41u3dx6klwv8" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_06.png" id="45_81bth"]
+[ext_resource type="Texture2D" uid="uid://bu6giunniyne8" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_07.png" id="46_1ucjm"]
+[ext_resource type="Texture2D" uid="uid://d4lpq1nd4ib0n" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_08.png" id="47_gsc7m"]
+[ext_resource type="Texture2D" uid="uid://lon7un8eawst" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_09.png" id="48_3dxef"]
+[ext_resource type="Texture2D" uid="uid://bao6sgo7nlcwy" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_10.png" id="49_j5y6n"]
+[ext_resource type="Texture2D" uid="uid://crpyaqetadgpa" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_11.png" id="50_jgn44"]
+[ext_resource type="Texture2D" uid="uid://dndcxubkevsmo" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_12.png" id="51_jp3oq"]
+[ext_resource type="Texture2D" uid="uid://bh8hr1qhc2qpt" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_13.png" id="52_rl2kn"]
+[ext_resource type="Texture2D" uid="uid://iv0yh44q65lv" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_14.png" id="53_pxm8w"]
+[ext_resource type="Texture2D" uid="uid://cu1hvjctegp7r" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_15.png" id="54_slhd5"]
+[ext_resource type="Texture2D" uid="uid://bvkychim53shy" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_16.png" id="55_u28jg"]
+[ext_resource type="Texture2D" uid="uid://p81n7v2pdoj4" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_17.png" id="56_uj04e"]
+[ext_resource type="Texture2D" uid="uid://07movit545ex" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_18.png" id="57_fnx3f"]
+[ext_resource type="Texture2D" uid="uid://4c0ijo7vac64" path="res://lewds/lewd_assets/nino1_ls/n_torso/n_torso_19.png" id="58_4k642"]
+[ext_resource type="Texture2D" uid="uid://cu1n0le2svx2k" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_00.png" id="59_bhbi2"]
+[ext_resource type="Texture2D" uid="uid://bqldkk5qo3hti" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_01.png" id="59_u1mtj"]
+[ext_resource type="Texture2D" uid="uid://d15vkjpf10n3a" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_02.png" id="60_hcgtq"]
+[ext_resource type="Texture2D" uid="uid://2tb0bmosaejb" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_01.png" id="60_jxr4l"]
+[ext_resource type="Texture2D" uid="uid://b7my25f8qhk63" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_03.png" id="61_h5j02"]
+[ext_resource type="Texture2D" uid="uid://c85k327yjeru0" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_02.png" id="61_xdkpn"]
+[ext_resource type="Texture2D" uid="uid://64qiuqnf1kfm" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_03.png" id="62_qc3lo"]
+[ext_resource type="Texture2D" uid="uid://cod5abk63cu7a" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_04.png" id="62_xopvc"]
+[ext_resource type="Texture2D" uid="uid://bwqiymd5142uu" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_04.png" id="63_hy77k"]
+[ext_resource type="Texture2D" uid="uid://7lpwuxnj1r4v" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_05.png" id="63_vjynm"]
+[ext_resource type="Texture2D" uid="uid://12vpyi8wc8ub" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_06.png" id="64_6v83t"]
+[ext_resource type="Texture2D" uid="uid://bjiuckl1lgsxl" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_05.png" id="64_8vu7s"]
+[ext_resource type="Texture2D" uid="uid://ccbk1eulr8xv4" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_07.png" id="65_k88n3"]
+[ext_resource type="Texture2D" uid="uid://c6wk7jlxl0hjd" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_06.png" id="65_yjgkg"]
+[ext_resource type="Texture2D" uid="uid://d1pwb7bwwvmxt" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_08.png" id="66_4j8vj"]
+[ext_resource type="Texture2D" uid="uid://wmek4nd402hw" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_07.png" id="66_ciux0"]
+[ext_resource type="Texture2D" uid="uid://cr5bebexyq6p1" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_08.png" id="67_8vxby"]
+[ext_resource type="Texture2D" uid="uid://dv5ovk8yddbso" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_09.png" id="67_qdw6j"]
+[ext_resource type="Texture2D" uid="uid://u458r1nr7k5d" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_09.png" id="68_0gr7b"]
+[ext_resource type="Texture2D" uid="uid://qjdkjhbylfes" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_10.png" id="68_72l2h"]
+[ext_resource type="Texture2D" uid="uid://xmd0kkkvpo1a" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_10.png" id="69_fis5r"]
+[ext_resource type="Texture2D" uid="uid://poqqw6hv6du8" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_11.png" id="69_yrsa6"]
+[ext_resource type="Texture2D" uid="uid://3ary8lfbepsg" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_11.png" id="70_kbaih"]
+[ext_resource type="Texture2D" uid="uid://bl8fy3mtqtjtq" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_12.png" id="70_t74l6"]
+[ext_resource type="Texture2D" uid="uid://c3aftuw38h6fu" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_13.png" id="71_3grgt"]
+[ext_resource type="Texture2D" uid="uid://cdb42wcjqnwc2" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_12.png" id="71_lwbe8"]
+[ext_resource type="Texture2D" uid="uid://5a4x5ahosnsx" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_13.png" id="72_dxsv7"]
+[ext_resource type="Texture2D" uid="uid://cfkigodi5t72s" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_14.png" id="72_ukiaj"]
+[ext_resource type="Texture2D" uid="uid://cayrl0wj8mlif" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_14.png" id="73_7o4y4"]
+[ext_resource type="Texture2D" uid="uid://dibxwk1ql75br" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_15.png" id="73_66g1d"]
+[ext_resource type="Texture2D" uid="uid://bbuhtufbxq03i" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_16.png" id="74_1hxfp"]
+[ext_resource type="Texture2D" uid="uid://b4slrc3o17f2e" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_15.png" id="74_ilobp"]
+[ext_resource type="Texture2D" uid="uid://bba12au17s2aa" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_16.png" id="75_euwj6"]
+[ext_resource type="Texture2D" uid="uid://dws7ekhug2brb" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_17.png" id="75_myrtp"]
+[ext_resource type="Texture2D" uid="uid://dl18vnv64xk5f" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_18.png" id="76_5a2g3"]
+[ext_resource type="Texture2D" uid="uid://b5fgqhnfar66g" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_17.png" id="76_d2ipp"]
+[ext_resource type="Texture2D" uid="uid://rntv1j8at0sf" path="res://lewds/lewd_assets/nino1_ls/n_vagina/n_vagina_19.png" id="77_0ymky"]
+[ext_resource type="Texture2D" uid="uid://dq3i2ef8ee261" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_18.png" id="77_mw318"]
+[ext_resource type="Texture2D" uid="uid://dfe2qo2abuy" path="res://lewds/lewd_assets/nino1_ls/n_bangs/n_bangs_19.png" id="78_u1mtj"]
+[ext_resource type="Texture2D" uid="uid://dbl5is2pmjm27" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_00.png" id="79_hcgtq"]
+[ext_resource type="Texture2D" uid="uid://bpwq1h20wr4x8" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_00.png" id="79_lojk6"]
+[ext_resource type="Texture2D" uid="uid://ctsbmhw85yb42" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_01.png" id="80_5ep2q"]
+[ext_resource type="Texture2D" uid="uid://cw6a3l8qv8wy0" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_01.png" id="80_h5j02"]
+[ext_resource type="Texture2D" uid="uid://dxofr8xxgx5qg" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_02.png" id="81_ocoad"]
+[ext_resource type="Texture2D" uid="uid://bjneos4xuoyuu" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_02.png" id="81_xopvc"]
+[ext_resource type="Texture2D" uid="uid://26x34tv8xgpk" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_03.png" id="82_ag8fr"]
+[ext_resource type="Texture2D" uid="uid://0wunljny5ty0" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_03.png" id="82_vjynm"]
+[ext_resource type="Texture2D" uid="uid://c2246eilmxw57" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_04.png" id="83_4y22e"]
+[ext_resource type="Texture2D" uid="uid://4kcxo38iwhgm" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_04.png" id="83_6v83t"]
+[ext_resource type="Texture2D" uid="uid://buvp1f2cma3vy" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_05.png" id="84_k88n3"]
+[ext_resource type="Texture2D" uid="uid://bx2fbded2fnnb" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_05.png" id="84_l8xxl"]
+[ext_resource type="Texture2D" uid="uid://0j67djgg0xjn" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_06.png" id="85_4j8vj"]
+[ext_resource type="Texture2D" uid="uid://ba3xpqsktmvf5" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_06.png" id="85_w48eg"]
+[ext_resource type="Texture2D" uid="uid://bu27rumwpwkst" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_07.png" id="86_7125y"]
+[ext_resource type="Texture2D" uid="uid://5yy5giyujtuo" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_07.png" id="86_qdw6j"]
+[ext_resource type="Texture2D" uid="uid://c5swkla3nje7t" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_08.png" id="87_2ufgh"]
+[ext_resource type="Texture2D" uid="uid://bigeeg4t5w7ki" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_08.png" id="87_72l2h"]
+[ext_resource type="Texture2D" uid="uid://sfi7xyp87hai" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_09.png" id="88_r0df3"]
+[ext_resource type="Texture2D" uid="uid://cig23lxfqfec1" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_09.png" id="88_yrsa6"]
+[ext_resource type="Texture2D" uid="uid://ccw13njkiih60" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_10.png" id="89_4bs3u"]
+[ext_resource type="Texture2D" uid="uid://dtofwat1cyh1c" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_10.png" id="89_t74l6"]
+[ext_resource type="Texture2D" uid="uid://b6vd5tbbn2wiu" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_11.png" id="90_3grgt"]
+[ext_resource type="Texture2D" uid="uid://dmp36m1pdevee" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_11.png" id="90_vylqi"]
+[ext_resource type="Texture2D" uid="uid://dkvvrc3ocpi0c" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_12.png" id="91_e2ma3"]
+[ext_resource type="Texture2D" uid="uid://bl4rn6cih5byi" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_12.png" id="91_ukiaj"]
+[ext_resource type="Texture2D" uid="uid://dek8ruwr01s52" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_13.png" id="92_66g1d"]
+[ext_resource type="Texture2D" uid="uid://1gbmd2bbsve1" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_13.png" id="92_p43yt"]
+[ext_resource type="Texture2D" uid="uid://xlo8dpm0vp2u" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_14.png" id="93_1hxfp"]
+[ext_resource type="Texture2D" uid="uid://2berqj8emwaq" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_14.png" id="93_78lxs"]
+[ext_resource type="Texture2D" uid="uid://c8kkg3kdtgvhw" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_15.png" id="94_myrtp"]
+[ext_resource type="Texture2D" uid="uid://ccfpnokyb1bvg" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_15.png" id="94_xpk0b"]
+[ext_resource type="Texture2D" uid="uid://gjvffplw6us8" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_16.png" id="95_5a2g3"]
+[ext_resource type="Texture2D" uid="uid://bk4nsvs2ofuay" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_16.png" id="95_dl8ad"]
+[ext_resource type="Texture2D" uid="uid://cxlkl73t1qvcm" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_17.png" id="96_0ymky"]
+[ext_resource type="Texture2D" uid="uid://b4frpqs2j74n5" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_17.png" id="96_6uhtv"]
+[ext_resource type="Texture2D" uid="uid://v6whltlhcyn4" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_18.png" id="97_1ruj8"]
+[ext_resource type="Texture2D" uid="uid://5i46c052aw03" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_18.png" id="97_es6yd"]
+[ext_resource type="Texture2D" uid="uid://b2d7sxw2jhmt8" path="res://lewds/lewd_assets/nino1_ls/n_back_hair/n_back_hair_19.png" id="98_lojk6"]
+[ext_resource type="Texture2D" uid="uid://c0gd62igjba5u" path="res://lewds/lewd_assets/nino1_ls/n_vines/n_vines_19.png" id="98_pxme4"]
+[ext_resource type="Texture2D" uid="uid://bxjg1f67ecqm1" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_00.png" id="99_5ep2q"]
+[ext_resource type="Texture2D" uid="uid://bflvk6qthq0u" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_01.png" id="100_ocoad"]
+[ext_resource type="Texture2D" uid="uid://37ywaq5a8c6a" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_02.png" id="101_ag8fr"]
+[ext_resource type="Texture2D" uid="uid://ct20125nu0mxw" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_03.png" id="102_4y22e"]
+[ext_resource type="Texture2D" uid="uid://ci1ikcx0jjuji" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_04.png" id="103_l8xxl"]
+[ext_resource type="Texture2D" uid="uid://cqsh2pxnhsxpw" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_05.png" id="104_w48eg"]
+[ext_resource type="Texture2D" uid="uid://oyw8wg3px3sk" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_06.png" id="105_7125y"]
+[ext_resource type="Texture2D" uid="uid://d2807sw2a7iw" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_07.png" id="106_2ufgh"]
+[ext_resource type="Texture2D" uid="uid://dsax82e7wyqtn" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_08.png" id="107_r0df3"]
+[ext_resource type="Texture2D" uid="uid://bh7ihxsrlergn" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_09.png" id="108_4bs3u"]
+[ext_resource type="Texture2D" uid="uid://dq4rqht0fxknw" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_10.png" id="109_vylqi"]
+[ext_resource type="Texture2D" uid="uid://dhj4p6pkhu1ah" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_11.png" id="110_e2ma3"]
+[ext_resource type="Texture2D" uid="uid://do1btps1pbjqd" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_12.png" id="111_p43yt"]
+[ext_resource type="Texture2D" uid="uid://tsc0moycra6d" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_13.png" id="112_78lxs"]
+[ext_resource type="Texture2D" uid="uid://bh66rv7ewws60" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_14.png" id="113_xpk0b"]
+[ext_resource type="Texture2D" uid="uid://dyx6045clppgl" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_15.png" id="114_dl8ad"]
+[ext_resource type="Texture2D" uid="uid://bwybkn0nvt3k3" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_16.png" id="115_6uhtv"]
+[ext_resource type="Texture2D" uid="uid://cnjsaeo8lywih" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_17.png" id="116_1ruj8"]
+[ext_resource type="Texture2D" uid="uid://nwg44lkqh283" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_18.png" id="117_pxme4"]
+[ext_resource type="Texture2D" uid="uid://cuku2p24rk0sp" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_19.png" id="118_aaeki"]
+[ext_resource type="Texture2D" uid="uid://bcl0lg88p6b3g" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_01.png" id="119_vdlbw"]
+[ext_resource type="Texture2D" uid="uid://duxyjjttsto5t" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_02.png" id="120_iec55"]
+[ext_resource type="Texture2D" uid="uid://dlyydcdvt4br7" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_03.png" id="121_8ow1j"]
+[ext_resource type="Texture2D" uid="uid://3l061y17ycf0" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_04.png" id="122_xuee1"]
+[ext_resource type="Texture2D" uid="uid://n46dfk8qbv0j" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_05.png" id="123_jfhme"]
+[ext_resource type="Texture2D" uid="uid://dkttjo0r1cqu2" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_06.png" id="124_vpho0"]
+[ext_resource type="Texture2D" uid="uid://mcvln48yrk5b" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_07.png" id="125_73hf6"]
+[ext_resource type="Texture2D" uid="uid://b20cyji7h6ahf" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_08.png" id="126_yw5t5"]
+[ext_resource type="Texture2D" uid="uid://cw8ywx33o3v46" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_09.png" id="127_hwanc"]
+[ext_resource type="Texture2D" uid="uid://cu5h1n536asnv" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_10.png" id="128_vyj0h"]
+[ext_resource type="Texture2D" uid="uid://c1gqf5kl8eijf" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_11.png" id="129_yqbvr"]
+[ext_resource type="Texture2D" uid="uid://c8hfjqx04b270" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_12.png" id="130_lel3y"]
+[ext_resource type="Texture2D" uid="uid://bn45mm30ovvky" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_13.png" id="131_gtvjs"]
+[ext_resource type="Texture2D" uid="uid://cpr062utqutxf" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_14.png" id="132_efeiq"]
+[ext_resource type="Texture2D" uid="uid://b5usnimwhmtxu" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_15.png" id="133_nxn1x"]
+[ext_resource type="Texture2D" uid="uid://dbk1boh6ygsr" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_16.png" id="134_bov6l"]
+[ext_resource type="Texture2D" uid="uid://rf4qfverq4mf" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_17.png" id="135_gaahg"]
+[ext_resource type="Texture2D" uid="uid://b3u5b253d1r5" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_18.png" id="136_eilht"]
+[ext_resource type="Texture2D" uid="uid://bdqts4uf1cvom" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_19.png" id="137_man4y"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u1mtj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_w1fdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w1fdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w1fdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w1fdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w1fdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w1fdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w1fdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w1fdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w1fdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w1fdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w1fdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w1fdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6ags4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_pxq4r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Torso/LBoob:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("10_xr0ow")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Torso:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("39_mf656")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Torso/Head/Bangs:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("59_bhbi2")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Torso/BackHair:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("79_hcgtq")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Torso/LThigh:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("99_5ep2q")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Torso/RThigh:texture")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("11_0bmbl")]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Torso:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(640, 432)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Torso/LThigh:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Torso/RThigh:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Torso/RThigh/RLeg:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Torso/LShoulder:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Torso/LShoulder/LArm:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Torso/Head:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Torso/Head/Flower:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.0893115]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Torso/BackHair:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Torso/Penis:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(109, 154)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Torso/Penis:scale")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Torso/Vagina:texture")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("16_mw318")]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Torso/MBody:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(292, 214)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Torso/Vines:texture")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("79_lojk6")]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Torso/Head/Mouth:scale")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Torso/Cum2:self_modulate")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("Torso/Cum:self_modulate")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("lewdscenes:speed_scale")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Torso/Cum2:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(100.571, 109.571)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("Torso/Cum2:scale")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.575094, 0.575094)]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("Torso/Cum:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(105, 139)]
+}
+
+[sub_resource type="Animation" id="Animation_1hxfp"]
+resource_name = "climax"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Torso/LBoob:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("10_xr0ow"), ExtResource("20_6mc5n"), ExtResource("21_1dg4b"), ExtResource("22_nufj6"), ExtResource("23_k4nd7"), ExtResource("24_oawye"), ExtResource("25_5ia71"), ExtResource("26_8rm5h"), ExtResource("27_24d25"), ExtResource("28_g1vaf"), ExtResource("29_swppl"), ExtResource("30_eppng"), ExtResource("31_coo4j"), ExtResource("32_bb1g3"), ExtResource("33_xfjk1"), ExtResource("34_7imj6"), ExtResource("35_lx8dh"), ExtResource("36_xsk71"), ExtResource("37_xkl55"), ExtResource("38_hhmua")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Torso:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("39_mf656"), ExtResource("40_csrx8"), ExtResource("41_b1yfc"), ExtResource("42_k4jvo"), ExtResource("43_f3yfj"), ExtResource("44_c8fka"), ExtResource("45_81bth"), ExtResource("46_1ucjm"), ExtResource("47_gsc7m"), ExtResource("48_3dxef"), ExtResource("49_j5y6n"), ExtResource("50_jgn44"), ExtResource("51_jp3oq"), ExtResource("52_rl2kn"), ExtResource("53_pxm8w"), ExtResource("54_slhd5"), ExtResource("55_u28jg"), ExtResource("56_uj04e"), ExtResource("57_fnx3f"), ExtResource("58_4k642")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Torso/Head/Bangs:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("59_bhbi2"), ExtResource("60_jxr4l"), ExtResource("61_xdkpn"), ExtResource("62_qc3lo"), ExtResource("63_hy77k"), ExtResource("64_8vu7s"), ExtResource("65_yjgkg"), ExtResource("66_ciux0"), ExtResource("67_8vxby"), ExtResource("68_0gr7b"), ExtResource("69_fis5r"), ExtResource("70_kbaih"), ExtResource("71_lwbe8"), ExtResource("72_dxsv7"), ExtResource("73_7o4y4"), ExtResource("74_ilobp"), ExtResource("75_euwj6"), ExtResource("76_d2ipp"), ExtResource("77_mw318"), ExtResource("78_u1mtj")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Torso/BackHair:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("79_hcgtq"), ExtResource("80_h5j02"), ExtResource("81_xopvc"), ExtResource("82_vjynm"), ExtResource("83_6v83t"), ExtResource("84_k88n3"), ExtResource("85_4j8vj"), ExtResource("86_qdw6j"), ExtResource("87_72l2h"), ExtResource("88_yrsa6"), ExtResource("89_t74l6"), ExtResource("90_3grgt"), ExtResource("91_ukiaj"), ExtResource("92_66g1d"), ExtResource("93_1hxfp"), ExtResource("94_myrtp"), ExtResource("95_5a2g3"), ExtResource("96_0ymky"), ExtResource("97_es6yd"), ExtResource("98_lojk6")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Torso/LThigh:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("99_5ep2q"), ExtResource("100_ocoad"), ExtResource("101_ag8fr"), ExtResource("102_4y22e"), ExtResource("103_l8xxl"), ExtResource("104_w48eg"), ExtResource("105_7125y"), ExtResource("106_2ufgh"), ExtResource("107_r0df3"), ExtResource("108_4bs3u"), ExtResource("109_vylqi"), ExtResource("110_e2ma3"), ExtResource("111_p43yt"), ExtResource("112_78lxs"), ExtResource("113_xpk0b"), ExtResource("114_dl8ad"), ExtResource("115_6uhtv"), ExtResource("116_1ruj8"), ExtResource("117_pxme4"), ExtResource("118_aaeki")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Torso/RThigh:texture")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("11_0bmbl"), ExtResource("119_vdlbw"), ExtResource("120_iec55"), ExtResource("121_8ow1j"), ExtResource("122_xuee1"), ExtResource("123_jfhme"), ExtResource("124_vpho0"), ExtResource("125_73hf6"), ExtResource("126_yw5t5"), ExtResource("127_hwanc"), ExtResource("128_vyj0h"), ExtResource("129_yqbvr"), ExtResource("130_lel3y"), ExtResource("131_gtvjs"), ExtResource("132_efeiq"), ExtResource("133_nxn1x"), ExtResource("134_bov6l"), ExtResource("135_gaahg"), ExtResource("136_eilht"), ExtResource("137_man4y")]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Torso:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.35, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(640, 432), Vector2(660, 515), Vector2(640, 432)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Torso/LThigh:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.35, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.327129, 0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Torso/RThigh:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.35, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.223602, 0.0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Torso/RThigh/RLeg:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.35, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.165819, 0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Torso/LShoulder:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.35, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.183133, 0.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Torso/LShoulder/LArm:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.35, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.519913, 0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Torso/Head:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.35, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.271558, 0.0]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Torso/Head/Flower:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [-0.0893115, 0.0, -0.387017, -0.0893115]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Torso/BackHair:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.35, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.229225, 0.0]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Torso/Penis:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 0.35, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(109, 154), Vector2(92, 108), Vector2(109, 154)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Torso/Penis:scale")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.35, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 0.6), Vector2(1, 1)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Torso/Vagina:texture")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("16_mw318"), ExtResource("59_u1mtj"), ExtResource("60_hcgtq"), ExtResource("61_h5j02"), ExtResource("62_xopvc"), ExtResource("63_vjynm"), ExtResource("64_6v83t"), ExtResource("65_k88n3"), ExtResource("66_4j8vj"), ExtResource("67_qdw6j"), ExtResource("68_72l2h"), ExtResource("69_yrsa6"), ExtResource("70_t74l6"), ExtResource("71_3grgt"), ExtResource("72_ukiaj"), ExtResource("73_66g1d"), ExtResource("74_1hxfp"), ExtResource("75_myrtp"), ExtResource("76_5a2g3"), ExtResource("77_0ymky")]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Torso/MBody:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.35, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(292, 214), Vector2(282, 146), Vector2(292, 214)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Torso/Vines:texture")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("79_lojk6"), ExtResource("80_5ep2q"), ExtResource("81_ocoad"), ExtResource("82_ag8fr"), ExtResource("83_4y22e"), ExtResource("84_l8xxl"), ExtResource("85_w48eg"), ExtResource("86_7125y"), ExtResource("87_2ufgh"), ExtResource("88_r0df3"), ExtResource("89_4bs3u"), ExtResource("90_vylqi"), ExtResource("91_e2ma3"), ExtResource("92_p43yt"), ExtResource("93_78lxs"), ExtResource("94_xpk0b"), ExtResource("95_dl8ad"), ExtResource("96_6uhtv"), ExtResource("97_1ruj8"), ExtResource("98_pxme4")]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Torso/Head/Mouth:scale")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.35, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1.5224), Vector2(1, 1)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Torso/Cum2:self_modulate")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.35, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("Torso/Cum:self_modulate")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0, 0.35, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("lewdscenes:speed_scale")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0, 0.35, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.5, 1.5, 0.6]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Torso/Cum2:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(100.571, 109.571), Vector2(100.571, 109.571), Vector2(8, -46)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("Torso/Cum2:scale")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.575094, 0.575094), Vector2(0.575094, 0.575094), Vector2(1.48689, 1.48689)]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("Torso/Cum:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0, 0.35, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(109, 144), Vector2(96, 119), Vector2(109, 144)]
+}
+
+[sub_resource type="Animation" id="Animation_myrtp"]
+resource_name = "idle"
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Torso/LBoob:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("10_xr0ow"), ExtResource("20_6mc5n"), ExtResource("21_1dg4b"), ExtResource("22_nufj6"), ExtResource("23_k4nd7"), ExtResource("24_oawye"), ExtResource("25_5ia71"), ExtResource("26_8rm5h"), ExtResource("27_24d25"), ExtResource("28_g1vaf"), ExtResource("29_swppl"), ExtResource("30_eppng"), ExtResource("31_coo4j"), ExtResource("32_bb1g3"), ExtResource("33_xfjk1"), ExtResource("34_7imj6"), ExtResource("35_lx8dh"), ExtResource("36_xsk71"), ExtResource("37_xkl55"), ExtResource("38_hhmua")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Torso:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("39_mf656"), ExtResource("40_csrx8"), ExtResource("41_b1yfc"), ExtResource("42_k4jvo"), ExtResource("43_f3yfj"), ExtResource("44_c8fka"), ExtResource("45_81bth"), ExtResource("46_1ucjm"), ExtResource("47_gsc7m"), ExtResource("48_3dxef"), ExtResource("49_j5y6n"), ExtResource("50_jgn44"), ExtResource("51_jp3oq"), ExtResource("52_rl2kn"), ExtResource("53_pxm8w"), ExtResource("54_slhd5"), ExtResource("55_u28jg"), ExtResource("56_uj04e"), ExtResource("57_fnx3f"), ExtResource("58_4k642")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Torso/Head/Bangs:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("59_bhbi2"), ExtResource("60_jxr4l"), ExtResource("61_xdkpn"), ExtResource("62_qc3lo"), ExtResource("63_hy77k"), ExtResource("64_8vu7s"), ExtResource("65_yjgkg"), ExtResource("66_ciux0"), ExtResource("67_8vxby"), ExtResource("68_0gr7b"), ExtResource("69_fis5r"), ExtResource("70_kbaih"), ExtResource("71_lwbe8"), ExtResource("72_dxsv7"), ExtResource("73_7o4y4"), ExtResource("74_ilobp"), ExtResource("75_euwj6"), ExtResource("76_d2ipp"), ExtResource("77_mw318"), ExtResource("78_u1mtj")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Torso/BackHair:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("79_hcgtq"), ExtResource("80_h5j02"), ExtResource("81_xopvc"), ExtResource("82_vjynm"), ExtResource("83_6v83t"), ExtResource("84_k88n3"), ExtResource("85_4j8vj"), ExtResource("86_qdw6j"), ExtResource("87_72l2h"), ExtResource("88_yrsa6"), ExtResource("89_t74l6"), ExtResource("90_3grgt"), ExtResource("91_ukiaj"), ExtResource("92_66g1d"), ExtResource("93_1hxfp"), ExtResource("94_myrtp"), ExtResource("95_5a2g3"), ExtResource("96_0ymky"), ExtResource("97_es6yd"), ExtResource("98_lojk6")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Torso/LThigh:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("99_5ep2q"), ExtResource("100_ocoad"), ExtResource("101_ag8fr"), ExtResource("102_4y22e"), ExtResource("103_l8xxl"), ExtResource("104_w48eg"), ExtResource("105_7125y"), ExtResource("106_2ufgh"), ExtResource("107_r0df3"), ExtResource("108_4bs3u"), ExtResource("109_vylqi"), ExtResource("110_e2ma3"), ExtResource("111_p43yt"), ExtResource("112_78lxs"), ExtResource("113_xpk0b"), ExtResource("114_dl8ad"), ExtResource("115_6uhtv"), ExtResource("116_1ruj8"), ExtResource("117_pxme4"), ExtResource("118_aaeki")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Torso/RThigh:texture")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("11_0bmbl"), ExtResource("119_vdlbw"), ExtResource("120_iec55"), ExtResource("121_8ow1j"), ExtResource("122_xuee1"), ExtResource("123_jfhme"), ExtResource("124_vpho0"), ExtResource("125_73hf6"), ExtResource("126_yw5t5"), ExtResource("127_hwanc"), ExtResource("128_vyj0h"), ExtResource("129_yqbvr"), ExtResource("130_lel3y"), ExtResource("131_gtvjs"), ExtResource("132_efeiq"), ExtResource("133_nxn1x"), ExtResource("134_bov6l"), ExtResource("135_gaahg"), ExtResource("136_eilht"), ExtResource("137_man4y")]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Torso:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(640, 432), Vector2(660, 515)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Torso/LThigh:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.327129]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Torso/RThigh:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.223602]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Torso/RThigh/RLeg:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.165819]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Torso/LShoulder:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.183133]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Torso/LShoulder/LArm:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.519913]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Torso/Head:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.271558]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Torso/Head/Flower:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.0893115, 0.0, -0.387017]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Torso/BackHair:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.229225]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Torso/Penis:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(109, 154), Vector2(92, 108)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Torso/Penis:scale")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 0.6)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Torso/Vagina:texture")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("16_mw318"), ExtResource("59_u1mtj"), ExtResource("60_hcgtq"), ExtResource("61_h5j02"), ExtResource("62_xopvc"), ExtResource("63_vjynm"), ExtResource("64_6v83t"), ExtResource("65_k88n3"), ExtResource("66_4j8vj"), ExtResource("67_qdw6j"), ExtResource("68_72l2h"), ExtResource("69_yrsa6"), ExtResource("70_t74l6"), ExtResource("71_3grgt"), ExtResource("72_ukiaj"), ExtResource("73_66g1d"), ExtResource("74_1hxfp"), ExtResource("75_myrtp"), ExtResource("76_5a2g3"), ExtResource("77_0ymky")]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Torso/MBody:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(292, 214), Vector2(282, 146)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Torso/Vines:texture")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("79_lojk6"), ExtResource("80_5ep2q"), ExtResource("81_ocoad"), ExtResource("82_ag8fr"), ExtResource("83_4y22e"), ExtResource("84_l8xxl"), ExtResource("85_w48eg"), ExtResource("86_7125y"), ExtResource("87_2ufgh"), ExtResource("88_r0df3"), ExtResource("89_4bs3u"), ExtResource("90_vylqi"), ExtResource("91_e2ma3"), ExtResource("92_p43yt"), ExtResource("93_78lxs"), ExtResource("94_xpk0b"), ExtResource("95_dl8ad"), ExtResource("96_6uhtv"), ExtResource("97_1ruj8"), ExtResource("98_pxme4")]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Torso/Head/Mouth:scale")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1.5224)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Torso/Cum2:self_modulate")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("lewdscenes:speed_scale")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.8]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Torso/Cum:self_modulate")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Torso/Cum2:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(100.571, 109.571), Vector2(100.571, 109.571), Vector2(8, -46)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("Torso/Cum2:scale")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.575094, 0.575094), Vector2(0.575094, 0.575094), Vector2(1.48689, 1.48689)]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("Torso/Cum:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0, 0.35, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(109, 144), Vector2(98, 124), Vector2(109, 144)]
+}
+
+[sub_resource type="Animation" id="Animation_ukyv3"]
+resource_name = "lewdscenes"
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Torso/LBoob:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("10_xr0ow"), ExtResource("20_6mc5n"), ExtResource("21_1dg4b"), ExtResource("22_nufj6"), ExtResource("23_k4nd7"), ExtResource("24_oawye"), ExtResource("25_5ia71"), ExtResource("26_8rm5h"), ExtResource("27_24d25"), ExtResource("28_g1vaf"), ExtResource("29_swppl"), ExtResource("30_eppng"), ExtResource("31_coo4j"), ExtResource("32_bb1g3"), ExtResource("33_xfjk1"), ExtResource("34_7imj6"), ExtResource("35_lx8dh"), ExtResource("36_xsk71"), ExtResource("37_xkl55"), ExtResource("38_hhmua")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Torso:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("39_mf656"), ExtResource("40_csrx8"), ExtResource("41_b1yfc"), ExtResource("42_k4jvo"), ExtResource("43_f3yfj"), ExtResource("44_c8fka"), ExtResource("45_81bth"), ExtResource("46_1ucjm"), ExtResource("47_gsc7m"), ExtResource("48_3dxef"), ExtResource("49_j5y6n"), ExtResource("50_jgn44"), ExtResource("51_jp3oq"), ExtResource("52_rl2kn"), ExtResource("53_pxm8w"), ExtResource("54_slhd5"), ExtResource("55_u28jg"), ExtResource("56_uj04e"), ExtResource("57_fnx3f"), ExtResource("58_4k642")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Torso/Head/Bangs:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("59_bhbi2"), ExtResource("60_jxr4l"), ExtResource("61_xdkpn"), ExtResource("62_qc3lo"), ExtResource("63_hy77k"), ExtResource("64_8vu7s"), ExtResource("65_yjgkg"), ExtResource("66_ciux0"), ExtResource("67_8vxby"), ExtResource("68_0gr7b"), ExtResource("69_fis5r"), ExtResource("70_kbaih"), ExtResource("71_lwbe8"), ExtResource("72_dxsv7"), ExtResource("73_7o4y4"), ExtResource("74_ilobp"), ExtResource("75_euwj6"), ExtResource("76_d2ipp"), ExtResource("77_mw318"), ExtResource("78_u1mtj")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Torso/BackHair:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("79_hcgtq"), ExtResource("80_h5j02"), ExtResource("81_xopvc"), ExtResource("82_vjynm"), ExtResource("83_6v83t"), ExtResource("84_k88n3"), ExtResource("85_4j8vj"), ExtResource("86_qdw6j"), ExtResource("87_72l2h"), ExtResource("88_yrsa6"), ExtResource("89_t74l6"), ExtResource("90_3grgt"), ExtResource("91_ukiaj"), ExtResource("92_66g1d"), ExtResource("93_1hxfp"), ExtResource("94_myrtp"), ExtResource("95_5a2g3"), ExtResource("96_0ymky"), ExtResource("97_es6yd"), ExtResource("98_lojk6")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Torso/LThigh:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("99_5ep2q"), ExtResource("100_ocoad"), ExtResource("101_ag8fr"), ExtResource("102_4y22e"), ExtResource("103_l8xxl"), ExtResource("104_w48eg"), ExtResource("105_7125y"), ExtResource("106_2ufgh"), ExtResource("107_r0df3"), ExtResource("108_4bs3u"), ExtResource("109_vylqi"), ExtResource("110_e2ma3"), ExtResource("111_p43yt"), ExtResource("112_78lxs"), ExtResource("113_xpk0b"), ExtResource("114_dl8ad"), ExtResource("115_6uhtv"), ExtResource("116_1ruj8"), ExtResource("117_pxme4"), ExtResource("118_aaeki")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Torso/RThigh:texture")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("11_0bmbl"), ExtResource("119_vdlbw"), ExtResource("120_iec55"), ExtResource("121_8ow1j"), ExtResource("122_xuee1"), ExtResource("123_jfhme"), ExtResource("124_vpho0"), ExtResource("125_73hf6"), ExtResource("126_yw5t5"), ExtResource("127_hwanc"), ExtResource("128_vyj0h"), ExtResource("129_yqbvr"), ExtResource("130_lel3y"), ExtResource("131_gtvjs"), ExtResource("132_efeiq"), ExtResource("133_nxn1x"), ExtResource("134_bov6l"), ExtResource("135_gaahg"), ExtResource("136_eilht"), ExtResource("137_man4y")]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Torso:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(640, 432), Vector2(660, 515)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Torso/LThigh:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.327129]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Torso/RThigh:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.223602]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Torso/RThigh/RLeg:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.165819]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Torso/LShoulder:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.183133]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Torso/LShoulder/LArm:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.519913]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Torso/Head:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.271558]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Torso/Head/Flower:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.0893115, 0.0, -0.387017]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Torso/BackHair:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.229225]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Torso/Penis:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(109, 154), Vector2(92, 108)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Torso/Penis:scale")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 0.6)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Torso/Vagina:texture")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("16_mw318"), ExtResource("59_u1mtj"), ExtResource("60_hcgtq"), ExtResource("61_h5j02"), ExtResource("62_xopvc"), ExtResource("63_vjynm"), ExtResource("64_6v83t"), ExtResource("65_k88n3"), ExtResource("66_4j8vj"), ExtResource("67_qdw6j"), ExtResource("68_72l2h"), ExtResource("69_yrsa6"), ExtResource("70_t74l6"), ExtResource("71_3grgt"), ExtResource("72_ukiaj"), ExtResource("73_66g1d"), ExtResource("74_1hxfp"), ExtResource("75_myrtp"), ExtResource("76_5a2g3"), ExtResource("77_0ymky")]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Torso/MBody:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(292, 214), Vector2(282, 146)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Torso/Vines:texture")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("79_lojk6"), ExtResource("80_5ep2q"), ExtResource("81_ocoad"), ExtResource("82_ag8fr"), ExtResource("83_4y22e"), ExtResource("84_l8xxl"), ExtResource("85_w48eg"), ExtResource("86_7125y"), ExtResource("87_2ufgh"), ExtResource("88_r0df3"), ExtResource("89_4bs3u"), ExtResource("90_vylqi"), ExtResource("91_e2ma3"), ExtResource("92_p43yt"), ExtResource("93_78lxs"), ExtResource("94_xpk0b"), ExtResource("95_dl8ad"), ExtResource("96_6uhtv"), ExtResource("97_1ruj8"), ExtResource("98_pxme4")]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Torso/Head/Mouth:scale")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1.5224)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Torso/Cum2:self_modulate")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("Torso/Cum:self_modulate")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("lewdscenes:speed_scale")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_86dxi"]
+_data = {
+&"RESET": SubResource("Animation_pxq4r"),
+&"climax": SubResource("Animation_1hxfp"),
+&"idle": SubResource("Animation_myrtp"),
+&"lewdscenes": SubResource("Animation_ukyv3")
+}
+
+[node name="nino1_ls" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(-59, -47)
+
+[node name="Torso" type="Sprite2D" parent="Node2D"]
+position = Vector2(640, 432)
+texture = ExtResource("39_mf656")
+
+[node name="BackHair" type="Sprite2D" parent="Node2D/Torso"]
+show_behind_parent = true
+position = Vector2(-153, -221)
+texture = ExtResource("79_hcgtq")
+offset = Vector2(32, 96)
+
+[node name="Head" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(-152, -219)
+texture = ExtResource("5_ekmsh")
+offset = Vector2(39, -79)
+
+[node name="Flower" type="Sprite2D" parent="Node2D/Torso/Head"]
+position = Vector2(63, -48)
+rotation = -0.0893115
+texture = ExtResource("6_lo2ww")
+
+[node name="eye" type="AnimatedSprite2D" parent="Node2D/Torso/Head"]
+position = Vector2(-2, -65)
+sprite_frames = SubResource("SpriteFrames_u1mtj")
+autoplay = "default"
+frame_progress = 0.671803
+
+[node name="Mouth" type="Sprite2D" parent="Node2D/Torso/Head"]
+position = Vector2(30, -11)
+texture = ExtResource("8_bubb2")
+
+[node name="Bangs" type="Sprite2D" parent="Node2D/Torso/Head"]
+position = Vector2(20, -58)
+texture = ExtResource("59_bhbi2")
+
+[node name="LShoulder" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(-194, -146)
+texture = ExtResource("14_fgcjc")
+offset = Vector2(1, 107)
+
+[node name="LArm" type="Sprite2D" parent="Node2D/Torso/LShoulder"]
+position = Vector2(23, 200)
+texture = ExtResource("13_wd5pg")
+offset = Vector2(37, 76)
+
+[node name="LBoob" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(-29, -97)
+texture = ExtResource("10_xr0ow")
+
+[node name="Vines" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(-196, 71)
+rotation = 0.00749603
+texture = ExtResource("79_lojk6")
+
+[node name="RThigh" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(154, 159)
+texture = ExtResource("11_0bmbl")
+offset = Vector2(126, -58)
+
+[node name="RLeg" type="Sprite2D" parent="Node2D/Torso/RThigh"]
+position = Vector2(241, -102)
+texture = ExtResource("18_lgm54")
+offset = Vector2(-20, 73)
+
+[node name="LThigh" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(32, 201)
+texture = ExtResource("99_5ep2q")
+offset = Vector2(-113, -1)
+
+[node name="MBody" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(292, 214)
+texture = ExtResource("16_wwuh2")
+
+[node name="Penis" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(109, 154)
+texture = ExtResource("17_0kund")
+
+[node name="Vagina" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(80, 118)
+texture = ExtResource("16_mw318")
+
+[node name="Cum2" type="Sprite2D" parent="Node2D/Torso"]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(100.571, 109.571)
+scale = Vector2(0.575094, 0.575094)
+texture = ExtResource("10_gns6o")
+
+[node name="Cum" type="Sprite2D" parent="Node2D/Torso"]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(105, 139)
+texture = ExtResource("11_rp4wh")
+
+[node name="lewdscenes" type="AnimationPlayer" parent="Node2D"]
+libraries = {
+&"": SubResource("AnimationLibrary_86dxi")
+}
+autoplay = "lewdscenes"
+
+[node name="Template" type="Sprite2D" parent="."]
+visible = false
+self_modulate = Color(0.47451, 0.298039, 1, 0.34902)
+position = Vector2(601, 344)
+texture = ExtResource("22_4d2tu")
