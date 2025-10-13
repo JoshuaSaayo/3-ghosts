@@ -1,6 +1,6 @@
 [gd_scene load_steps=180 format=3 uid="uid://u274poym1jao"]
 
-[ext_resource type="Texture2D" uid="uid://bhc28u7n0r0mk" path="res://lewds/lewd_assets/yuna1_ls/parts/bg_0.png" id="1_16agx"]
+[ext_resource type="Texture2D" uid="uid://balmwjreme8nd" path="res://lewds/lewd_assets/yuna1_ls/parts/bg5.png" id="1_bohpl"]
 [ext_resource type="Texture2D" uid="uid://dpwkebu0bmlge" path="res://lewds/lewd_assets/yuna1_ls/y_back_hair/yuna1_ls-animation_00.png" id="1_ogsh0"]
 [ext_resource type="Texture2D" uid="uid://b7v52c8h4an1h" path="res://lewds/lewd_assets/yuna1_ls/y_torso/yuna1_ls-godot_00.png" id="2_jd4av"]
 [ext_resource type="Texture2D" uid="uid://bkn3oqugnm1am" path="res://lewds/lewd_assets/yuna1_ls/parts/head.png" id="3_joftc"]
@@ -1391,9 +1391,9 @@ _data = {
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(0, -29)
 
-[node name="Bg0" type="Sprite2D" parent="Node2D"]
-position = Vector2(663, 371)
-texture = ExtResource("1_16agx")
+[node name="Bg5" type="Sprite2D" parent="Node2D"]
+position = Vector2(621, 357)
+texture = ExtResource("1_bohpl")
 
 [node name="BackHair" type="Sprite2D" parent="Node2D"]
 position = Vector2(616, 299)

@@ -1,5 +1,6 @@
-[gd_scene load_steps=98 format=3 uid="uid://cfiipw02rj3jq"]
+[gd_scene load_steps=99 format=3 uid="uid://cfiipw02rj3jq"]
 
+[ext_resource type="Texture2D" uid="uid://c61tpagocj4pt" path="res://lewds/lewd_assets/yuna2_ls/parts/bg2.png" id="1_r51cy"]
 [ext_resource type="Texture2D" uid="uid://dhkdldw6huqg3" path="res://lewds/lewd_assets/yuna2_ls/parts/cum2.png" id="3_ixw6j"]
 [ext_resource type="Texture2D" uid="uid://c0ohwqq1sdin0" path="res://lewds/lewd_assets/yuna2_ls/parts/cum3.png" id="4_2msxf"]
 [ext_resource type="Texture2D" uid="uid://c50vimqdrqcm0" path="res://lewds/lewd_assets/yuna2_ls/parts/cum.png" id="5_j34hf"]
@@ -1055,6 +1056,10 @@ _data = {
 [node name="yuna2_ls" type="Node2D"]
 
 [node name="Node2D" type="Node2D" parent="."]
+
+[node name="Bg2" type="Sprite2D" parent="Node2D"]
+position = Vector2(544, 324)
+texture = ExtResource("1_r51cy")
 
 [node name="BackHair" type="Sprite2D" parent="Node2D"]
 position = Vector2(458, 304)

@@ -1,5 +1,6 @@
-[gd_scene load_steps=180 format=3 uid="uid://s07b6dp145w8"]
+[gd_scene load_steps=181 format=3 uid="uid://s07b6dp145w8"]
 
+[ext_resource type="Texture2D" uid="uid://c1orueehsibu1" path="res://lewds/lewd_assets/nino1_ls/parts/bg3.png" id="1_myrtp"]
 [ext_resource type="Texture2D" uid="uid://cuwi5qqi2rnwv" path="res://lewds/lewd_assets/nino1_ls/parts/head.png" id="5_ekmsh"]
 [ext_resource type="Texture2D" uid="uid://dwchtf7oalixs" path="res://lewds/lewd_assets/nino1_ls/parts/flower.png" id="6_lo2ww"]
 [ext_resource type="Texture2D" uid="uid://biblsu5ikcxri" path="res://lewds/lewd_assets/nino1_ls/parts/o_eye.png" id="7_w1fdu"]
@@ -1510,6 +1511,11 @@ _data = {
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(-59, -47)
+
+[node name="Bg3" type="Sprite2D" parent="Node2D"]
+position = Vector2(635, 365)
+scale = Vector2(0.922296, 0.922296)
+texture = ExtResource("1_myrtp")
 
 [node name="Torso" type="Sprite2D" parent="Node2D"]
 position = Vector2(640, 432)

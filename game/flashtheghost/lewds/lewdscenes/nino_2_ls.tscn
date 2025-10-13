@@ -1,5 +1,6 @@
-[gd_scene load_steps=143 format=3 uid="uid://1y7paxqfhxas"]
+[gd_scene load_steps=144 format=3 uid="uid://1y7paxqfhxas"]
 
+[ext_resource type="Texture2D" uid="uid://35baeg3at1nb" path="res://lewds/lewd_assets/nino2_ls/parts/bg1.png" id="1_hqrkh"]
 [ext_resource type="Texture2D" uid="uid://cqhmnagld0p7d" path="res://lewds/lewd_assets/nino2_ls/parts/torso.png" id="1_trms6"]
 [ext_resource type="Texture2D" uid="uid://bt0jcaywcus2r" path="res://lewds/lewd_assets/nino2_ls/n_back_hair/n_back_hair_00.png" id="2_x87c3"]
 [ext_resource type="Texture2D" uid="uid://bgwu3ot5xohlj" path="res://lewds/lewd_assets/nino2_ls/parts/l_shoulder.png" id="3_k3y2o"]
@@ -183,323 +184,6 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
-
-[sub_resource type="Animation" id="Animation_trms6"]
-resource_name = "lewdscene"
-loop_mode = 1
-step = 0.05
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Torso/LBoob:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("7_iy5h4"), ExtResource("22_i3ibm"), ExtResource("23_6pah5"), ExtResource("24_7jfjx"), ExtResource("25_thedd"), ExtResource("26_wb0b2"), ExtResource("27_2vavh"), ExtResource("28_714ab"), ExtResource("29_8lhv1"), ExtResource("30_p5y1c"), ExtResource("31_5akmk"), ExtResource("32_bscmh"), ExtResource("33_db47l"), ExtResource("34_rhlb1"), ExtResource("35_uqtxx"), ExtResource("36_wbox7"), ExtResource("37_ff112"), ExtResource("38_7eiut"), ExtResource("39_agoth"), ExtResource("40_sfkvh")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Torso/Head/Bangs:texture")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("13_k3y2o"), ExtResource("41_a7paj"), ExtResource("42_x3iw4"), ExtResource("43_1co7w"), ExtResource("44_2h735"), ExtResource("45_axdlh"), ExtResource("46_fximp"), ExtResource("47_ia2ls"), ExtResource("48_hxw3g"), ExtResource("49_ynys5"), ExtResource("50_ogw1a"), ExtResource("51_e1qt2"), ExtResource("52_r4qk5"), ExtResource("53_l0gka"), ExtResource("54_pyudx"), ExtResource("55_apnp6"), ExtResource("56_bcpbb"), ExtResource("57_jnamp"), ExtResource("58_a31ya"), ExtResource("59_3b5v1")]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Torso/BackHair:texture")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("2_x87c3"), ExtResource("60_7d78a"), ExtResource("61_gjd7s"), ExtResource("62_2wu1c"), ExtResource("63_1grqp"), ExtResource("64_tbi7k"), ExtResource("65_dt1kt"), ExtResource("66_4t5lw"), ExtResource("67_kfeiu"), ExtResource("68_ixq45"), ExtResource("69_0k7bm"), ExtResource("70_vswnl"), ExtResource("71_u2nvy"), ExtResource("72_7m8nm"), ExtResource("73_p1oxo"), ExtResource("74_fnt2b"), ExtResource("75_xtsy0"), ExtResource("76_yb862"), ExtResource("77_p62rh"), ExtResource("78_11hdg")]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Torso/LShoulder/Vines:texture")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("4_trms6"), ExtResource("79_kyg4v"), ExtResource("80_4j00e"), ExtResource("81_hqrkh"), ExtResource("82_q1d41"), ExtResource("83_0hx42"), ExtResource("84_kb7hf"), ExtResource("85_ygio5"), ExtResource("86_px4wh"), ExtResource("87_j7ssd"), ExtResource("88_ob5ey"), ExtResource("89_4qfne"), ExtResource("90_hr4cl"), ExtResource("91_sxgsi"), ExtResource("92_deakf"), ExtResource("93_3no20"), ExtResource("94_lo1j5"), ExtResource("95_2mhld"), ExtResource("96_qhxqi"), ExtResource("97_wghpl")]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Torso/Dick:texture")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("15_grxhs"), ExtResource("98_geks4"), ExtResource("99_2rwft"), ExtResource("100_df66y"), ExtResource("101_0nj7m"), ExtResource("102_d67dv"), ExtResource("103_fhiyf"), ExtResource("104_0dyv2"), ExtResource("105_dgkq4"), ExtResource("106_dcf2l"), ExtResource("107_3mfi5"), ExtResource("108_u3ivj"), ExtResource("109_ex7bh"), ExtResource("110_ph65i"), ExtResource("111_jbnxh"), ExtResource("112_mfsql"), ExtResource("113_3kbpx"), ExtResource("114_5gtyy"), ExtResource("115_bsujk"), ExtResource("116_7s2lb")]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Torso/LHand:texture")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("18_48bs7"), ExtResource("117_t5qel"), ExtResource("118_b23ug"), ExtResource("119_owfk1"), ExtResource("120_mrm7x"), ExtResource("121_o7pn3"), ExtResource("122_a6wwf"), ExtResource("123_rhokl"), ExtResource("124_qyi8o"), ExtResource("125_odel7"), ExtResource("126_kv33v"), ExtResource("127_u6isw"), ExtResource("128_12vhm"), ExtResource("129_jwwos"), ExtResource("130_otk04"), ExtResource("131_01mm7"), ExtResource("132_2fpgi"), ExtResource("133_6xijc"), ExtResource("134_op4jw"), ExtResource("135_jkgk6")]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("Torso:position")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(652, 472), Vector2(652, 501)]
-}
-tracks/7/type = "value"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("Torso/Dick/Cum2:self_modulate")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("Torso/Dick/Cum:self_modulate")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-tracks/9/type = "value"
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/path = NodePath("Torso/LShoulder:rotation")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.142589, 0.0156543]
-}
-tracks/10/type = "value"
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/path = NodePath("Torso/LHand:position")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-186, 74.5), Vector2(-163, 104)]
-}
-tracks/11/type = "value"
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/path = NodePath("Torso/LHand2:position")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-187, 96.5), Vector2(-168.411, 121.601)]
-}
-tracks/12/type = "value"
-tracks/12/imported = false
-tracks/12/enabled = true
-tracks/12/path = NodePath("Torso/LShoulder:scale")
-tracks/12/interp = 1
-tracks/12/loop_wrap = true
-tracks/12/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1, 0.914941), Vector2(1.093, 1)]
-}
-tracks/13/type = "value"
-tracks/13/imported = false
-tracks/13/enabled = true
-tracks/13/path = NodePath("Torso/Dick:rotation")
-tracks/13/interp = 1
-tracks/13/loop_wrap = true
-tracks/13/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [-0.080795, 0.0099742]
-}
-tracks/14/type = "value"
-tracks/14/imported = false
-tracks/14/enabled = true
-tracks/14/path = NodePath("Torso/LHand:rotation")
-tracks/14/interp = 1
-tracks/14/loop_wrap = true
-tracks/14/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 0.181076]
-}
-tracks/15/type = "value"
-tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/path = NodePath("Torso/Head:rotation")
-tracks/15/interp = 1
-tracks/15/loop_wrap = true
-tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.15, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [0.108195, 0.163961, -0.0776899]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Torso/BackHair:rotation")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
-"times": PackedFloat32Array(0, 0.15, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [0.0320687, 0.0755133, -0.112747]
-}
-tracks/17/type = "value"
-tracks/17/imported = false
-tracks/17/enabled = true
-tracks/17/path = NodePath("Torso/RShoulder:rotation")
-tracks/17/interp = 1
-tracks/17/loop_wrap = true
-tracks/17/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [-0.0692901, 0.0497096]
-}
-tracks/18/type = "value"
-tracks/18/imported = false
-tracks/18/enabled = true
-tracks/18/path = NodePath("Torso/RArm:position")
-tracks/18/interp = 1
-tracks/18/loop_wrap = true
-tracks/18/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(124, 140), Vector2(89, 142)]
-}
-tracks/19/type = "value"
-tracks/19/imported = false
-tracks/19/enabled = true
-tracks/19/path = NodePath("Torso/RArm:rotation")
-tracks/19/interp = 1
-tracks/19/loop_wrap = true
-tracks/19/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 0.0836101]
-}
-tracks/20/type = "value"
-tracks/20/imported = false
-tracks/20/enabled = true
-tracks/20/path = NodePath("Torso/MBody:position")
-tracks/20/interp = 1
-tracks/20/loop_wrap = true
-tracks/20/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-153, 162), Vector2(-156, 143)]
-}
-tracks/21/type = "value"
-tracks/21/imported = false
-tracks/21/enabled = true
-tracks/21/path = NodePath("Torso/Dick:position")
-tracks/21/interp = 1
-tracks/21/loop_wrap = true
-tracks/21/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-153, 161), Vector2(-152, 136)]
-}
-tracks/22/type = "value"
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/path = NodePath("Torso/Head/Mouth:scale")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(0.840876, 1.50381)]
-}
-tracks/23/type = "value"
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/path = NodePath("Torso/Head/Flower:rotation")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.65),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [-0.194335, 0.0, -0.421059]
-}
-tracks/24/type = "value"
-tracks/24/imported = false
-tracks/24/enabled = true
-tracks/24/path = NodePath("Torso/Head/Eyebrow:position")
-tracks/24/interp = 1
-tracks/24/loop_wrap = true
-tracks/24/keys = {
-"times": PackedFloat32Array(0, 0.55),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-79.5698, -65.7924), Vector2(-84.5282, -78.2063)]
-}
-tracks/25/type = "value"
-tracks/25/imported = false
-tracks/25/enabled = true
-tracks/25/path = NodePath("lewdscenes:speed_scale")
-tracks/25/interp = 1
-tracks/25/loop_wrap = true
-tracks/25/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [1.0]
-}
 
 [sub_resource type="Animation" id="Animation_d8hpd"]
 length = 0.001
@@ -1497,6 +1181,323 @@ tracks/25/keys = {
 "values": [0.8]
 }
 
+[sub_resource type="Animation" id="Animation_trms6"]
+resource_name = "lewdscene"
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Torso/LBoob:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("7_iy5h4"), ExtResource("22_i3ibm"), ExtResource("23_6pah5"), ExtResource("24_7jfjx"), ExtResource("25_thedd"), ExtResource("26_wb0b2"), ExtResource("27_2vavh"), ExtResource("28_714ab"), ExtResource("29_8lhv1"), ExtResource("30_p5y1c"), ExtResource("31_5akmk"), ExtResource("32_bscmh"), ExtResource("33_db47l"), ExtResource("34_rhlb1"), ExtResource("35_uqtxx"), ExtResource("36_wbox7"), ExtResource("37_ff112"), ExtResource("38_7eiut"), ExtResource("39_agoth"), ExtResource("40_sfkvh")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Torso/Head/Bangs:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("13_k3y2o"), ExtResource("41_a7paj"), ExtResource("42_x3iw4"), ExtResource("43_1co7w"), ExtResource("44_2h735"), ExtResource("45_axdlh"), ExtResource("46_fximp"), ExtResource("47_ia2ls"), ExtResource("48_hxw3g"), ExtResource("49_ynys5"), ExtResource("50_ogw1a"), ExtResource("51_e1qt2"), ExtResource("52_r4qk5"), ExtResource("53_l0gka"), ExtResource("54_pyudx"), ExtResource("55_apnp6"), ExtResource("56_bcpbb"), ExtResource("57_jnamp"), ExtResource("58_a31ya"), ExtResource("59_3b5v1")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Torso/BackHair:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_x87c3"), ExtResource("60_7d78a"), ExtResource("61_gjd7s"), ExtResource("62_2wu1c"), ExtResource("63_1grqp"), ExtResource("64_tbi7k"), ExtResource("65_dt1kt"), ExtResource("66_4t5lw"), ExtResource("67_kfeiu"), ExtResource("68_ixq45"), ExtResource("69_0k7bm"), ExtResource("70_vswnl"), ExtResource("71_u2nvy"), ExtResource("72_7m8nm"), ExtResource("73_p1oxo"), ExtResource("74_fnt2b"), ExtResource("75_xtsy0"), ExtResource("76_yb862"), ExtResource("77_p62rh"), ExtResource("78_11hdg")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Torso/LShoulder/Vines:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_trms6"), ExtResource("79_kyg4v"), ExtResource("80_4j00e"), ExtResource("81_hqrkh"), ExtResource("82_q1d41"), ExtResource("83_0hx42"), ExtResource("84_kb7hf"), ExtResource("85_ygio5"), ExtResource("86_px4wh"), ExtResource("87_j7ssd"), ExtResource("88_ob5ey"), ExtResource("89_4qfne"), ExtResource("90_hr4cl"), ExtResource("91_sxgsi"), ExtResource("92_deakf"), ExtResource("93_3no20"), ExtResource("94_lo1j5"), ExtResource("95_2mhld"), ExtResource("96_qhxqi"), ExtResource("97_wghpl")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Torso/Dick:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("15_grxhs"), ExtResource("98_geks4"), ExtResource("99_2rwft"), ExtResource("100_df66y"), ExtResource("101_0nj7m"), ExtResource("102_d67dv"), ExtResource("103_fhiyf"), ExtResource("104_0dyv2"), ExtResource("105_dgkq4"), ExtResource("106_dcf2l"), ExtResource("107_3mfi5"), ExtResource("108_u3ivj"), ExtResource("109_ex7bh"), ExtResource("110_ph65i"), ExtResource("111_jbnxh"), ExtResource("112_mfsql"), ExtResource("113_3kbpx"), ExtResource("114_5gtyy"), ExtResource("115_bsujk"), ExtResource("116_7s2lb")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Torso/LHand:texture")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("18_48bs7"), ExtResource("117_t5qel"), ExtResource("118_b23ug"), ExtResource("119_owfk1"), ExtResource("120_mrm7x"), ExtResource("121_o7pn3"), ExtResource("122_a6wwf"), ExtResource("123_rhokl"), ExtResource("124_qyi8o"), ExtResource("125_odel7"), ExtResource("126_kv33v"), ExtResource("127_u6isw"), ExtResource("128_12vhm"), ExtResource("129_jwwos"), ExtResource("130_otk04"), ExtResource("131_01mm7"), ExtResource("132_2fpgi"), ExtResource("133_6xijc"), ExtResource("134_op4jw"), ExtResource("135_jkgk6")]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Torso:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(652, 472), Vector2(652, 501)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Torso/Dick/Cum2:self_modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Torso/Dick/Cum:self_modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Torso/LShoulder:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.142589, 0.0156543]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Torso/LHand:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-186, 74.5), Vector2(-163, 104)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Torso/LHand2:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-187, 96.5), Vector2(-168.411, 121.601)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Torso/LShoulder:scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 0.914941), Vector2(1.093, 1)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Torso/Dick:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.080795, 0.0099742]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Torso/LHand:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.181076]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Torso/Head:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.108195, 0.163961, -0.0776899]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Torso/BackHair:rotation")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0320687, 0.0755133, -0.112747]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Torso/RShoulder:rotation")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.0692901, 0.0497096]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Torso/RArm:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(124, 140), Vector2(89, 142)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Torso/RArm:rotation")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0836101]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Torso/MBody:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-153, 162), Vector2(-156, 143)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Torso/Dick:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-153, 161), Vector2(-152, 136)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("Torso/Head/Mouth:scale")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.840876, 1.50381)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Torso/Head/Flower:rotation")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.65),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.194335, 0.0, -0.421059]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Torso/Head/Eyebrow:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0, 0.55),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-79.5698, -65.7924), Vector2(-84.5282, -78.2063)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("lewdscenes:speed_scale")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_iy5h4"]
 _data = {
 &"RESET": SubResource("Animation_d8hpd"),
@@ -1509,6 +1510,10 @@ _data = {
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(2, -37)
+
+[node name="Bg1" type="Sprite2D" parent="Node2D"]
+position = Vector2(598, 349)
+texture = ExtResource("1_hqrkh")
 
 [node name="Torso" type="Sprite2D" parent="Node2D"]
 position = Vector2(652, 472)
@@ -1566,7 +1571,6 @@ offset = Vector2(-6.8418, 21.5267)
 
 [node name="Eyes" type="AnimatedSprite2D" parent="Node2D/Torso/Head"]
 position = Vector2(-69, -50)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_hqrkh")
 autoplay = "default"
 frame_progress = 0.298828
