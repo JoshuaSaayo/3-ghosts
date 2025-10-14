@@ -1,4 +1,4 @@
-[gd_scene load_steps=183 format=3 uid="uid://u274poym1jao"]
+[gd_scene load_steps=181 format=3 uid="uid://u274poym1jao"]
 
 [ext_resource type="Texture2D" uid="uid://balmwjreme8nd" path="res://lewds/lewd_assets/yuna1_ls/parts/bg5.png" id="1_bohpl"]
 [ext_resource type="Script" uid="uid://diphcwxnto426" path="res://lewds/lewdscenes/yuna_1_ls.gd" id="1_d0sra"]
@@ -139,7 +139,6 @@
 [ext_resource type="Texture2D" uid="uid://2mg1t2bmc18n" path="res://lewds/lewd_assets/yuna1_ls/y_vagina/yuna1_ls-godot_03.png" id="116_2ceef"]
 [ext_resource type="Texture2D" uid="uid://btj5nmiwto3os" path="res://lewds/lewd_assets/yuna1_ls/y_vagina/yuna1_ls-godot_04.png" id="117_cru0j"]
 [ext_resource type="Texture2D" uid="uid://b2oh7ecawwa0h" path="res://lewds/lewd_assets/yuna1_ls/y_vagina/yuna1_ls-godot_05.png" id="118_4ed64"]
-[ext_resource type="AudioStream" uid="uid://dqokilw5ngcf7" path="res://lewds/lewd_assets/yuna1_ls/audio/yuna_cum.wav" id="118_yrknl"]
 [ext_resource type="Texture2D" uid="uid://rrnj70hu2rfy" path="res://lewds/lewd_assets/yuna1_ls/y_vagina/yuna1_ls-godot_06.png" id="119_nsmyl"]
 [ext_resource type="Texture2D" uid="uid://dls3bu4a5m3i8" path="res://lewds/lewd_assets/yuna1_ls/y_vagina/yuna1_ls-godot_07.png" id="120_s1hrn"]
 [ext_resource type="Texture2D" uid="uid://cq3dqnxg2y18m" path="res://lewds/lewd_assets/yuna1_ls/y_vagina/yuna1_ls-godot_08.png" id="121_rfw24"]
@@ -175,7 +174,6 @@
 [ext_resource type="Texture2D" uid="uid://bi74135wypkno" path="res://lewds/lewd_assets/yuna1_ls/y_mouth/yuna1_ls-godot_19.png" id="151_bxi2x"]
 [ext_resource type="Texture2D" uid="uid://cpiau0vovungh" path="res://lewds/lewd_assets/yuna1_ls/parts/cum splash.png" id="172_bohpl"]
 [ext_resource type="Texture2D" uid="uid://bsln4yd35q7k0" path="res://lewds/lewd_assets/yuna1_ls/parts/cum.png" id="173_d0sra"]
-[ext_resource type="AudioStream" uid="uid://xl4xvfbbqa7r" path="res://lewds/lewd_assets/yuna1_ls/audio/plaps1.wav" id="174_v0mg8"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bohpl"]
 animations = [{
@@ -830,36 +828,6 @@ tracks/24/keys = {
 "update": 0,
 "values": [1.5, 1.5, 0.6]
 }
-tracks/25/type = "audio"
-tracks/25/imported = false
-tracks/25/enabled = true
-tracks/25/path = NodePath("Node2D/PlapSounds")
-tracks/25/interp = 1
-tracks/25/loop_wrap = true
-tracks/25/keys = {
-"clips": [{
-"end_offset": 0.0,
-"start_offset": 0.0,
-"stream": ExtResource("174_v0mg8")
-}],
-"times": PackedFloat32Array(0.332685)
-}
-tracks/25/use_blend = true
-tracks/26/type = "audio"
-tracks/26/imported = false
-tracks/26/enabled = true
-tracks/26/path = NodePath("Node2D/YunaMoans")
-tracks/26/interp = 1
-tracks/26/loop_wrap = true
-tracks/26/keys = {
-"clips": [{
-"end_offset": 0.579273,
-"start_offset": 0.0,
-"stream": ExtResource("118_yrknl")
-}],
-"times": PackedFloat32Array(0.25)
-}
-tracks/26/use_blend = true
 
 [sub_resource type="Animation" id="Animation_bohpl"]
 resource_name = "idle"
@@ -1141,21 +1109,6 @@ tracks/22/keys = {
 "update": 0,
 "values": [0.6]
 }
-tracks/23/type = "audio"
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/path = NodePath("Node2D/PlapSounds")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/keys = {
-"clips": [{
-"end_offset": 0.0,
-"start_offset": 0.0,
-"stream": ExtResource("174_v0mg8")
-}],
-"times": PackedFloat32Array(0.332685)
-}
-tracks/23/use_blend = true
 
 [sub_resource type="Animation" id="Animation_8h4xr"]
 resource_name = "lewdscene"
@@ -1425,21 +1378,6 @@ tracks/21/keys = {
 "update": 0,
 "values": [1.0]
 }
-tracks/22/type = "audio"
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/path = NodePath("Node2D/PlapSounds")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/keys = {
-"clips": [{
-"end_offset": 0.0,
-"start_offset": 0.0,
-"stream": ExtResource("174_v0mg8")
-}],
-"times": PackedFloat32Array(0.332685)
-}
-tracks/22/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3yhx8"]
 _data = {
@@ -1557,12 +1495,8 @@ root_node = NodePath("../..")
 libraries = {
 &"": SubResource("AnimationLibrary_3yhx8")
 }
-autoplay = "climax"
+autoplay = "lewdscene"
 speed_scale = 1.5
-
-[node name="PlapSounds" type="AudioStreamPlayer" parent="Node2D"]
-
-[node name="YunaMoans" type="AudioStreamPlayer" parent="Node2D"]
 
 [node name="CumSplash" type="Sprite2D" parent="."]
 self_modulate = Color(1, 1, 1, 0)
