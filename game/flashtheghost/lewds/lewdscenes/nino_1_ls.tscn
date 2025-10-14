@@ -1,5 +1,6 @@
-[gd_scene load_steps=181 format=3 uid="uid://s07b6dp145w8"]
+[gd_scene load_steps=183 format=3 uid="uid://s07b6dp145w8"]
 
+[ext_resource type="Script" uid="uid://bocogfvalvixc" path="res://lewds/lewdscenes/nino_1_ls.gd" id="1_5a2g3"]
 [ext_resource type="Texture2D" uid="uid://c1orueehsibu1" path="res://lewds/lewd_assets/nino1_ls/parts/bg3.png" id="1_myrtp"]
 [ext_resource type="Texture2D" uid="uid://cuwi5qqi2rnwv" path="res://lewds/lewd_assets/nino1_ls/parts/head.png" id="5_ekmsh"]
 [ext_resource type="Texture2D" uid="uid://dwchtf7oalixs" path="res://lewds/lewd_assets/nino1_ls/parts/flower.png" id="6_lo2ww"]
@@ -174,6 +175,7 @@
 [ext_resource type="Texture2D" uid="uid://rf4qfverq4mf" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_17.png" id="135_gaahg"]
 [ext_resource type="Texture2D" uid="uid://b3u5b253d1r5" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_18.png" id="136_eilht"]
 [ext_resource type="Texture2D" uid="uid://bdqts4uf1cvom" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_19.png" id="137_man4y"]
+[ext_resource type="AudioStream" uid="uid://cblnof7suu234" path="res://lewds/lewd_assets/nino1_ls/audio/plaps2.wav" id="175_0ymky"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_u1mtj"]
 animations = [{
@@ -1207,7 +1209,7 @@ tracks/26/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_ukyv3"]
-resource_name = "lewdscenes"
+resource_name = "lewdscene"
 loop_mode = 1
 step = 0.05
 tracks/0/type = "value"
@@ -1498,16 +1500,32 @@ tracks/23/keys = {
 "update": 0,
 "values": [1.0]
 }
+tracks/24/type = "audio"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("NinoPlaps")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("175_0ymky")
+}],
+"times": PackedFloat32Array(0.324814)
+}
+tracks/24/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_86dxi"]
 _data = {
 &"RESET": SubResource("Animation_pxq4r"),
 &"climax": SubResource("Animation_1hxfp"),
 &"idle": SubResource("Animation_myrtp"),
-&"lewdscenes": SubResource("Animation_ukyv3")
+&"lewdscene": SubResource("Animation_ukyv3")
 }
 
 [node name="nino1_ls" type="Node2D"]
+script = ExtResource("1_5a2g3")
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(-59, -47)
@@ -1612,7 +1630,11 @@ texture = ExtResource("11_rp4wh")
 libraries = {
 &"": SubResource("AnimationLibrary_86dxi")
 }
-autoplay = "lewdscenes"
+autoplay = "lewdscene"
+
+[node name="NinoMoans" type="AudioStreamPlayer" parent="Node2D"]
+
+[node name="NinoPlaps" type="AudioStreamPlayer" parent="Node2D"]
 
 [node name="Template" type="Sprite2D" parent="."]
 visible = false
