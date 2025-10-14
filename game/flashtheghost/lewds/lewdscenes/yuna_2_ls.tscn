@@ -1,5 +1,6 @@
-[gd_scene load_steps=99 format=3 uid="uid://cfiipw02rj3jq"]
+[gd_scene load_steps=101 format=3 uid="uid://cfiipw02rj3jq"]
 
+[ext_resource type="Script" uid="uid://dwix2xga4yegx" path="res://lewds/lewdscenes/yuna_2_ls.gd" id="1_o47n6"]
 [ext_resource type="Texture2D" uid="uid://c61tpagocj4pt" path="res://lewds/lewd_assets/yuna2_ls/parts/bg2.png" id="1_r51cy"]
 [ext_resource type="Texture2D" uid="uid://dhkdldw6huqg3" path="res://lewds/lewd_assets/yuna2_ls/parts/cum2.png" id="3_ixw6j"]
 [ext_resource type="Texture2D" uid="uid://c0ohwqq1sdin0" path="res://lewds/lewd_assets/yuna2_ls/parts/cum3.png" id="4_2msxf"]
@@ -57,6 +58,7 @@
 [ext_resource type="Texture2D" uid="uid://cqv6d5eg4vxt" path="res://lewds/lewd_assets/yuna2_ls/y_back_hair/y_back_hair_01.png" id="54_r51cy"]
 [ext_resource type="Texture2D" uid="uid://dd5tusg7lgpx2" path="res://lewds/lewd_assets/yuna2_ls/y_back_hair/y_back_hair_02.png" id="55_o47n6"]
 [ext_resource type="Texture2D" uid="uid://cxox3as6ek0g4" path="res://lewds/lewd_assets/yuna2_ls/y_back_hair/y_back_hair_03.png" id="56_7k310"]
+[ext_resource type="AudioStream" uid="uid://dksnr6i5c23sm" path="res://lewds/lewd_assets/yuna2_ls/audio/yuna_cum.wav" id="56_tbrbe"]
 [ext_resource type="Texture2D" uid="uid://6ufe818vpkqx" path="res://lewds/lewd_assets/yuna2_ls/y_back_hair/y_back_hair_04.png" id="57_tbrbe"]
 [ext_resource type="Texture2D" uid="uid://bbt672np817am" path="res://lewds/lewd_assets/yuna2_ls/y_back_hair/y_back_hair_05.png" id="58_b8jyq"]
 [ext_resource type="Texture2D" uid="uid://b2874h8rqsfak" path="res://lewds/lewd_assets/yuna2_ls/y_back_hair/y_back_hair_06.png" id="59_l7o81"]
@@ -349,7 +351,7 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("lewdscene:speed_scale")
+tracks/17/path = NodePath("lewdscenes:speed_scale")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
@@ -593,7 +595,7 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("lewdscene:speed_scale")
+tracks/17/path = NodePath("lewdscenes:speed_scale")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
@@ -602,6 +604,21 @@ tracks/17/keys = {
 "update": 0,
 "values": [1.5, 1.5, 0.6]
 }
+tracks/18/type = "audio"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("YunaSuck")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"clips": [{
+"end_offset": 0.418714,
+"start_offset": 0.380935,
+"stream": ExtResource("56_tbrbe")
+}],
+"times": PackedFloat32Array(0.3)
+}
+tracks/18/use_blend = true
 
 [sub_resource type="Animation" id="Animation_r51cy"]
 resource_name = "idle"
@@ -802,7 +819,7 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("lewdscene:speed_scale")
+tracks/16/path = NodePath("lewdscenes:speed_scale")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
@@ -1035,7 +1052,7 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("lewdscene:speed_scale")
+tracks/16/path = NodePath("lewdscenes:speed_scale")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
@@ -1054,6 +1071,7 @@ _data = {
 }
 
 [node name="yuna2_ls" type="Node2D"]
+script = ExtResource("1_o47n6")
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -1136,8 +1154,10 @@ self_modulate = Color(0.266667, 1, 0.32549, 0.352941)
 position = Vector2(616, 306)
 texture = ExtResource("15_g2kms")
 
-[node name="lewdscene" type="AnimationPlayer" parent="Node2D"]
+[node name="lewdscenes" type="AnimationPlayer" parent="Node2D"]
 libraries = {
 &"": SubResource("AnimationLibrary_fcf2y")
 }
 autoplay = "lewdscene"
+
+[node name="YunaSuck" type="AudioStreamPlayer" parent="Node2D"]
