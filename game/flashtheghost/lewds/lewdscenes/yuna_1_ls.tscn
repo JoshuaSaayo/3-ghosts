@@ -1557,7 +1557,7 @@ root_node = NodePath("../..")
 libraries = {
 &"": SubResource("AnimationLibrary_3yhx8")
 }
-autoplay = "climax"
+autoplay = "lewdscene"
 speed_scale = 1.5
 
 [node name="PlapSounds" type="AudioStreamPlayer" parent="Node2D"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=183 format=3 uid="uid://s07b6dp145w8"]
+[gd_scene load_steps=184 format=3 uid="uid://s07b6dp145w8"]
 
 [ext_resource type="Script" uid="uid://bocogfvalvixc" path="res://lewds/lewdscenes/nino_1_ls.gd" id="1_5a2g3"]
 [ext_resource type="Texture2D" uid="uid://c1orueehsibu1" path="res://lewds/lewd_assets/nino1_ls/parts/bg3.png" id="1_myrtp"]
@@ -156,6 +156,7 @@
 [ext_resource type="Texture2D" uid="uid://cnjsaeo8lywih" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_17.png" id="116_1ruj8"]
 [ext_resource type="Texture2D" uid="uid://nwg44lkqh283" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_18.png" id="117_pxme4"]
 [ext_resource type="Texture2D" uid="uid://cuku2p24rk0sp" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_19.png" id="118_aaeki"]
+[ext_resource type="AudioStream" uid="uid://b5a0onu350a6" path="res://lewds/lewd_assets/nino1_ls/audio/nino_cum.wav" id="119_es6yd"]
 [ext_resource type="Texture2D" uid="uid://bcl0lg88p6b3g" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_01.png" id="119_vdlbw"]
 [ext_resource type="Texture2D" uid="uid://duxyjjttsto5t" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_02.png" id="120_iec55"]
 [ext_resource type="Texture2D" uid="uid://dlyydcdvt4br7" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_03.png" id="121_8ow1j"]
@@ -878,6 +879,36 @@ tracks/26/keys = {
 "update": 0,
 "values": [Vector2(109, 144), Vector2(96, 119), Vector2(109, 144)]
 }
+tracks/27/type = "audio"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("NinoPlaps")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("175_0ymky")
+}],
+"times": PackedFloat32Array(0.324814)
+}
+tracks/27/use_blend = true
+tracks/28/type = "audio"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("NinoMoans")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"clips": [{
+"end_offset": 1.41828,
+"start_offset": 0.10704,
+"stream": ExtResource("119_es6yd")
+}],
+"times": PackedFloat32Array(0.322781)
+}
+tracks/28/use_blend = true
 
 [sub_resource type="Animation" id="Animation_myrtp"]
 resource_name = "idle"
@@ -1207,6 +1238,21 @@ tracks/26/keys = {
 "update": 0,
 "values": [Vector2(109, 144), Vector2(98, 124), Vector2(109, 144)]
 }
+tracks/27/type = "audio"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("NinoPlaps")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("175_0ymky")
+}],
+"times": PackedFloat32Array(0.324814)
+}
+tracks/27/use_blend = true
 
 [sub_resource type="Animation" id="Animation_ukyv3"]
 resource_name = "lewdscene"
