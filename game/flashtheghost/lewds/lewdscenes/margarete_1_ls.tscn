@@ -1,5 +1,6 @@
-[gd_scene load_steps=184 format=3 uid="uid://djdbuhaa35vxy"]
+[gd_scene load_steps=187 format=3 uid="uid://djdbuhaa35vxy"]
 
+[ext_resource type="Script" uid="uid://dmjxu14hf24rs" path="res://lewds/lewdscenes/margarete_1_ls.gd" id="1_xcf4t"]
 [ext_resource type="Texture2D" uid="uid://bpklmd0fgrtdp" path="res://lewds/lewd_assets/margarete1_ls/parts/bg4.png" id="1_xe75h"]
 [ext_resource type="Texture2D" uid="uid://btkch28i4t1ge" path="res://lewds/lewd_assets/margarete1_ls/parts/dick.png" id="3_vg2rq"]
 [ext_resource type="Texture2D" uid="uid://5nbgygpyxwhw" path="res://lewds/lewd_assets/margarete1_ls/m_torso/m_torso_00.png" id="4_5fma8"]
@@ -177,6 +178,8 @@
 [ext_resource type="Texture2D" uid="uid://ccgpdk1dhoael" path="res://lewds/lewd_assets/margarete1_ls/m_back_hair/m_back_hair_17.png" id="133_4aecm"]
 [ext_resource type="Texture2D" uid="uid://drrtgha3iqcrg" path="res://lewds/lewd_assets/margarete1_ls/m_back_hair/m_back_hair_18.png" id="134_xbo6r"]
 [ext_resource type="Texture2D" uid="uid://c3eyib06mhh6s" path="res://lewds/lewd_assets/margarete1_ls/m_back_hair/m_back_hair_19.png" id="135_2jlhr"]
+[ext_resource type="AudioStream" uid="uid://dwdnp5ecf12eb" path="res://lewds/lewd_assets/margarete1_ls/audio/margarete_cum.wav" id="142_jx280"]
+[ext_resource type="AudioStream" uid="uid://24kwn4w2k4md" path="res://lewds/lewd_assets/margarete1_ls/audio/plaps3.wav" id="179_fjjrc"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_d082e"]
 animations = [{
@@ -1071,6 +1074,36 @@ tracks/33/keys = {
 "update": 0,
 "values": [Vector2(398, -23), Vector2(210.333, -87)]
 }
+tracks/34/type = "audio"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("MargaretePlaps")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("179_fjjrc")
+}],
+"times": PackedFloat32Array(0.322038)
+}
+tracks/34/use_blend = true
+tracks/35/type = "audio"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("MargareteMoans")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"clips": [{
+"end_offset": 0.278618,
+"start_offset": 0.0,
+"stream": ExtResource("142_jx280")
+}],
+"times": PackedFloat32Array(0.245561)
+}
+tracks/35/use_blend = true
 
 [sub_resource type="Animation" id="Animation_xe75h"]
 resource_name = "idle"
@@ -1484,6 +1517,21 @@ tracks/33/keys = {
 "update": 0,
 "values": [Vector2(1.38908, 0.693245), Vector2(1.34624, 0.967791)]
 }
+tracks/34/type = "audio"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("MargaretePlaps")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("179_fjjrc")
+}],
+"times": PackedFloat32Array(0.322038)
+}
+tracks/34/use_blend = true
 
 [sub_resource type="Animation" id="Animation_ruj61"]
 resource_name = "lewdscene"
@@ -1847,7 +1895,7 @@ tracks/29/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [1.3]
 }
 tracks/30/type = "value"
 tracks/30/imported = false
@@ -1873,6 +1921,21 @@ tracks/31/keys = {
 "update": 0,
 "values": [Vector2(-100.5, 136.5), Vector2(-48, 140)]
 }
+tracks/32/type = "audio"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("MargaretePlaps")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("179_fjjrc")
+}],
+"times": PackedFloat32Array(0.322038)
+}
+tracks/32/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4qgqk"]
 _data = {
@@ -1883,6 +1946,7 @@ _data = {
 }
 
 [node name="margarete1_ls" type="Node2D"]
+script = ExtResource("1_xcf4t")
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(128, 58)
@@ -2017,3 +2081,7 @@ libraries = {
 &"": SubResource("AnimationLibrary_4qgqk")
 }
 autoplay = "lewdscene"
+
+[node name="MargareteMoans" type="AudioStreamPlayer" parent="Node2D"]
+
+[node name="MargaretePlaps" type="AudioStreamPlayer" parent="Node2D"]

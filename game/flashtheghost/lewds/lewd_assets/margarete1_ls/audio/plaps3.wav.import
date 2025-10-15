@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://24kwn4w2k4md"
-path="res://.godot/imported/plaps3.wav-3ce3dfdf0d7956e0914b935e35fd4c92.sample"
+path="res://.godot/imported/plaps3.wav-d3ae2c7dbb82313827d6c225ee1d555b.sample"
 
 [deps]
 
-source_file="res://lewds/lewd_assets/yuna1_ls/audio/plaps3.wav"
-dest_files=["res://.godot/imported/plaps3.wav-3ce3dfdf0d7956e0914b935e35fd4c92.sample"]
+source_file="res://lewds/lewd_assets/margarete1_ls/audio/plaps3.wav"
+dest_files=["res://.godot/imported/plaps3.wav-d3ae2c7dbb82313827d6c225ee1d555b.sample"]
 
 [params]
 
