@@ -5,6 +5,8 @@ extends Node3D
 @onready var window_path: Node3D = $Paths/WindowPath
 @onready var bed_path: Node3D = $Paths/BedPath
 @onready var margarete: Node3D = $Entity/Margarete
+@onready var yuna: Node3D = $Entity/Yuna
+@onready var nino: Node3D = $Entity/Nino
 @onready var player: CharacterBody3D = %Player
 @onready var player_anim: AnimationPlayer = %PlayerAnim
 
@@ -31,7 +33,31 @@ extends Node3D
 		"path": window_path, 
 		"spawn_node": margarete , 
 		"char_position": "Window" , 
+		"instance" : "res://entity/yuna.tscn"},
+	
+	"yuna_stand" : {
+		"path": door_path, 
+		"spawn_node": yuna , 
+		"char_position": "Stand" , 
+		"instance" : "res://entity/yuna.tscn"},
+		
+	"yuna_crawl" : {
+		"path": table_path, 
+		"spawn_node": yuna , 
+		"char_position": "Crawl" , 
 		"instance" : "res://entity/margarete.tscn"},
+		
+	"nino_crawl_bed" : {
+		"path": bed_path, 
+		"spawn_node": nino , 
+		"char_position": "CrawlBed" , 
+		"instance" : "res://entity/nino.tscn"},
+	
+	"nino_window" : {
+		"path": window_path, 
+		"spawn_node": nino , 
+		"char_position": "Window" , 
+		"instance" : "res://entity/nino.tscn"},
 	
 }
 

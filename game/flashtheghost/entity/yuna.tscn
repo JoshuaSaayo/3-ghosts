@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://nirli8jemhh"]
+
+[ext_resource type="PackedScene" uid="uid://c0gmxnmdyhreo" path="res://entity/entity.tscn" id="1_0fkjp"]
+[ext_resource type="Shader" uid="uid://d32uu65f64asl" path="res://asset/shader/dissolve.gdshader" id="2_jsogy"]
+[ext_resource type="PackedScene" uid="uid://crweps5lv8dgh" path="res://entity/enity_compiled_scene/yuna.tscn" id="3_vt5n5"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_hlnpy"]
+resource_local_to_scene = true
+size = Vector2(1, 2.5)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_giqp3"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ci2my"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("2_jsogy")
+shader_parameter/baseColor = Color(1, 1, 1, 1)
+shader_parameter/baseColorTexture = SubResource("ViewportTexture_giqp3")
+shader_parameter/dissolveSlider = 0.0
+shader_parameter/dissolveNoiseScale = -30.0
+shader_parameter/edgeNoiseScale = -2.2352e-07
+shader_parameter/edgesThickness = 0.3
+shader_parameter/edgeColor = Color(0, 0, 0, 1)
+shader_parameter/edgeEmissionSlider = 10.0
+shader_parameter/enable_dissolve_animation = true
+shader_parameter/animation_speed = 1.0
+shader_parameter/animation_intensity = 0.2
+shader_parameter/alpha_threshold = 0.1
+shader_parameter/use_texture_alpha = true
+
+[node name="Yuna" node_paths=PackedStringArray("ghost_node") instance=ExtResource("1_0fkjp")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
+ghost_node = NodePath("SubViewport/Yuna")
+
+[node name="MeshInstance3D" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.942468, 0)
+mesh = SubResource("QuadMesh_hlnpy")
+surface_material_override/0 = SubResource("ShaderMaterial_ci2my")
+
+[node name="SubViewport" parent="." index="1"]
+size = Vector2i(447, 927)
+
+[node name="Yuna" parent="SubViewport" index="0" instance=ExtResource("3_vt5n5")]
+position = Vector2(-5.89, 221.86)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://csbf0gcad0cc0"]
+[gd_scene load_steps=22 format=3 uid="uid://cp1kfh6hmfahj"]
 
 [ext_resource type="Texture2D" uid="uid://cwfnk6fknegnw" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_00.png" id="1_px1hm"]
 [ext_resource type="Texture2D" uid="uid://combq73cdoa2e" path="res://entity/entity_assets/margarete_pos1/margarete_pos1-animation_01.png" id="2_bxwwn"]

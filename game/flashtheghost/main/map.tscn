@@ -97,7 +97,6 @@ libraries = {
 speed_scale = 1.5
 
 [node name="Lights" type="Node3D" parent="."]
-visible = false
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Lights"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.6186, 40.0574, -0.509079)
@@ -110,6 +109,10 @@ omni_attenuation = -0.944
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
 
 [node name="Margarete" type="Node3D" parent="Entity"]
+
+[node name="Yuna" type="Node3D" parent="Entity"]
+
+[node name="Nino" type="Node3D" parent="Entity"]
 
 [node name="Paths" type="Node3D" parent="."]
 
