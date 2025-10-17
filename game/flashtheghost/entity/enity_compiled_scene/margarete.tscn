@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://cltefsq2i6o2l"]
 
-[ext_resource type="PackedScene" uid="uid://csbf0gcad0cc0" path="res://entity/entity_scenes/margarete_pos_1.tscn" id="1_v0o3n"]
-[ext_resource type="PackedScene" uid="uid://bwsukumy4nlpu" path="res://entity/entity_scenes/margarete_pos_3.tscn" id="2_0xyt7"]
-[ext_resource type="PackedScene" uid="uid://b0ug7xfjwgir7" path="res://entity/entity_scenes/margarete_pos_2.tscn" id="3_npeef"]
-[ext_resource type="PackedScene" uid="uid://cjb1y8j12ar22" path="res://entity/entity_scenes/margarete_pos_4.tscn" id="4_7q0o4"]
+[ext_resource type="PackedScene" uid="uid://csbf0gcad0cc0" path="res://entity/entity_scenes/margarete_door.tscn" id="1_v0o3n"]
+[ext_resource type="PackedScene" uid="uid://bwsukumy4nlpu" path="res://entity/entity_scenes/margarete_table.tscn" id="2_0xyt7"]
+[ext_resource type="PackedScene" uid="uid://b0ug7xfjwgir7" path="res://entity/entity_scenes/margarete_window.tscn" id="3_npeef"]
+[ext_resource type="PackedScene" uid="uid://cjb1y8j12ar22" path="res://entity/entity_scenes/margarete_bed.tscn" id="4_7q0o4"]
 
 [node name="Margarete" type="Node2D"]
 
