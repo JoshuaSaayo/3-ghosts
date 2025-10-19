@@ -1,7 +1,7 @@
 [gd_scene load_steps=145 format=3 uid="uid://1y7paxqfhxas"]
 
 [ext_resource type="Texture2D" uid="uid://35baeg3at1nb" path="res://lewds/lewd_assets/nino2_ls/parts/bg1.png" id="1_hqrkh"]
-[ext_resource type="Script" uid="uid://dvnr2guxryuet" path="res://lewds/lewdscenes/nino_2_ls.gd" id="1_q1d41"]
+[ext_resource type="Script" uid="uid://cffdijitl0wqp" path="res://lewds/lewdscenes/lewdscenes.gd" id="1_q1d41"]
 [ext_resource type="Texture2D" uid="uid://cqhmnagld0p7d" path="res://lewds/lewd_assets/nino2_ls/parts/torso.png" id="1_trms6"]
 [ext_resource type="Texture2D" uid="uid://bt0jcaywcus2r" path="res://lewds/lewd_assets/nino2_ls/n_back_hair/n_back_hair_00.png" id="2_x87c3"]
 [ext_resource type="Texture2D" uid="uid://bgwu3ot5xohlj" path="res://lewds/lewd_assets/nino2_ls/parts/l_shoulder.png" id="3_k3y2o"]
@@ -1628,7 +1628,7 @@ libraries = {
 }
 autoplay = "lewdscene"
 
-[node name="NinoMoans" type="AudioStreamPlayer" parent="Node2D"]
+[node name="Moan" type="AudioStreamPlayer" parent="Node2D"]
 
 [node name="Template" type="Sprite2D" parent="Node2D"]
 visible = false

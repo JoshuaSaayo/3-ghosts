@@ -76,7 +76,6 @@ func resume_tween():
 		tween.play()
 		ghost_flash(false)
 
-
 func ghost_flash(value : bool) -> void:
 	if is_instance_valid(ghost_anim):
 		ghost_anim.play("default")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=101 format=3 uid="uid://cfiipw02rj3jq"]
 
-[ext_resource type="Script" uid="uid://dwix2xga4yegx" path="res://lewds/lewdscenes/yuna_2_ls.gd" id="1_o47n6"]
+[ext_resource type="Script" uid="uid://cffdijitl0wqp" path="res://lewds/lewdscenes/lewdscenes.gd" id="1_7k310"]
 [ext_resource type="Texture2D" uid="uid://c61tpagocj4pt" path="res://lewds/lewd_assets/yuna2_ls/parts/bg2.png" id="1_r51cy"]
 [ext_resource type="Texture2D" uid="uid://dhkdldw6huqg3" path="res://lewds/lewd_assets/yuna2_ls/parts/cum2.png" id="3_ixw6j"]
 [ext_resource type="Texture2D" uid="uid://c0ohwqq1sdin0" path="res://lewds/lewd_assets/yuna2_ls/parts/cum3.png" id="4_2msxf"]
@@ -1071,7 +1071,7 @@ _data = {
 }
 
 [node name="yuna2_ls" type="Node2D"]
-script = ExtResource("1_o47n6")
+script = ExtResource("1_7k310")
 
 [node name="Node2D" type="Node2D" parent="."]
 

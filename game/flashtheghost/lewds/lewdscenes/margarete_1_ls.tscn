@@ -1,6 +1,6 @@
 [gd_scene load_steps=187 format=3 uid="uid://djdbuhaa35vxy"]
 
-[ext_resource type="Script" uid="uid://dmjxu14hf24rs" path="res://lewds/lewdscenes/margarete_1_ls.gd" id="1_xcf4t"]
+[ext_resource type="Script" uid="uid://cffdijitl0wqp" path="res://lewds/lewdscenes/lewdscenes.gd" id="1_jx280"]
 [ext_resource type="Texture2D" uid="uid://bpklmd0fgrtdp" path="res://lewds/lewd_assets/margarete1_ls/parts/bg4.png" id="1_xe75h"]
 [ext_resource type="Texture2D" uid="uid://btkch28i4t1ge" path="res://lewds/lewd_assets/margarete1_ls/parts/dick.png" id="3_vg2rq"]
 [ext_resource type="Texture2D" uid="uid://5nbgygpyxwhw" path="res://lewds/lewd_assets/margarete1_ls/m_torso/m_torso_00.png" id="4_5fma8"]
@@ -1092,7 +1092,7 @@ tracks/34/use_blend = true
 tracks/35/type = "audio"
 tracks/35/imported = false
 tracks/35/enabled = true
-tracks/35/path = NodePath("MargareteMoans")
+tracks/35/path = NodePath("Moan")
 tracks/35/interp = 1
 tracks/35/loop_wrap = true
 tracks/35/keys = {
@@ -1946,7 +1946,7 @@ _data = {
 }
 
 [node name="margarete1_ls" type="Node2D"]
-script = ExtResource("1_xcf4t")
+script = ExtResource("1_jx280")
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(128, 58)
@@ -2082,6 +2082,6 @@ libraries = {
 }
 autoplay = "lewdscene"
 
-[node name="MargareteMoans" type="AudioStreamPlayer" parent="Node2D"]
+[node name="Moan" type="AudioStreamPlayer" parent="Node2D"]
 
 [node name="MargaretePlaps" type="AudioStreamPlayer" parent="Node2D"]

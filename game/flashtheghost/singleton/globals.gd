@@ -2,9 +2,51 @@ extends Node
 
 signal empty_battery
 
+@onready var anim: AnimationPlayer = $Anim
+
+var game_scene = "res://main/map.tscn"
+
+var selected_scene
+
 var flash_ligt_life : int = 100
 var flash_ligt_max_life: int = 100
 
+var day : int = 1
+var max_day : int = 5
+
+
+var days_data = {
+	1: {
+		"available_ghosts": ["Yuna"],  # Array of ghosts
+		"day_end_anim":"res://lewds/lewdscenes/yuna_1_ls.tscn" ,  # Filesystem path
+		"sound_key" : "yuna1",
+		"day_time_limit": 10  # int - seconds
+	},
+	2: {
+		"available_ghosts": ["Yuna"],
+		"day_end_anim": "res://lewds/lewdscenes/yuna_2_ls.tscn",
+		"sound_key" : "yuna2",
+		"day_time_limit": 10
+	},
+	3: {
+		"available_ghosts": ["Yuna","Nino"],
+		"day_end_anim": "res://lewds/lewdscenes/nino_1_ls.tscn",
+		"sound_key" : "nino1",
+		"day_time_limit": 10
+	},
+	4: {
+		"available_ghosts": ["Yuna","Nino"],
+		"day_end_anim": "res://lewds/lewdscenes/nino_2_ls.tscn",
+		"sound_key" : "nino2",
+		"day_time_limit": 10
+	},
+	5: {
+		"available_ghosts": ["Yuna","Nino","Margarete"],
+		"day_end_anim": "res://lewds/lewdscenes/margarete_1_ls.tscn",
+		"sound_key" : "margarete1",
+		"day_time_limit": 10
+	}
+}
 
 func set_flash_ligt_life(value : int) -> void:
 	flash_ligt_life = value
@@ -12,9 +54,18 @@ func set_flash_ligt_life(value : int) -> void:
 	if flash_ligt_life <= 0:
 		emit_signal("empty_battery")
 
+func change_scene_anim():
+	var _scene = load(selected_scene)
+	get_tree().change_scene_to_packed(_scene)
+
+func change_scene(scene):
+	selected_scene = scene
+	anim.play("show")
+
 func game_end():
 	get_tree().reload_current_scene()
 	game_pause(false)
 
 func game_pause(value : bool) -> void:
 	get_tree().paused = value
+	

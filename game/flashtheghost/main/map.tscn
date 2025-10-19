@@ -1,10 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://dkj4ghkle4kvo"]
+[gd_scene load_steps=18 format=3 uid="uid://dkj4ghkle4kvo"]
 
 [ext_resource type="PackedScene" uid="uid://bl0s82uug2re7" path="res://main/player.tscn" id="1_0twea"]
 [ext_resource type="Script" uid="uid://bcub2o0fx67wk" path="res://main/map.gd" id="1_1t10m"]
 [ext_resource type="PackedScene" uid="uid://dylcgip3baxjv" path="res://gltf/bedroom.glb" id="1_7ik47"]
 [ext_resource type="AudioStream" uid="uid://dxhceeokgwjg7" path="res://sound/ambience/765421__omashau__light-rain-from-bedroom-ambience.wav" id="4_7ik47"]
 [ext_resource type="AudioStream" uid="uid://cfujqcknroyot" path="res://sound/ambience/164734__deleted_user_2104797__int-bedroom-tone-2.wav" id="5_1t10m"]
+[ext_resource type="Script" uid="uid://be0r0sydlm6ad" path="res://main/intro.gd" id="6_gmq0m"]
+[ext_resource type="PackedScene" uid="uid://bh355yyng5aea" path="res://scene/day_end.tscn" id="7_swgx3"]
 
 [sub_resource type="Environment" id="Environment_7ik47"]
 volumetric_fog_enabled = true
@@ -64,6 +66,94 @@ _data = {
 &"stand": SubResource("Animation_t5pmm")
 }
 
+[sub_resource type="LabelSettings" id="LabelSettings_gmq0m"]
+font_size = 121
+
+[sub_resource type="Animation" id="Animation_gmq0m"]
+resource_name = "play"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333, 1.87667, 1.96667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.56667, 1.76667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:visible_ratio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.133333, 0.433333, 1.26667, 1.56),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_swgx3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:visible_ratio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vgsql"]
+_data = {
+&"RESET": SubResource("Animation_swgx3"),
+&"play": SubResource("Animation_gmq0m")
+}
+
 [node name="Map" type="Node3D"]
 script = ExtResource("1_1t10m")
 
@@ -87,6 +177,7 @@ transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 4.87994, 0, -24.9208)
 
 [node name="Player" parent="Character" groups=["player"] instance=ExtResource("1_0twea")]
 unique_name_in_owner = true
+process_mode = 0
 transform = Transform3D(0.729661, 0, 0.683809, 0, 1, 0, -0.683809, 0, 0.729661, 41, 10, 11)
 
 [node name="PlayerAnim" type="AnimationPlayer" parent="Character"]
@@ -154,6 +245,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10.1788)
 [node name="Spawn" type="Timer" parent="Timer"]
 autostart = true
 
+[node name="EndDay" type="Timer" parent="Timer"]
+
 [node name="Rain" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_7ik47")
 volume_db = -35.683
@@ -166,4 +259,55 @@ volume_db = -20.0
 autoplay = true
 mix_target = 2
 
+[node name="Intro" type="Control" parent="."]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("6_gmq0m")
+
+[node name="ColorRect" type="ColorRect" parent="Intro"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.623529)
+
+[node name="ColorRect2" type="ColorRect" parent="Intro"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 241.0
+offset_bottom = -241.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.623529)
+
+[node name="Label" type="Label" parent="Intro"]
+layout_mode = 0
+offset_top = 243.0
+offset_right = 1280.0
+offset_bottom = 473.0
+text = "Day 1"
+label_settings = SubResource("LabelSettings_gmq0m")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Anim" type="AnimationPlayer" parent="Intro"]
+libraries = {
+&"": SubResource("AnimationLibrary_vgsql")
+}
+speed_scale = 0.3
+
+[node name="DayEnd" parent="." instance=ExtResource("7_swgx3")]
+
 [connection signal="timeout" from="Timer/Spawn" to="." method="_on_spawn_timeout"]
+[connection signal="timeout" from="Timer/EndDay" to="." method="_on_end_day_timeout"]

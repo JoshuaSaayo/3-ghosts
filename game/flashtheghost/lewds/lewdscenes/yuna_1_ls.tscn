@@ -1,8 +1,8 @@
 [gd_scene load_steps=183 format=3 uid="uid://u274poym1jao"]
 
 [ext_resource type="Texture2D" uid="uid://balmwjreme8nd" path="res://lewds/lewd_assets/yuna1_ls/parts/bg5.png" id="1_bohpl"]
-[ext_resource type="Script" uid="uid://diphcwxnto426" path="res://lewds/lewdscenes/yuna_1_ls.gd" id="1_d0sra"]
 [ext_resource type="Texture2D" uid="uid://dpwkebu0bmlge" path="res://lewds/lewd_assets/yuna1_ls/y_back_hair/yuna1_ls-animation_00.png" id="1_ogsh0"]
+[ext_resource type="Script" uid="uid://cffdijitl0wqp" path="res://lewds/lewdscenes/lewdscenes.gd" id="1_yrknl"]
 [ext_resource type="Texture2D" uid="uid://b7v52c8h4an1h" path="res://lewds/lewd_assets/yuna1_ls/y_torso/yuna1_ls-godot_00.png" id="2_jd4av"]
 [ext_resource type="Texture2D" uid="uid://bkn3oqugnm1am" path="res://lewds/lewd_assets/yuna1_ls/parts/head.png" id="3_joftc"]
 [ext_resource type="Texture2D" uid="uid://5mb3itd1amvb" path="res://lewds/lewd_assets/yuna1_ls/parts/o_eyes.png" id="5_ogsh0"]
@@ -848,7 +848,7 @@ tracks/25/use_blend = true
 tracks/26/type = "audio"
 tracks/26/imported = false
 tracks/26/enabled = true
-tracks/26/path = NodePath("Node2D/YunaMoans")
+tracks/26/path = NodePath("Node2D/Moan")
 tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/keys = {
@@ -1450,7 +1450,7 @@ _data = {
 }
 
 [node name="yuna1_ls" type="Node2D"]
-script = ExtResource("1_d0sra")
+script = ExtResource("1_yrknl")
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(0, -29)
@@ -1562,7 +1562,7 @@ speed_scale = 1.5
 
 [node name="PlapSounds" type="AudioStreamPlayer" parent="Node2D"]
 
-[node name="YunaMoans" type="AudioStreamPlayer" parent="Node2D"]
+[node name="Moan" type="AudioStreamPlayer" parent="Node2D"]
 
 [node name="CumSplash" type="Sprite2D" parent="."]
 self_modulate = Color(1, 1, 1, 0)

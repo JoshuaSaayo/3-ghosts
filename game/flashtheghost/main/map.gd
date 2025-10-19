@@ -1,4 +1,5 @@
 extends Node3D
+@onready var day_end: Control = $DayEnd
 
 @onready var door_path: Node3D = $Paths/DoorPath
 @onready var table_path: Node3D = $Paths/TablePath
@@ -9,6 +10,9 @@ extends Node3D
 @onready var nino: Node3D = $Entity/Nino
 @onready var player: CharacterBody3D = %Player
 @onready var player_anim: AnimationPlayer = %PlayerAnim
+
+@onready var end_day: Timer = $Timer/EndDay
+
 
 @onready var ghost_map : Dictionary = {
 	"margarete_stand" : {
@@ -33,7 +37,7 @@ extends Node3D
 		"path": window_path, 
 		"spawn_node": margarete , 
 		"char_position": "Window" , 
-		"instance" : "res://entity/yuna.tscn"},
+		"instance" : "res://entity/margarete.tscn"},
 	
 	"yuna_stand" : {
 		"path": door_path, 
@@ -45,7 +49,7 @@ extends Node3D
 		"path": table_path, 
 		"spawn_node": yuna , 
 		"char_position": "Crawl" , 
-		"instance" : "res://entity/margarete.tscn"},
+		"instance" : "res://entity/yuna.tscn"},
 		
 	"nino_crawl_bed" : {
 		"path": bed_path, 
@@ -70,7 +74,12 @@ var previous_path
 
 func _ready() -> void:
 	randomize()
-	
+	setup_end_timer()
+
+func setup_end_timer():
+	if Globals.days_data.has(Globals.day):
+		end_day.wait_time = Globals.days_data[Globals.day].day_time_limit
+		end_day.start()
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventKey:
@@ -82,8 +91,19 @@ func _input(event: InputEvent) -> void:
 						player_anim.play(key)
 					return
 
-func get_rndm_ghost():
+func get_available_ghost(day): 
 	var keys = ghost_map.keys()
+	var selected_ghost = Globals.days_data[day].available_ghosts
+	var selected_keys : Array
+	for key in keys:
+		if ghost_map[key].spawn_node.name in selected_ghost:
+			selected_keys.append(key)
+	return selected_keys
+
+func get_rndm_ghost():
+	var crnt_day = Globals.day
+	var keys = get_available_ghost(crnt_day)
+	print(keys)
 	if keys.is_empty():
 		print("error")
 		
@@ -98,7 +118,6 @@ func spawn_ghost() -> void:
 	var tscn = dict.instance
 	var path = dict.path
 	var stand = dict.char_position
-	
 	
 	if parent.get_children().size() >= 1:
 		return
@@ -122,3 +141,6 @@ func stand_crawl() -> void:
 
 func _on_spawn_timeout() -> void:
 	spawn_ghost()
+
+func _on_end_day_timeout() -> void:
+	day_end._show(true)
