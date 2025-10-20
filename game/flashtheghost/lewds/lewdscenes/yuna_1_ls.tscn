@@ -1453,10 +1453,12 @@ _data = {
 script = ExtResource("1_yrknl")
 
 [node name="Node2D" type="Node2D" parent="."]
-position = Vector2(0, -29)
+position = Vector2(-45, -35)
+scale = Vector2(1.14, 1.14)
 
 [node name="Bg5" type="Sprite2D" parent="Node2D"]
 position = Vector2(621, 357)
+scale = Vector2(0.912935, 0.912935)
 texture = ExtResource("1_bohpl")
 
 [node name="BackHair" type="Sprite2D" parent="Node2D"]

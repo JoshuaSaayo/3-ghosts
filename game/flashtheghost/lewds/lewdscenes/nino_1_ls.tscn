@@ -1575,6 +1575,7 @@ script = ExtResource("1_es6yd")
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(-59, -47)
+scale = Vector2(1.14, 1.14)
 
 [node name="Bg3" type="Sprite2D" parent="Node2D"]
 position = Vector2(635, 365)
