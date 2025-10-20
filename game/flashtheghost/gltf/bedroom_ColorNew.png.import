@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dc4p2yo742q8c"
-path.s3tc="res://.godot/imported/bedroom_color.png-77153512e5a63842730e041d15798a7c.s3tc.ctex"
+uid="uid://dogn0dy16e4ui"
+path.s3tc="res://.godot/imported/bedroom_ColorNew.png-7d25c137ea7f8733220828e20c7182b4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "6839d6eb5993c12daf09e3c2fb594154"
+"md5": "8c1bf1892d90ead12111b780140ffb2b"
 }
 
 [deps]
 
-source_file="res://gltf/bedroom_color.png"
-dest_files=["res://.godot/imported/bedroom_color.png-77153512e5a63842730e041d15798a7c.s3tc.ctex"]
+source_file="res://gltf/bedroom_ColorNew.png"
+dest_files=["res://.godot/imported/bedroom_ColorNew.png-7d25c137ea7f8733220828e20c7182b4.s3tc.ctex"]
 
 [params]
 
