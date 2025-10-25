@@ -13,8 +13,8 @@ var material
 var flash : bool = false
 var tween : Tween
 
-var speed_default : int = 6
-var movement_speed : int = speed_default
+var speed_default : Array = [6,6]
+var movement_speed : Array = speed_default
 var ghost_original_position 
 var ghost_target_position 
 
@@ -29,10 +29,15 @@ func _ready():
 	material = mesh_instance_3d.get_surface_override_material(0)
 	player = get_tree().get_first_node_in_group("player")
 	await get_tree().process_frame
-	
+	_setup_speed()
 	set_shader_texture()
 	_transition_vanished()
 	pause_tween()
+
+func _setup_speed():
+	if Globals.days_data.has(Globals.day):
+		movement_speed = Globals.days_data[Globals.day].ghost_movement
+	pass
 
 
 func _process(delta: float) -> void:
@@ -99,13 +104,17 @@ func _setup_path(paths,stand) -> void:
 	ghost_original_position = global_position
 	select_ghost_position(stand)
 
+func _get_speed():
+	var speed = randi_range(movement_speed[0],movement_speed[1])
+	return speed
+
 #below method is for ghost movements
 func move_ghost(delta) -> void:
 	if ghost_target_position:
-		global_position = global_position.move_toward(ghost_target_position, movement_speed * delta)
+		global_position = global_position.move_toward(ghost_target_position, _get_speed() * delta)
 
 func move_ghost_to_original_position(delta) -> void:
-	global_position = global_position.move_toward(ghost_original_position, movement_speed * delta)
+	global_position = global_position.move_toward(ghost_original_position, _get_speed() * delta)
 	
 	if global_position.distance_to(ghost_original_position) < 0.1:
 		force_vanish = true
@@ -116,8 +125,8 @@ func move_to_player(delta) -> void:
 	if is_instance_valid(player):
 		var direction = player.global_position - global_position
 		direction.y = 0  
-		target_position = global_position + direction.normalized() * (movement_speed * 10) * delta
-		global_position = global_position.move_toward(target_position, (movement_speed * 13) * delta)
+		target_position = global_position + direction.normalized() * (_get_speed() * 10) * delta
+		global_position = global_position.move_toward(target_position, (_get_speed() * 13) * delta)
 	
 	if target_position:
 		if global_position.distance_to(target_position) < 0.1:

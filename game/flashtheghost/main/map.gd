@@ -10,6 +10,7 @@ extends Node3D
 @onready var nino: Node3D = $Entity/Nino
 @onready var player: CharacterBody3D = %Player
 @onready var player_anim: AnimationPlayer = %PlayerAnim
+@onready var spawn: Timer = $Timer/Spawn
 
 @onready var end_day: Timer = $Timer/EndDay
 
@@ -20,6 +21,7 @@ extends Node3D
 		"spawn_node": margarete , 
 		"char_position": "Stand" , 
 		"instance" : "res://entity/margarete.tscn"},
+		
 		
 	"margarete_crawl" : {
 		"path": table_path, 
@@ -141,6 +143,7 @@ func stand_crawl() -> void:
 
 func _on_spawn_timeout() -> void:
 	spawn_ghost()
+	spawn.wait_time = randi_range(5,10)
 
 func _on_end_day_timeout() -> void:
 	day_end._show(true)

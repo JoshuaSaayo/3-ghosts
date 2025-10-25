@@ -20,31 +20,46 @@ var days_data = {
 		"available_ghosts": ["Yuna"],  # Array of ghosts
 		"day_end_anim":"res://lewds/lewdscenes/yuna_1_ls.tscn" ,  # Filesystem path
 		"sound_key" : "yuna1",
-		"day_time_limit": 10  # int - seconds
+		"day_time_limit": 240,  # int - seconds
+		"batt_life": 100,
+		"ghost_movement": [6,8],
+		
 	},
 	2: {
 		"available_ghosts": ["Yuna"],
 		"day_end_anim": "res://lewds/lewdscenes/yuna_2_ls.tscn",
 		"sound_key" : "yuna2",
-		"day_time_limit": 10
+		"day_time_limit": 240,
+		"batt_life": 90,
+		"ghost_movement": [6,10],
+		
 	},
 	3: {
 		"available_ghosts": ["Yuna","Nino"],
 		"day_end_anim": "res://lewds/lewdscenes/nino_1_ls.tscn",
 		"sound_key" : "nino1",
-		"day_time_limit": 10
+		"day_time_limit": 240,
+		"batt_life": 80,
+		"ghost_movement": [6,12],
+		
 	},
 	4: {
 		"available_ghosts": ["Yuna","Nino"],
 		"day_end_anim": "res://lewds/lewdscenes/nino_2_ls.tscn",
 		"sound_key" : "nino2",
-		"day_time_limit": 10
+		"day_time_limit": 240,
+		"batt_life": 70,
+		"ghost_movement": [6,14],
+		
 	},
 	5: {
 		"available_ghosts": ["Yuna","Nino","Margarete"],
 		"day_end_anim": "res://lewds/lewdscenes/margarete_1_ls.tscn",
 		"sound_key" : "margarete1",
-		"day_time_limit": 10
+		"day_time_limit": 240,
+		"batt_life": 60,
+		"ghost_movement": [6,15],
+		
 	}
 }
 
