@@ -2,9 +2,10 @@ extends Node
 
 signal empty_battery
 
-@onready var anim: AnimationPlayer = $Anim
+var scene_main_menu = load("res://UI/menu.tscn")
+var game_scene = load("res://main/map.tscn")
 
-var game_scene = "res://main/map.tscn"
+@onready var anim: AnimationPlayer = $Anim
 
 var selected_scene
 
@@ -63,6 +64,18 @@ var days_data = {
 	}
 }
 
+func _save_data():
+	var data : Dictionary = {
+		"day":day
+	}
+	Save.save_game(data,"1")
+
+func get_loaded_data():
+	var data : Dictionary = Save.load_game("1")
+	if data.is_empty():
+		push_error("missing save")
+	day = data["day"]
+	
 func set_flash_ligt_life(value : int) -> void:
 	flash_ligt_life = value
 	
@@ -70,7 +83,7 @@ func set_flash_ligt_life(value : int) -> void:
 		emit_signal("empty_battery")
 
 func change_scene_anim():
-	var _scene = load(selected_scene)
+	var _scene = selected_scene
 	get_tree().change_scene_to_packed(_scene)
 
 func change_scene(scene):
@@ -83,4 +96,6 @@ func game_end():
 
 func game_pause(value : bool) -> void:
 	get_tree().paused = value
-	
+
+func _reset_game():
+	day = 1
