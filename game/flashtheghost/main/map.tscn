@@ -188,6 +188,7 @@ libraries = {
 speed_scale = 1.5
 
 [node name="Lights" type="Node3D" parent="."]
+visible = false
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Lights"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.6186, 40.0574, -0.509079)

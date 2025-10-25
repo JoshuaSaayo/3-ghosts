@@ -24,6 +24,7 @@ var force_vanish : bool = false
 var ghost_quit_tag : String = "DEFAULT"
 
 var ghost_anim : AnimatedSprite2D
+var force_death : bool = false
 
 func _ready():
 	material = mesh_instance_3d.get_surface_override_material(0)
@@ -90,8 +91,9 @@ func _update_shader_parameter(value: float):
 		material.set_shader_parameter("edgeColor", Color(1.0, 1.0, 1.0))
 	
 	material.set_shader_parameter("dissolveSlider", value)
-	
-	if value >= 1.3:
+	force_death = true
+	# force death XD
+	if value >= 0.8:
 		remove_entity()
 
 func _setup_path(paths,stand) -> void:
@@ -156,7 +158,8 @@ func _on_area_3d_area_entered(area: Area3D) -> void:
 	resume_tween()
 
 func _on_area_3d_area_exited(area: Area3D) -> void:
-	pause_tween()
+	if ! force_death:
+		pause_tween()
 
 func _on_ghost_quit_timeout() -> void:
 	ghost_quit_tag = "QUIT"
