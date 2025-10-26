@@ -1,0 +1,89 @@
+{ "skeleton": { "images": "C:/Users/Joshua PC/OneDrive/Desktop/parts/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "BG", "bone": "root" },
+	{ "name": "Layer13", "bone": "root", "attachment": "Layer13" },
+	{ "name": "back_hair", "bone": "root", "attachment": "back_hair" },
+	{ "name": "l_shoulder", "bone": "root", "attachment": "l_shoulder" },
+	{ "name": "vines", "bone": "root", "attachment": "vines" },
+	{ "name": "r_shoulder", "bone": "root", "attachment": "r_shoulder" },
+	{ "name": "torso", "bone": "root", "attachment": "torso" },
+	{ "name": "r_boob", "bone": "root", "attachment": "r_boob" },
+	{ "name": "l_boob", "bone": "root", "attachment": "l_boob" },
+	{ "name": "cloth", "bone": "root", "attachment": "cloth" },
+	{ "name": "l_arm", "bone": "root", "attachment": "l_arm" },
+	{ "name": "r_arm", "bone": "root", "attachment": "r_arm" },
+	{ "name": "l_hand", "bone": "root", "attachment": "l_hand" },
+	{ "name": "r_hand", "bone": "root", "attachment": "r_hand" },
+	{ "name": "head", "bone": "root", "attachment": "head" },
+	{ "name": "mouth", "bone": "root", "attachment": "mouth" },
+	{ "name": "bangs", "bone": "root", "attachment": "bangs" },
+	{ "name": "glass", "bone": "root", "attachment": "glass" },
+	{ "name": "Layer28 copy 5", "bone": "root", "attachment": "Layer28 copy 5" }
+],
+"skins": {
+	"default": {
+		"BG": {
+			"BG": { "x": 640, "y": -360, "width": 1282, "height": 722 }
+		},
+		"Layer13": {
+			"Layer13": { "x": 792.5, "y": -296.5, "width": 489, "height": 385 }
+		},
+		"back_hair": {
+			"back_hair": { "x": 770.5, "y": -273.5, "width": 519, "height": 545 }
+		},
+		"l_shoulder": {
+			"l_shoulder": { "x": 704, "y": -261, "width": 180, "height": 226 }
+		},
+		"vines": {
+			"vines": { "x": 680, "y": -320.5, "width": 66, "height": 89 }
+		},
+		"r_shoulder": {
+			"r_shoulder": { "x": 896.5, "y": -268.5, "width": 105, "height": 209 }
+		},
+		"torso": {
+			"torso": { "x": 799.5, "y": -334.5, "width": 347, "height": 461 }
+		},
+		"r_boob": {
+			"r_boob": { "x": 844, "y": -288, "width": 172, "height": 162 }
+		},
+		"l_boob": {
+			"l_boob": { "x": 786, "y": -274.5, "width": 194, "height": 153 }
+		},
+		"cloth": {
+			"cloth": { "x": 793, "y": -245, "width": 284, "height": 198 }
+		},
+		"l_arm": {
+			"l_arm": { "x": 683.5, "y": -297.5, "width": 159, "height": 203 }
+		},
+		"r_arm": {
+			"r_arm": { "x": 931.5, "y": -269, "width": 71, "height": 186 }
+		},
+		"l_hand": {
+			"l_hand": { "x": 672.5, "y": -185.5, "width": 123, "height": 195 }
+		},
+		"r_hand": {
+			"r_hand": { "x": 944, "y": -174.5, "width": 98, "height": 135 }
+		},
+		"head": {
+			"head": { "x": 793, "y": -81.5, "width": 176, "height": 149 }
+		},
+		"mouth": {
+			"mouth": { "x": 796.5, "y": -128.5, "width": 35, "height": 15 }
+		},
+		"bangs": {
+			"bangs": { "x": 795.5, "y": -100.5, "width": 167, "height": 203 }
+		},
+		"glass": {
+			"glass": { "x": 843, "y": -337, "width": 876, "height": 676 }
+		},
+		"Layer28 copy 5": {
+			"Layer28 copy 5": { "x": 640, "y": -360, "width": 1282, "height": 722 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
