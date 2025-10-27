@@ -1,9 +1,33 @@
-[gd_scene load_steps=3 format=3 uid="uid://d1xxqwwr3p3lu"]
+[gd_scene load_steps=7 format=3 uid="uid://d1xxqwwr3p3lu"]
 
 [ext_resource type="Script" uid="uid://br2cs5yxtqi1r" path="res://UI/prompt/prompt.gd" id="1_ly83h"]
+[ext_resource type="FontFile" uid="uid://32dv5eni0vce" path="res://UI/fonts/OldNewspaperTypes.ttf" id="2_h1wvt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h1wvt"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g2e1f"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_362el"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="LabelSettings" id="LabelSettings_h1wvt"]
-font_color = Color(0, 0, 0, 1)
+font = ExtResource("2_h1wvt")
 
 [node name="Prompt" type="Control"]
 layout_mode = 3
@@ -14,14 +38,13 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ly83h")
 
-[node name="ColorRect2" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0, 0, 0.678431)
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 259.0
+offset_top = 258.0
+offset_right = 1022.0
+offset_bottom = 462.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h1wvt")
 
 [node name="Panel" type="ColorRect" parent="."]
 layout_mode = 1
@@ -36,29 +59,72 @@ offset_right = 381.0
 offset_bottom = 102.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0, 0, 0, 0.392157)
 
 [node name="Confirm" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = -51.0
-offset_top = 162.0
-offset_right = 221.0
-offset_bottom = 236.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 200.0
+offset_top = 38.0
+offset_right = 350.0
+offset_bottom = 78.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_h1wvt")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_g2e1f")
+theme_override_styles/normal = SubResource("StyleBoxFlat_362el")
 text = "Confirm"
 
 [node name="Decline" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 551.0
-offset_top = 162.0
-offset_right = 823.0
-offset_bottom = 236.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -355.0
+offset_top = 38.0
+offset_right = -205.0
+offset_bottom = 78.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_h1wvt")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_g2e1f")
+theme_override_styles/normal = SubResource("StyleBoxFlat_362el")
 text = "Decline"
 
 [node name="OK" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 254.0
-offset_top = 162.0
-offset_right = 526.0
-offset_bottom = 236.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.0
+offset_top = 38.0
+offset_right = 75.0
+offset_bottom = 78.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_h1wvt")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_g2e1f")
+theme_override_styles/normal = SubResource("StyleBoxFlat_362el")
 text = "OKAY"
 
 [node name="Message" type="Label" parent="Panel"]
