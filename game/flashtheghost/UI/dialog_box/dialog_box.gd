@@ -1,5 +1,9 @@
 extends Control
 
+# Signal to notify when ALL dialog is finished
+signal all_dialog_finished
+signal _dialog_ready
+
 @onready var character_name: Label = $CharacterName
 @onready var label: Label = $Label
 @onready var next: Button = $Next
@@ -13,28 +17,22 @@ var dialog_data: Dictionary = {}
 var dialog_keys: Array = []
 var current_key_index: int = 0
 
+var d_manager
+var time 
+
 func _ready():
+	d_manager = dialog_manager.new()
 	# Connect button signals
 	next.pressed.connect(_on_next_pressed)
 	skip.pressed.connect(_on_skip_pressed)
 	
 	# Hide the dialog box initially
 	hide_dialog()
-	
-	# Debugging
-	var npc_dialog = {
-		"greeting||Old Man": [
-			"Hello traveler!",
-			"Welcome to our village.",
-			"How can I help you today?"
-		],
-		"quest||Old Man2": [
-			"I need your help!",
-			"Please find my lost cat.",
-			"She's somewhere in the forest."
-		]
-	}
-	set_dialog_data(npc_dialog)
+	emit_signal("_dialog_ready")
+
+func _start_dialog(_time : String):
+	time = _time
+	set_dialog_data(d_manager._get_dialog(_time))
 
 # Method to receive dialog data from external source
 func set_dialog_data(new_dialog_data: Dictionary):
@@ -103,9 +101,8 @@ func hide_dialog():
 func is_dialog_active() -> bool:
 	return visible
 
-# Signal to notify when ALL dialog is finished
-signal all_dialog_finished()
+
 
 func _on_all_dialog_finished():
-	emit_signal("all_dialog_finished")
+	emit_signal("all_dialog_finished",time)
 	hide_dialog()
