@@ -1,6 +1,5 @@
-[gd_scene load_steps=12 format=3 uid="uid://cbgkrnpa2ypg8"]
+[gd_scene load_steps=11 format=3 uid="uid://cbgkrnpa2ypg8"]
 
-[ext_resource type="Texture2D" uid="uid://c04aktf1pn2tl" path="res://UI/assets/menu_bg.png" id="1_0h2wq"]
 [ext_resource type="Script" uid="uid://dck5m827b2c5f" path="res://UI/menu.gd" id="1_4hkxj"]
 [ext_resource type="PackedScene" uid="uid://bi3xkes0mp6ng" path="res://lewds/lewdscenes/main_menu.tscn" id="3_e05sn"]
 [ext_resource type="PackedScene" uid="uid://dxxy03nnlmgnc" path="res://UI/setting.tscn" id="3_qmqfe"]
@@ -48,15 +47,6 @@ grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_4hkxj")
-
-[node name="Background" type="TextureRect" parent="."]
-visible = false
-layout_mode = 0
-offset_left = -15.0
-offset_right = 1265.0
-offset_bottom = 720.0
-scale = Vector2(0.927128, 0.927128)
-texture = ExtResource("1_0h2wq")
 
 [node name="main_menu" parent="." instance=ExtResource("3_e05sn")]
 position = Vector2(0, 1)

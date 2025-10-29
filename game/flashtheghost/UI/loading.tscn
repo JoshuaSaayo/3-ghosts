@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://7otpyw2t6ja2"]
+
+[ext_resource type="Texture2D" uid="uid://bgkp2i053t61f" path="res://UI/assets/disclaimer.png" id="1_hno1x"]
+[ext_resource type="FontFile" uid="uid://32dv5eni0vce" path="res://UI/fonts/OldNewspaperTypes.ttf" id="2_620be"]
+
+[node name="disclaimer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_hno1x")
+
+[node name="loading" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -171.0
+offset_top = -68.0
+offset_right = -30.0
+offset_bottom = -30.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_620be")
+theme_override_font_sizes/font_size = 30
+text = "Loading..."
+horizontal_alignment = 1
