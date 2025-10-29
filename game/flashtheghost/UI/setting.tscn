@@ -148,11 +148,12 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -99.0
-offset_right = 99.0
-offset_bottom = 62.0
+offset_left = -128.0
+offset_top = 11.0
+offset_right = 128.0
+offset_bottom = 73.0
 grow_horizontal = 2
-theme_override_fonts/font = ExtResource("4_ymdbj")
+theme_override_fonts/font = ExtResource("5_36jyd")
 theme_override_font_sizes/font_size = 50
 text = "Settings"
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dkj4ghkle4kvo"]
+[gd_scene load_steps=20 format=3 uid="uid://dkj4ghkle4kvo"]
 
 [ext_resource type="PackedScene" uid="uid://bl0s82uug2re7" path="res://main/player.tscn" id="1_0twea"]
 [ext_resource type="Script" uid="uid://bcub2o0fx67wk" path="res://main/map.gd" id="1_1t10m"]
@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://cfujqcknroyot" path="res://sound/ambience/164734__deleted_user_2104797__int-bedroom-tone-2.wav" id="5_1t10m"]
 [ext_resource type="Script" uid="uid://be0r0sydlm6ad" path="res://main/intro.gd" id="6_gmq0m"]
 [ext_resource type="PackedScene" uid="uid://bh355yyng5aea" path="res://scene/day_end.tscn" id="7_swgx3"]
+[ext_resource type="FontFile" uid="uid://b4tnhgxs2jb4f" path="res://UI/fonts/OldTypewriter2.0.ttf" id="7_tm1r7"]
 [ext_resource type="PackedScene" uid="uid://ckhepriwteify" path="res://UI/dialog_box/dialog_box.tscn" id="8_vgsql"]
 
 [sub_resource type="Environment" id="Environment_7ik47"]
@@ -68,6 +69,7 @@ _data = {
 }
 
 [sub_resource type="LabelSettings" id="LabelSettings_gmq0m"]
+font = ExtResource("7_tm1r7")
 font_size = 121
 
 [sub_resource type="Animation" id="Animation_swgx3"]

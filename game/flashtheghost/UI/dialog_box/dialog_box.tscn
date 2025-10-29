@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://ckhepriwteify"]
+[gd_scene load_steps=9 format=3 uid="uid://ckhepriwteify"]
 
 [ext_resource type="Script" uid="uid://61s8rkbe3njf" path="res://UI/dialog_box/dialog_box.gd" id="1_0vf7k"]
 [ext_resource type="FontFile" uid="uid://32dv5eni0vce" path="res://UI/fonts/OldNewspaperTypes.ttf" id="2_dcey7"]
+[ext_resource type="FontFile" uid="uid://duerwhkfleuh6" path="res://UI/fonts/MomsTypewritter.ttf" id="3_8mbqe"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dcey7"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -15,7 +16,7 @@ border_color = Color(1, 1, 1, 1)
 font = ExtResource("2_dcey7")
 
 [sub_resource type="LabelSettings" id="LabelSettings_dcey7"]
-font = ExtResource("2_dcey7")
+font = ExtResource("3_8mbqe")
 font_size = 44
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8mbqe"]
@@ -51,6 +52,7 @@ offset_bottom = 688.0
 color = Color(0, 0, 0, 0.392157)
 
 [node name="Borderbox" type="Panel" parent="."]
+layout_mode = 0
 offset_left = 66.0
 offset_top = 494.0
 offset_right = 1224.0
