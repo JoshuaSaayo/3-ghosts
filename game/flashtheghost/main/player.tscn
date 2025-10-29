@@ -1,8 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://bl0s82uug2re7"]
+[gd_scene load_steps=12 format=3 uid="uid://bl0s82uug2re7"]
 
 [ext_resource type="Script" uid="uid://bcqw8nq0jex86" path="res://main/player.gd" id="1_ntxbt"]
 [ext_resource type="Script" uid="uid://c7jlbxgyh3xnq" path="res://main/pov.gd" id="2_ab3tm"]
 [ext_resource type="Script" uid="uid://dibutvkuxvjw4" path="res://main/ghost_manager.gd" id="2_lat6o"]
+[ext_resource type="Texture2D" uid="uid://dvgyrmvjptyss" path="res://UI/assets/Battery.png" id="4_5ar6u"]
+[ext_resource type="Texture2D" uid="uid://yioau6mja8qn" path="res://UI/assets/battery bar.png" id="5_07mow"]
+[ext_resource type="FontFile" uid="uid://32dv5eni0vce" path="res://UI/fonts/OldNewspaperTypes.ttf" id="6_55rq2"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ntxbt"]
 
@@ -15,6 +18,10 @@ height = 534.341
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_4v151"]
 viewport_path = NodePath("SubViewport")
+
+[sub_resource type="LabelSettings" id="LabelSettings_1gbna"]
+font = ExtResource("6_55rq2")
+font_size = 30
 
 [node name="Player" type="CharacterBody3D"]
 process_mode = 3
@@ -76,22 +83,53 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Battery" type="ProgressBar" parent="POV"]
+visible = false
 layout_mode = 1
-anchors_preset = 12
+anchors_preset = 2
 anchor_top = 1.0
-anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 363.0
 offset_top = -27.0
-offset_right = -363.0
-grow_horizontal = 2
+offset_right = 153.0
 grow_vertical = 0
+
+[node name="BatteryBar" type="TextureProgressBar" parent="POV"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 30.0
+offset_top = -77.0
+offset_right = 148.0
+offset_bottom = -30.0
+grow_vertical = 0
+value = 37.0
+texture_under = ExtResource("4_5ar6u")
+texture_progress = ExtResource("5_07mow")
+texture_progress_offset = Vector2(4, 5)
 
 [node name="TextureRect" type="TextureRect" parent="POV"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = SubResource("ViewportTexture_4v151")
+
+[node name="BatteryPercentage" type="Label" parent="POV"]
+layout_mode = 0
+offset_left = 164.0
+offset_top = 647.0
+offset_right = 218.0
+offset_bottom = 685.0
+text = "37%"
+label_settings = SubResource("LabelSettings_1gbna")
+
+[node name="NightCounts" type="Label" parent="POV"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 218.0
+offset_bottom = 68.0
+text = "Night Counts"
+label_settings = SubResource("LabelSettings_1gbna")
 
 [node name="Walk" type="AudioStreamPlayer3D" parent="."]
 volume_db = 80.0
