@@ -82,16 +82,6 @@ offset_bottom = 2.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Battery" type="ProgressBar" parent="POV"]
-visible = false
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -27.0
-offset_right = 153.0
-grow_vertical = 0
-
 [node name="BatteryBar" type="TextureProgressBar" parent="POV"]
 layout_mode = 1
 anchors_preset = 2
@@ -102,7 +92,7 @@ offset_top = -77.0
 offset_right = 148.0
 offset_bottom = -30.0
 grow_vertical = 0
-value = 37.0
+value = 38.0
 texture_under = ExtResource("4_5ar6u")
 texture_progress = ExtResource("5_07mow")
 texture_progress_offset = Vector2(4, 5)

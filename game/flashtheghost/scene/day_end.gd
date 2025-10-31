@@ -33,7 +33,16 @@ func instantiate_anim():
 	lewd_scene_anim.add_child(ls)
 
 func _closing_anim():
+	if one_time:
+		return
+	one_time = true
+	
+	if Globals.day == 5:
+		Globals.change_scene(Globals.scene_main_menu)
+	
 	Globals.day = clamp(Globals.day + 1, 1 , Globals.max_day)
+	if !Globals.unlock_gallery.has(Globals.day):
+		Globals.unlock_gallery.append(Globals.day)
 	Globals.change_scene(Globals.game_scene)
 
 func _start_dialog(time : String):

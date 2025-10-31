@@ -4,9 +4,12 @@ extends Control
 @onready var load_game: Button = $LoadGame
 @onready var setting: Button = $Setting
 @onready var quit: Button = $Quit
+@onready var gallery: Button = $Gallery
 
 @onready var setting_tab: Control = $SettingTab
 @onready var prompt: Control = $Prompt
+@onready var gallery_2: Control = $Gallery2
+
 
 func _ready():
 	_check_load()
@@ -15,6 +18,7 @@ func _ready():
 	load_game.pressed.connect(_on_load_game_pressed)
 	setting.pressed.connect(_on_setting_pressed)
 	quit.pressed.connect(_on_quit_pressed)
+	gallery.pressed.connect(_on_gallery_pressed)
 	
 func _check_load():
 	var valid : Dictionary = Save.load_game("1")
@@ -44,8 +48,17 @@ func _load_game():
 	Globals.get_loaded_data()
 	Globals.change_scene(Globals.game_scene)
 
+func _on_gallery_pressed():
+	gallery_2._show(true)
 
 func _on_prompt_prompt_response(code: String, result) -> void:
 	if code == "new_game":
 		if result:
 			_new_game()
+
+
+func _on_instruction_pressed() -> void:
+	var controls_short = """MOUSE: Move screen | F: Flashlight | CTRL: Crouch/Stand
+	ALT: View cursor
+	Shine flashlight on ghosts to banish them"""
+	prompt.setup("instruction",controls_short, "Yes","No","Close")

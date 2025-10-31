@@ -147,3 +147,6 @@ func _on_spawn_timeout() -> void:
 
 func _on_end_day_timeout() -> void:
 	day_end._show(true)
+
+func _on_next_night_pressed() -> void:
+	day_end._show(true)

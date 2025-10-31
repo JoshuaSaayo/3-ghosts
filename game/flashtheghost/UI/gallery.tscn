@@ -1,5 +1,6 @@
-[gd_scene load_steps=23 format=3 uid="uid://dwowobb5amhyj"]
+[gd_scene load_steps=24 format=3 uid="uid://dwowobb5amhyj"]
 
+[ext_resource type="Script" uid="uid://bhglx5kvx8t2k" path="res://UI/gallery.gd" id="1_5fg8s"]
 [ext_resource type="FontFile" uid="uid://duerwhkfleuh6" path="res://UI/fonts/MomsTypewritter.ttf" id="1_o8krx"]
 [ext_resource type="FontFile" uid="uid://32dv5eni0vce" path="res://UI/fonts/OldNewspaperTypes.ttf" id="2_j006r"]
 [ext_resource type="Texture2D" uid="uid://bwf0kk5yq8aar" path="res://UI/assets/thumbnail_1_lock.png" id="3_ch2e1"]
@@ -38,8 +39,6 @@ corner_radius_bottom_left = 5
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pkf84"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ci53"]
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ucfh"]
 bg_color = Color(0, 0, 0, 0.392157)
 border_color = Color(1, 1, 1, 1)
@@ -54,15 +53,28 @@ bg_color = Color(0, 0, 0, 0.392157)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ghkey"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ci53"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_04avt"]
 
 [node name="Gallery" type="Control"]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_5fg8s")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [node name="TextBox" type="ColorRect" parent="."]
 layout_mode = 1
@@ -116,254 +128,8 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_auojw")
 theme_override_styles/normal = SubResource("StyleBoxFlat_pkf84")
 text = "X"
 
-[node name="ThumbnailA" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -462.0
-offset_top = 171.0
-offset_right = -221.0
-offset_bottom = 356.0
-grow_horizontal = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_j006r")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/disabled = SubResource("StyleBoxFlat_1ci53")
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
-theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
-text = "Night 1
-"
-icon = ExtResource("3_mde88")
-alignment = 0
-icon_alignment = 1
-vertical_icon_alignment = 0
-
-[node name="ThumbnailALocked" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 178.0
-offset_top = 171.0
-offset_right = 419.0
-offset_bottom = 356.0
-texture = ExtResource("3_ch2e1")
-stretch_mode = 2
-
-[node name="Lock" type="TextureRect" parent="ThumbnailALocked"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -28.5
-offset_top = -66.5
-offset_right = 28.5
-offset_bottom = 14.5
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("5_6wnc1")
-
-[node name="ThumbnailB" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -110.0
-offset_top = 171.0
-offset_right = 129.0
-offset_bottom = 356.0
-grow_horizontal = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_j006r")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/disabled = SubResource("StyleBoxFlat_04avt")
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
-theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
-text = "Night 2
-"
-icon = ExtResource("4_pkf84")
-alignment = 0
-icon_alignment = 1
-vertical_icon_alignment = 0
-
-[node name="ThumbnailALocked2" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 530.0
-offset_top = 171.0
-offset_right = 771.0
-offset_bottom = 356.0
-texture = ExtResource("6_1ci53")
-stretch_mode = 2
-
-[node name="Lock" type="TextureRect" parent="ThumbnailALocked2"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -28.5
-offset_top = -66.5
-offset_right = 28.5
-offset_bottom = 14.5
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("5_6wnc1")
-
-[node name="ThumbnailC" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = 238.5
-offset_top = 171.0
-offset_right = 476.5
-offset_bottom = 355.0
-grow_horizontal = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_j006r")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
-theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
-text = "Night 3
-"
-icon = ExtResource("5_8ucfh")
-alignment = 0
-icon_alignment = 1
-vertical_icon_alignment = 0
-
-[node name="ThumbnailALocked3" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 878.0
-offset_top = 171.0
-offset_right = 1119.0
-offset_bottom = 356.0
-texture = ExtResource("8_6wnc1")
-stretch_mode = 2
-
-[node name="Lock" type="TextureRect" parent="ThumbnailALocked3"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -28.5
-offset_top = -66.5
-offset_right = 28.5
-offset_bottom = 14.5
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("5_6wnc1")
-
-[node name="ThumbnailD" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -462.0
-offset_top = 481.0
-offset_right = -221.0
-offset_bottom = 666.0
-grow_horizontal = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_j006r")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
-theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
-text = "Night 4
-"
-icon = ExtResource("6_ghkey")
-alignment = 0
-icon_alignment = 1
-vertical_icon_alignment = 0
-
-[node name="ThumbnailALocked4" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 178.0
-offset_top = 481.0
-offset_right = 419.0
-offset_bottom = 666.0
-texture = ExtResource("10_5fg8s")
-stretch_mode = 2
-
-[node name="Lock" type="TextureRect" parent="ThumbnailALocked4"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -28.5
-offset_top = -66.5
-offset_right = 28.5
-offset_bottom = 14.5
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("5_6wnc1")
-
-[node name="ThumbnailE" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -110.0
-offset_top = 481.0
-offset_right = 131.0
-offset_bottom = 667.0
-grow_horizontal = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_j006r")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
-theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
-text = "Night 5
-"
-icon = ExtResource("7_8r80v")
-alignment = 0
-icon_alignment = 1
-vertical_icon_alignment = 0
-
-[node name="ThumbnailALocked5" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 530.0
-offset_top = 481.0
-offset_right = 771.0
-offset_bottom = 666.0
-texture = ExtResource("12_g28k2")
-stretch_mode = 2
-
-[node name="Lock" type="TextureRect" parent="ThumbnailALocked5"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -28.5
-offset_top = -66.5
-offset_right = 28.5
-offset_bottom = 14.5
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("5_6wnc1")
-
 [node name="ThumbnailF" type="Button" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -387,3 +153,281 @@ icon = ExtResource("8_04avt")
 alignment = 0
 icon_alignment = 1
 vertical_icon_alignment = 0
+
+[node name="GalleryContainer" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ThumbnailA" type="Button" parent="GalleryContainer"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 158.0
+offset_top = 171.0
+offset_right = 399.0
+offset_bottom = 356.0
+grow_horizontal = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_j006r")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/disabled = SubResource("StyleBoxFlat_1ci53")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
+text = "Night 1
+"
+icon = ExtResource("3_mde88")
+alignment = 0
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="ThumbnailALocked" type="TextureRect" parent="GalleryContainer"]
+layout_mode = 0
+offset_left = 178.0
+offset_top = 171.0
+offset_right = 419.0
+offset_bottom = 356.0
+texture = ExtResource("3_ch2e1")
+stretch_mode = 2
+
+[node name="Lock" type="TextureRect" parent="GalleryContainer/ThumbnailALocked"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.5
+offset_top = -66.5
+offset_right = 28.5
+offset_bottom = 14.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_6wnc1")
+
+[node name="ThumbnailB" type="Button" parent="GalleryContainer"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 510.0
+offset_top = 171.0
+offset_right = 749.0
+offset_bottom = 356.0
+grow_horizontal = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_j006r")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/disabled = SubResource("StyleBoxFlat_04avt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
+text = "Night 2
+"
+icon = ExtResource("4_pkf84")
+alignment = 0
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="ThumbnailALocked2" type="TextureRect" parent="GalleryContainer"]
+layout_mode = 0
+offset_left = 530.0
+offset_top = 171.0
+offset_right = 771.0
+offset_bottom = 356.0
+texture = ExtResource("6_1ci53")
+stretch_mode = 2
+
+[node name="Lock" type="TextureRect" parent="GalleryContainer/ThumbnailALocked2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.5
+offset_top = -66.5
+offset_right = 28.5
+offset_bottom = 14.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_6wnc1")
+
+[node name="ThumbnailC" type="Button" parent="GalleryContainer"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 858.5
+offset_top = 171.0
+offset_right = 1096.5
+offset_bottom = 355.0
+grow_horizontal = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_j006r")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
+text = "Night 3
+"
+icon = ExtResource("5_8ucfh")
+alignment = 0
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="ThumbnailALocked3" type="TextureRect" parent="GalleryContainer"]
+layout_mode = 0
+offset_left = 878.0
+offset_top = 171.0
+offset_right = 1119.0
+offset_bottom = 356.0
+texture = ExtResource("8_6wnc1")
+stretch_mode = 2
+
+[node name="Lock" type="TextureRect" parent="GalleryContainer/ThumbnailALocked3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.5
+offset_top = -66.5
+offset_right = 28.5
+offset_bottom = 14.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_6wnc1")
+
+[node name="ThumbnailD" type="Button" parent="GalleryContainer"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 158.0
+offset_top = 481.0
+offset_right = 399.0
+offset_bottom = 666.0
+grow_horizontal = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_j006r")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
+text = "Night 4
+"
+icon = ExtResource("6_ghkey")
+alignment = 0
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="ThumbnailALocked4" type="TextureRect" parent="GalleryContainer"]
+layout_mode = 0
+offset_left = 178.0
+offset_top = 481.0
+offset_right = 419.0
+offset_bottom = 666.0
+texture = ExtResource("10_5fg8s")
+stretch_mode = 2
+
+[node name="Lock" type="TextureRect" parent="GalleryContainer/ThumbnailALocked4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.5
+offset_top = -66.5
+offset_right = 28.5
+offset_bottom = 14.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_6wnc1")
+
+[node name="ThumbnailE" type="Button" parent="GalleryContainer"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 510.0
+offset_top = 481.0
+offset_right = 751.0
+offset_bottom = 667.0
+grow_horizontal = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_j006r")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
+text = "Night 5
+"
+icon = ExtResource("7_8r80v")
+alignment = 0
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="ThumbnailALocked5" type="TextureRect" parent="GalleryContainer"]
+layout_mode = 0
+offset_left = 530.0
+offset_top = 481.0
+offset_right = 771.0
+offset_bottom = 666.0
+texture = ExtResource("12_g28k2")
+stretch_mode = 2
+
+[node name="Lock" type="TextureRect" parent="GalleryContainer/ThumbnailALocked5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.5
+offset_top = -66.5
+offset_right = 28.5
+offset_bottom = 14.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_6wnc1")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="LewdScene" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CloseLS" type="Button" parent="CanvasLayer"]
+offset_left = 1195.0
+offset_top = -2.0
+offset_right = 1282.0
+offset_bottom = 90.0
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_o8krx")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/hover = SubResource("StyleBoxFlat_auojw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_pkf84")
+text = "X"
+
+[connection signal="pressed" from="Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="CanvasLayer/CloseLS" to="." method="_on_close_ls_pressed"]

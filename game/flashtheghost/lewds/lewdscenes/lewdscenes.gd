@@ -34,8 +34,6 @@ var sounds: Dictionary = {
 
 func _ready():
 	moan = get_node_or_null("Node2D/Moan")
-	
-	
 	lewdscenes.play("lewdscene")
 	start_timer()
 	lewdscenes.animation_finished.connect(_on_animation_finished)

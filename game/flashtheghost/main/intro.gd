@@ -4,13 +4,12 @@ extends Control
 @onready var anim: AnimationPlayer = $Anim
 @onready var dialog_box: Control = $"../DialogBox"
 
-
 func _ready() -> void:
 	anim.animation_finished.connect(_animation_finished)
 	get_tree().paused = true
 	
 func _start():
-	label.text = "NIGHT "+ str(Globals.day) +"!"
+	label.text = "NIGHT "+ str(Globals.day)
 	anim.play("play")
 
 func _animation_finished(anim_name):

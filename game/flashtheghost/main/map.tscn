@@ -317,7 +317,15 @@ speed_scale = 0.3
 [node name="DialogBox" parent="." instance=ExtResource("8_vgsql")]
 process_mode = 3
 
+[node name="NextNight" type="Button" parent="."]
+offset_left = 1097.0
+offset_top = 26.0
+offset_right = 1262.0
+offset_bottom = 67.0
+text = "Next night "
+
 [connection signal="timeout" from="Timer/Spawn" to="." method="_on_spawn_timeout"]
 [connection signal="timeout" from="Timer/EndDay" to="." method="_on_end_day_timeout"]
 [connection signal="_dialog_ready" from="DialogBox" to="Intro" method="_on_dialog_box__dialog_ready"]
 [connection signal="all_dialog_finished" from="DialogBox" to="Intro" method="_on_dialog_box_all_dialog_finished"]
+[connection signal="pressed" from="NextNight" to="." method="_on_next_night_pressed"]

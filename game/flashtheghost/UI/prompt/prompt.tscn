@@ -28,6 +28,7 @@ bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="LabelSettings" id="LabelSettings_h1wvt"]
 font = ExtResource("2_h1wvt")
+font_size = 21
 
 [node name="Prompt" type="Control"]
 layout_mode = 3

@@ -15,6 +15,7 @@ var flash_ligt_max_life: int = 100
 var day : int = 1
 var max_day : int = 5
 
+var unlock_gallery : Array = []
 
 var days_data = {
 	1: {
