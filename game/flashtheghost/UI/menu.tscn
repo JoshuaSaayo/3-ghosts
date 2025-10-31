@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cbgkrnpa2ypg8"]
+[gd_scene load_steps=12 format=3 uid="uid://cbgkrnpa2ypg8"]
 
 [ext_resource type="Script" uid="uid://dck5m827b2c5f" path="res://UI/menu.gd" id="1_4hkxj"]
 [ext_resource type="PackedScene" uid="uid://bi3xkes0mp6ng" path="res://lewds/lewdscenes/main_menu.tscn" id="3_e05sn"]
@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://32dv5eni0vce" path="res://UI/fonts/OldNewspaperTypes.ttf" id="4_dte3n"]
 [ext_resource type="FontFile" uid="uid://duerwhkfleuh6" path="res://UI/fonts/MomsTypewritter.ttf" id="4_kfjwn"]
 [ext_resource type="PackedScene" uid="uid://d1xxqwwr3p3lu" path="res://UI/prompt/prompt.tscn" id="4_qmqfe"]
+[ext_resource type="PackedScene" uid="uid://dwowobb5amhyj" path="res://UI/gallery.tscn" id="7_dte3n"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dhncy"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -169,6 +170,14 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_re817")
 text = "Quit
 "
 
+[node name="Instruction" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1189.0
+offset_top = 19.0
+offset_right = 1263.0
+offset_bottom = 90.0
+text = "?"
+
 [node name="Title" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 5
@@ -222,4 +231,8 @@ theme_override_fonts/font = ExtResource("4_dte3n")
 theme_override_font_sizes/font_size = 20
 text = "v 1.0"
 
+[node name="Gallery2" parent="." instance=ExtResource("7_dte3n")]
+layout_mode = 1
+
+[connection signal="pressed" from="Instruction" to="." method="_on_instruction_pressed"]
 [connection signal="prompt_response" from="Prompt" to="." method="_on_prompt_prompt_response"]
