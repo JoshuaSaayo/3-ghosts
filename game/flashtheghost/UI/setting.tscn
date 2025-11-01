@@ -1,9 +1,13 @@
-[gd_scene load_steps=13 format=3 uid="uid://dxxy03nnlmgnc"]
+[gd_scene load_steps=23 format=3 uid="uid://dxxy03nnlmgnc"]
 
 [ext_resource type="Script" uid="uid://n05mfe1a788n" path="res://UI/setting.gd" id="1_8534u"]
 [ext_resource type="PackedScene" uid="uid://bi3xkes0mp6ng" path="res://lewds/lewdscenes/main_menu.tscn" id="3_irhm8"]
 [ext_resource type="FontFile" uid="uid://32dv5eni0vce" path="res://UI/fonts/OldNewspaperTypes.ttf" id="4_ymdbj"]
 [ext_resource type="FontFile" uid="uid://duerwhkfleuh6" path="res://UI/fonts/MomsTypewritter.ttf" id="5_36jyd"]
+[ext_resource type="Texture2D" uid="uid://dyxd6gvbav5gt" path="res://UI/assets/grabber.png" id="5_irhm8"]
+[ext_resource type="Texture2D" uid="uid://d1q61uvjvr6bp" path="res://UI/assets/grabber_hover.png" id="6_ymdbj"]
+[ext_resource type="Script" uid="uid://d23maiayphew8" path="res://UI/resolution.gd" id="7_36jyd"]
+[ext_resource type="Texture2D" uid="uid://dhrjjhw1y1ao4" path="res://UI/assets/check-mark.png" id="7_gb4v8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ymdbj"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -68,8 +72,32 @@ corner_radius_top_right = 4
 corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_7dmh7"]
+color = Color(0.352941, 0.352941, 0.352941, 1)
+thickness = 5
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_irhm8"]
+color = Color(1, 1, 1, 1)
+thickness = 5
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ymdbj"]
+color = Color(1, 1, 1, 1)
+thickness = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8yq3x"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="ImageTexture" id="ImageTexture_lfsxt"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fv0ub"]
 bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="ImageTexture" id="ImageTexture_gb4v8"]
 
 [node name="Setting" type="Control"]
 layout_mode = 3
@@ -220,8 +248,16 @@ offset_left = 253.0
 offset_top = 10.0
 offset_right = 647.0
 offset_bottom = 26.0
+theme_override_icons/grabber = ExtResource("5_irhm8")
+theme_override_icons/grabber_highlight = ExtResource("6_ymdbj")
+theme_override_icons/grabber_disabled = ExtResource("5_irhm8")
+theme_override_icons/tick = ExtResource("5_irhm8")
+theme_override_styles/slider = SubResource("StyleBoxLine_7dmh7")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_irhm8")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_ymdbj")
 max_value = 1.0
 step = 0.1
+value = 0.5
 
 [node name="Music" type="Label" parent="AudioTab"]
 layout_mode = 0
@@ -243,8 +279,16 @@ offset_left = 253.0
 offset_top = 13.0
 offset_right = 647.0
 offset_bottom = 29.0
+theme_override_icons/grabber = ExtResource("5_irhm8")
+theme_override_icons/grabber_highlight = ExtResource("6_ymdbj")
+theme_override_icons/grabber_disabled = ExtResource("5_irhm8")
+theme_override_icons/tick = ExtResource("5_irhm8")
+theme_override_styles/slider = SubResource("StyleBoxLine_7dmh7")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_irhm8")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_ymdbj")
 max_value = 1.0
 step = 0.1
+value = 0.5
 
 [node name="SFX" type="Label" parent="AudioTab"]
 layout_mode = 0
@@ -266,8 +310,16 @@ offset_left = 253.0
 offset_top = 12.0
 offset_right = 647.0
 offset_bottom = 28.0
+theme_override_icons/grabber = ExtResource("5_irhm8")
+theme_override_icons/grabber_highlight = ExtResource("6_ymdbj")
+theme_override_icons/grabber_disabled = ExtResource("5_irhm8")
+theme_override_icons/tick = ExtResource("5_irhm8")
+theme_override_styles/slider = SubResource("StyleBoxLine_7dmh7")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_irhm8")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_ymdbj")
 max_value = 1.0
 step = 0.1
+value = 0.5
 
 [node name="Mute" type="Label" parent="AudioTab"]
 layout_mode = 0
@@ -284,9 +336,16 @@ vertical_alignment = 1
 [node name="CheckBox" type="CheckBox" parent="AudioTab/Mute"]
 layout_mode = 0
 offset_left = 117.0
-offset_top = 13.0
-offset_right = 141.0
-offset_bottom = 37.0
+offset_top = -7.0
+offset_right = 174.0
+offset_bottom = 56.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8yq3x")
+theme_override_icons/checked = ExtResource("7_gb4v8")
+theme_override_icons/unchecked = SubResource("ImageTexture_lfsxt")
 
 [node name="DisplayTab" type="Control" parent="."]
 visible = false
@@ -317,11 +376,21 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_fv0ub")
 text = "Windowed"
 
 [node name="CheckBox" type="CheckBox" parent="DisplayTab/Windowed"]
-layout_mode = 0
+clip_contents = true
+layout_mode = 1
 offset_left = 164.0
-offset_top = 13.0
-offset_right = 188.0
-offset_bottom = 37.0
+offset_top = -12.0
+offset_right = 221.0
+offset_bottom = 51.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8yq3x")
+theme_override_icons/checked = ExtResource("7_gb4v8")
+theme_override_icons/unchecked = SubResource("ImageTexture_gb4v8")
+alignment = 1
+clip_text = true
+icon_alignment = 1
 
 [node name="Borderless" type="Label" parent="DisplayTab"]
 layout_mode = 0
@@ -337,9 +406,15 @@ text = "Borderless"
 [node name="CheckBox" type="CheckBox" parent="DisplayTab/Borderless"]
 layout_mode = 0
 offset_left = 164.0
-offset_top = 13.0
-offset_right = 188.0
-offset_bottom = 37.0
+offset_top = -6.0
+offset_right = 221.0
+offset_bottom = 57.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8yq3x")
+theme_override_icons/checked = ExtResource("7_gb4v8")
+theme_override_icons/unchecked = SubResource("ImageTexture_gb4v8")
 
 [node name="Fullscreen" type="Label" parent="DisplayTab"]
 layout_mode = 0
@@ -355,16 +430,24 @@ text = "Fullscreen"
 [node name="CheckBox" type="CheckBox" parent="DisplayTab/Fullscreen"]
 layout_mode = 0
 offset_left = 164.0
-offset_top = 13.0
-offset_right = 188.0
-offset_bottom = 37.0
+offset_top = -6.0
+offset_right = 221.0
+offset_bottom = 57.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8yq3x")
+theme_override_icons/checked = ExtResource("7_gb4v8")
+theme_override_icons/unchecked = SubResource("ImageTexture_gb4v8")
 
 [node name="Resolution" type="MenuButton" parent="DisplayTab"]
 layout_mode = 0
-offset_left = 379.0
+offset_left = 368.0
 offset_top = 315.0
-offset_right = 470.0
-offset_bottom = 346.0
+offset_right = 541.0
+offset_bottom = 353.0
 theme_override_fonts/font = ExtResource("4_ymdbj")
 theme_override_font_sizes/font_size = 30
 text = "Resolution"
+switch_on_hover = true
+script = ExtResource("7_36jyd")
