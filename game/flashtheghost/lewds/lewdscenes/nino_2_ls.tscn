@@ -1646,6 +1646,7 @@ libraries = {
 autoplay = "lewdscene"
 
 [node name="Moan" type="AudioStreamPlayer" parent="Node2D"]
+bus = &"SFX"
 
 [node name="Template" type="Sprite2D" parent="Node2D"]
 visible = false

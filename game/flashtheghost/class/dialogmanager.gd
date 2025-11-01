@@ -33,7 +33,7 @@ var dialog : Dictionary = {
 			"seduction||Yuna": [
 				"mmmm you have amazing cock right there~",
 				"mmmm fill my mouth~",
-				"she will suck you hard until you die at 7th night~"
+				"she will suck you hard until you die soon~"
 			],
 			"resistance||Player": [
 				"What the hell do you think you are doing?!",
@@ -45,7 +45,7 @@ var dialog : Dictionary = {
 	3:{
 		"pre": {
 			"planning||Player": [
-				"hmm on 7th night? I hope she will come. I have to survive for the nights and keep fucking these ghosts hard."
+				"hmm when was she meant soon? I hope she will come. I have to survive for the nights and keep fucking these ghosts hard."
 			]
 		},
 		"post": {

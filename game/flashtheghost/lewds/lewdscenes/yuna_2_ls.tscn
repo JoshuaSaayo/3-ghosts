@@ -1162,3 +1162,4 @@ libraries = {
 autoplay = "lewdscene"
 
 [node name="YunaSuck" type="AudioStreamPlayer" parent="Node2D"]
+bus = &"SFX"

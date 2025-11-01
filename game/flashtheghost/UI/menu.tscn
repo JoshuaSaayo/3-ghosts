@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cbgkrnpa2ypg8"]
+[gd_scene load_steps=15 format=3 uid="uid://cbgkrnpa2ypg8"]
 
 [ext_resource type="Script" uid="uid://dck5m827b2c5f" path="res://UI/menu.gd" id="1_4hkxj"]
 [ext_resource type="PackedScene" uid="uid://bi3xkes0mp6ng" path="res://lewds/lewdscenes/main_menu.tscn" id="3_e05sn"]
@@ -7,6 +7,7 @@
 [ext_resource type="FontFile" uid="uid://duerwhkfleuh6" path="res://UI/fonts/MomsTypewritter.ttf" id="4_kfjwn"]
 [ext_resource type="PackedScene" uid="uid://d1xxqwwr3p3lu" path="res://UI/prompt/prompt.tscn" id="4_qmqfe"]
 [ext_resource type="PackedScene" uid="uid://dwowobb5amhyj" path="res://UI/gallery.tscn" id="7_dte3n"]
+[ext_resource type="AudioStream" uid="uid://bbi68o82vo5yb" path="res://sound/ambience/534876__szegvari__dark-pyramid-night-ambience-loop.wav" id="8_dhncy"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dhncy"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -36,6 +37,21 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_re817"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1qvof"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wcfn6"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="Menu" type="Control"]
@@ -176,6 +192,13 @@ offset_left = 1189.0
 offset_top = 19.0
 offset_right = 1263.0
 offset_bottom = 90.0
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_kfjwn")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_1qvof")
+theme_override_styles/normal = SubResource("StyleBoxFlat_wcfn6")
 text = "?"
 
 [node name="Title" type="Label" parent="."]
@@ -215,9 +238,9 @@ grow_horizontal = 0
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("4_dte3n")
 theme_override_font_sizes/font_size = 20
-text = "© Fleurdelis the Witch"
+text = "© Fleurdelis The Witch"
 
-[node name="producer2" type="Label" parent="."]
+[node name="version" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -233,6 +256,10 @@ text = "v 1.0"
 
 [node name="Gallery2" parent="." instance=ExtResource("7_dte3n")]
 layout_mode = 1
+
+[node name="MainMenuSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_dhncy")
+autoplay = true
 
 [connection signal="pressed" from="Instruction" to="." method="_on_instruction_pressed"]
 [connection signal="prompt_response" from="Prompt" to="." method="_on_prompt_prompt_response"]

@@ -1563,8 +1563,10 @@ autoplay = "lewdscene"
 speed_scale = 1.5
 
 [node name="PlapSounds" type="AudioStreamPlayer" parent="Node2D"]
+bus = &"SFX"
 
 [node name="Moan" type="AudioStreamPlayer" parent="Node2D"]
+bus = &"SFX"
 
 [node name="CumSplash" type="Sprite2D" parent="."]
 self_modulate = Color(1, 1, 1, 0)
