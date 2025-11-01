@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cbgkrnpa2ypg8"]
+[gd_scene load_steps=16 format=3 uid="uid://cbgkrnpa2ypg8"]
 
 [ext_resource type="Script" uid="uid://dck5m827b2c5f" path="res://UI/menu.gd" id="1_4hkxj"]
 [ext_resource type="PackedScene" uid="uid://bi3xkes0mp6ng" path="res://lewds/lewdscenes/main_menu.tscn" id="3_e05sn"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://d1xxqwwr3p3lu" path="res://UI/prompt/prompt.tscn" id="4_qmqfe"]
 [ext_resource type="PackedScene" uid="uid://dwowobb5amhyj" path="res://UI/gallery.tscn" id="7_dte3n"]
 [ext_resource type="AudioStream" uid="uid://bbi68o82vo5yb" path="res://sound/ambience/534876__szegvari__dark-pyramid-night-ambience-loop.wav" id="8_dhncy"]
+[ext_resource type="Script" uid="uid://p88yxdc6gvs1" path="res://UI/main_menu_sound.gd" id="9_cvc1e"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dhncy"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -259,7 +260,9 @@ layout_mode = 1
 
 [node name="MainMenuSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_dhncy")
+volume_db = -10.636
 autoplay = true
+script = ExtResource("9_cvc1e")
 
 [connection signal="pressed" from="Instruction" to="." method="_on_instruction_pressed"]
 [connection signal="prompt_response" from="Prompt" to="." method="_on_prompt_prompt_response"]
