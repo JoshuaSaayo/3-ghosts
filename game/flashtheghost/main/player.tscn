@@ -116,9 +116,9 @@ label_settings = SubResource("LabelSettings_1gbna")
 layout_mode = 0
 offset_left = 30.0
 offset_top = 30.0
-offset_right = 218.0
+offset_right = 109.0
 offset_bottom = 68.0
-text = "Night Counts"
+text = "Night"
 label_settings = SubResource("LabelSettings_1gbna")
 
 [node name="Walk" type="AudioStreamPlayer3D" parent="."]
