@@ -92,7 +92,7 @@ animations = [{
 
 [node name="margarete_jumpscare" type="Node2D"]
 
-[node name="AnimatedSprite3D" type="AnimatedSprite2D" parent="." groups=["jumpscare_anim"]]
+[node name="AnimatedSprite3D" type="AnimatedSprite2D" parent="."]
 position = Vector2(577, 424)
 scale = Vector2(0.865289, 0.797997)
 sprite_frames = SubResource("SpriteFrames_lxt7v")

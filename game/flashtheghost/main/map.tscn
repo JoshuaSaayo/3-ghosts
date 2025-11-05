@@ -229,7 +229,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.74229, 1.7267, 8.92699)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.172, 0, 0)
 
 [node name="WindowPath" type="Node3D" parent="Paths"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0092, 15.1093, -81.7691)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0092, 11.2904, -81.7691)
 
 [node name="Marker3D" type="Marker3D" parent="Paths/WindowPath"]
 
@@ -295,10 +295,15 @@ grow_vertical = 2
 color = Color(0, 0, 0, 0.623529)
 
 [node name="Label" type="Label" parent="Intro"]
-layout_mode = 0
-offset_top = 243.0
-offset_right = 1280.0
-offset_bottom = 473.0
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -68.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "Day 1"
 label_settings = SubResource("LabelSettings_gmq0m")
 horizontal_alignment = 1

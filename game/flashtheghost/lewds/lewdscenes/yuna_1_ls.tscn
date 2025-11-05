@@ -1450,6 +1450,7 @@ _data = {
 }
 
 [node name="yuna1_ls" type="Node2D"]
+scale = Vector2(1.1, 1.1)
 script = ExtResource("1_yrknl")
 
 [node name="Node2D" type="Node2D" parent="."]

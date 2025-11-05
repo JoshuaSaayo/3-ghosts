@@ -23,6 +23,8 @@ extends Control
 @onready var check_box_fullscreen: CheckBox = $DisplayTab/Fullscreen/CheckBox
 @onready var resolution: MenuButton = $DisplayTab/Resolution
 
+@onready var restore: Button = $Restore
+
 # Save system variables
 const SAVE_PATH := "user://settings.cfg"
 var settings_data: Dictionary = {
@@ -33,18 +35,20 @@ var settings_data: Dictionary = {
 		"muted": false
 	},
 	"display": {
-		"windowed": true,
-		"borderless": false,
-		"fullscreen": false,
+		"windowed": false,
+		"borderless": true,
+		"fullscreen": true,
 		"resolution": "1280x720"
 	}
 }
 
 func _ready():
-	_show(false)
+	hide()
 	# Load settings immediately when game starts
 	_load_settings()
 	_apply_settings_to_ui()
+	
+	restore.pressed.connect(reset_to_defaults)
 	
 	# Connect tab buttons
 	display.pressed.connect(_on_display_pressed)
@@ -66,9 +70,11 @@ func _ready():
 
 func _show(value):
 	if value:
+		_load_settings()
 		show()
 	else:
 		hide()
+		save_settings_manual()
 	
 func _setup_resolution_menu():
 	var popup = resolution.get_popup()
@@ -257,10 +263,10 @@ func reset_to_defaults():
 			"muted": false
 		},
 		"display": {
-			"windowed": true,
-			"borderless": false,
-			"fullscreen": false,
-			"resolution": "1920x1080"
+			"windowed": false,
+			"borderless": true,
+			"fullscreen": true,
+			"resolution": "1280x720"
 		}
 	}
 	_apply_settings_to_ui()

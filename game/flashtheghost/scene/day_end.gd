@@ -14,8 +14,14 @@ func _ready() -> void:
 	selected_tscn = Globals.days_data[Globals.day]["day_end_anim"]
 	
 func _show(value):
+	_show_pov(false)
 	get_tree().paused = true
 	anim.play("open")
+
+func _show_pov(_value):
+	var pov = get_tree().get_first_node_in_group("POV")
+	if is_instance_valid(pov):
+		pov.visible = _value
 
 func _on_anim_animation_finished(anim_name: StringName) -> void:
 	pass
