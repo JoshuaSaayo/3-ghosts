@@ -129,6 +129,7 @@ unique_name_in_owner = true
 
 [node name="SubViewport" type="SubViewport" parent="."]
 unique_name_in_owner = true
+process_mode = 3
 transparent_bg = true
 size = Vector2i(1280, 720)
 

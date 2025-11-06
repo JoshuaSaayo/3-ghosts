@@ -132,7 +132,7 @@ func move_to_player(delta) -> void:
 	
 	if target_position:
 		if global_position.distance_to(target_position) < 0.1:
-			player._jump_scare("Margarete")
+			player._jump_scare(name)
 			remove_entity()
 	
 func select_ghost_position(ghost_position : String) -> void:
