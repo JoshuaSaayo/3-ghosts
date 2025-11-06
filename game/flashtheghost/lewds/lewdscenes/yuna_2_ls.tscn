@@ -607,7 +607,7 @@ tracks/17/keys = {
 tracks/18/type = "audio"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("YunaSuck")
+tracks/18/path = NodePath("YunaClimax")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
@@ -1162,5 +1162,8 @@ libraries = {
 }
 autoplay = "lewdscene"
 
-[node name="YunaSuck" type="AudioStreamPlayer" parent="Node2D"]
+[node name="Moan" type="AudioStreamPlayer" parent="Node2D"]
+bus = &"SFX"
+
+[node name="YunaClimax" type="AudioStreamPlayer" parent="Node2D"]
 bus = &"SFX"
