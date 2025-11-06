@@ -1,0 +1,98 @@
+[gd_scene load_steps=6 format=3 uid="uid://cfn4rlr8u8tuh"]
+
+[ext_resource type="FontFile" uid="uid://duerwhkfleuh6" path="res://UI/fonts/MomsTypewritter.ttf" id="1_3y5qq"]
+[ext_resource type="FontFile" uid="uid://32dv5eni0vce" path="res://UI/fonts/OldNewspaperTypes.ttf" id="2_wruqd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_phit2"]
+font = ExtResource("1_3y5qq")
+font_size = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fmr02"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jwcg4"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="game_over" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_phit2")
+horizontal_alignment = 1
+
+[node name="Quit" type="Button" parent="Label"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 200.0
+offset_top = 95.0
+offset_right = 350.0
+offset_bottom = 135.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_wruqd")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_fmr02")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jwcg4")
+text = "Quit"
+
+[node name="Restart" type="Button" parent="Label"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -355.0
+offset_top = 95.0
+offset_right = -205.0
+offset_bottom = 135.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_wruqd")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_fmr02")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jwcg4")
+text = "Restart"
