@@ -1074,7 +1074,8 @@ _data = {
 script = ExtResource("1_7k310")
 
 [node name="Node2D" type="Node2D" parent="."]
-scale = Vector2(1.14, 1.14)
+position = Vector2(0, 21)
+scale = Vector2(1.1, 1.1)
 
 [node name="Bg2" type="Sprite2D" parent="Node2D"]
 position = Vector2(544, 324)
