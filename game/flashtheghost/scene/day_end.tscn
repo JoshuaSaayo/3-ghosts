@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bnq2wylojddek" path="res://scene/day_end.gd" id="1_co44h"]
 [ext_resource type="PackedScene" uid="uid://ckhepriwteify" path="res://UI/dialog_box/dialog_box.tscn" id="2_48nvu"]
-[ext_resource type="FontFile" uid="uid://b4tnhgxs2jb4f" path="res://UI/fonts/OldTypewriter2.0.ttf" id="2_n6f1t"]
+[ext_resource type="FontFile" uid="uid://datf7y7gct2hb" path="res://UI/fonts/1942.ttf" id="2_n6f1t"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4rasd"]
 font = ExtResource("2_n6f1t")
