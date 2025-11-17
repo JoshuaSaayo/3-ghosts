@@ -5,6 +5,7 @@ extends Control
 @onready var label: Label = $Label
 
 @onready var dialog_box: Control = $DialogBox
+@onready var pause: Control = $"../Pause"
 
 var selected_tscn
 var one_time = false
@@ -14,6 +15,7 @@ func _ready() -> void:
 	selected_tscn = Globals.days_data[Globals.day]["day_end_anim"]
 	
 func _show(value):
+	pause.disabled = true
 	_show_pov(false)
 	get_tree().paused = true
 	anim.play("open")

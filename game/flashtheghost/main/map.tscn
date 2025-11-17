@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dkj4ghkle4kvo"]
+[gd_scene load_steps=21 format=3 uid="uid://dkj4ghkle4kvo"]
 
 [ext_resource type="PackedScene" uid="uid://bl0s82uug2re7" path="res://main/player.tscn" id="1_0twea"]
 [ext_resource type="Script" uid="uid://bcub2o0fx67wk" path="res://main/map.gd" id="1_1t10m"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bh355yyng5aea" path="res://scene/day_end.tscn" id="7_swgx3"]
 [ext_resource type="FontFile" uid="uid://datf7y7gct2hb" path="res://UI/fonts/1942.ttf" id="7_tm1r7"]
 [ext_resource type="PackedScene" uid="uid://ckhepriwteify" path="res://UI/dialog_box/dialog_box.tscn" id="8_vgsql"]
+[ext_resource type="PackedScene" uid="uid://be5xb8nomnblb" path="res://UI/pause.tscn" id="10_45brn"]
 
 [sub_resource type="Environment" id="Environment_7ik47"]
 volumetric_fog_enabled = true
@@ -328,6 +329,9 @@ offset_top = 26.0
 offset_right = 1262.0
 offset_bottom = 67.0
 text = "Next night "
+
+[node name="Pause" parent="." instance=ExtResource("10_45brn")]
+visible = false
 
 [connection signal="timeout" from="Timer/Spawn" to="." method="_on_spawn_timeout"]
 [connection signal="timeout" from="Timer/EndDay" to="." method="_on_end_day_timeout"]

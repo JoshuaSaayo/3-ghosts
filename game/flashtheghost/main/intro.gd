@@ -3,8 +3,10 @@ extends Control
 @onready var label: Label = $Label
 @onready var anim: AnimationPlayer = $Anim
 @onready var dialog_box: Control = $"../DialogBox"
+@onready var pause: Control = $"../Pause"
 
 func _ready() -> void:
+	pause.disabled = true
 	_show_pov(false)
 	anim.animation_finished.connect(_animation_finished)
 	get_tree().paused = true
@@ -21,6 +23,7 @@ func _start():
 func _animation_finished(anim_name):
 	get_tree().paused = false
 	_show_pov(true)
+	pause.disabled = false
 
 func _on_dialog_box__dialog_ready() -> void:
 	dialog_box._start_dialog("pre")

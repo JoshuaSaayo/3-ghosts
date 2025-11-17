@@ -1,7 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://be5xb8nomnblb"]
+[gd_scene load_steps=9 format=3 uid="uid://be5xb8nomnblb"]
 
 [ext_resource type="FontFile" uid="uid://duerwhkfleuh6" path="res://UI/fonts/MomsTypewritter.ttf" id="1_jixca"]
+[ext_resource type="Script" uid="uid://d3omfdllyr16e" path="res://UI/pause.gd" id="1_ocodi"]
 [ext_resource type="FontFile" uid="uid://32dv5eni0vce" path="res://UI/fonts/OldNewspaperTypes.ttf" id="2_jl6cd"]
+[ext_resource type="PackedScene" uid="uid://d1xxqwwr3p3lu" path="res://UI/prompt/prompt.tscn" id="4_85lix"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ocodi"]
 font = ExtResource("1_jixca")
@@ -34,46 +36,17 @@ corner_radius_bottom_left = 5
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_syi7u"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jixca"]
-bg_color = Color(0, 0, 0, 0.392157)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jl6cd"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ocodi"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="LabelSettings" id="LabelSettings_85lix"]
-font = ExtResource("2_jl6cd")
-font_size = 21
-
 [node name="Pause" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ocodi")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="BlackBackground" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -83,7 +56,6 @@ grow_vertical = 2
 color = Color(0, 0, 0, 0.27451)
 
 [node name="PauseMenu" type="Control" parent="."]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -181,174 +153,5 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_jddmy")
 theme_override_styles/normal = SubResource("StyleBoxFlat_syi7u")
 text = "Main menu"
 
-[node name="Restart" type="Control" parent="."]
-visible = false
+[node name="Prompt" parent="." instance=ExtResource("4_85lix")]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Panel" type="Panel" parent="Restart"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -381.5
-offset_top = -102.0
-offset_right = 381.5
-offset_bottom = 102.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_jixca")
-
-[node name="No" type="Button" parent="Restart/Panel"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 100.0
-offset_top = 38.0
-offset_right = 250.0
-offset_bottom = 78.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_jl6cd")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/hover = SubResource("StyleBoxFlat_jl6cd")
-theme_override_styles/normal = SubResource("StyleBoxFlat_ocodi")
-text = "No"
-
-[node name="Yes" type="Button" parent="Restart/Panel"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -255.0
-offset_top = 43.0
-offset_right = -105.0
-offset_bottom = 83.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_jl6cd")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/hover = SubResource("StyleBoxFlat_jl6cd")
-theme_override_styles/normal = SubResource("StyleBoxFlat_ocodi")
-text = "Yes"
-
-[node name="Message" type="Label" parent="Restart/Panel"]
-layout_mode = 0
-offset_left = 11.5
-offset_top = 25.0
-offset_right = 749.5
-offset_bottom = 136.0
-text = "Are you sure you want to restart the game"
-label_settings = SubResource("LabelSettings_85lix")
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
-
-[node name="Quit" type="Control" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Panel" type="Panel" parent="Quit"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -381.5
-offset_top = -102.0
-offset_right = 381.5
-offset_bottom = 102.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_jixca")
-
-[node name="No" type="Button" parent="Quit/Panel"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 100.0
-offset_top = 38.0
-offset_right = 250.0
-offset_bottom = 78.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_jl6cd")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/hover = SubResource("StyleBoxFlat_jl6cd")
-theme_override_styles/normal = SubResource("StyleBoxFlat_ocodi")
-text = "No"
-
-[node name="Yes" type="Button" parent="Quit/Panel"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -255.0
-offset_top = 43.0
-offset_right = -105.0
-offset_bottom = 83.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_jl6cd")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/hover = SubResource("StyleBoxFlat_jl6cd")
-theme_override_styles/normal = SubResource("StyleBoxFlat_ocodi")
-text = "Yes"
-
-[node name="Message" type="Label" parent="Quit/Panel"]
-layout_mode = 0
-offset_left = 11.5
-offset_top = 25.0
-offset_right = 749.5
-offset_bottom = 136.0
-text = "Are you sure you want to quit"
-label_settings = SubResource("LabelSettings_85lix")
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
