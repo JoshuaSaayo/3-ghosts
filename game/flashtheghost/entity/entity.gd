@@ -84,7 +84,27 @@ func resume_tween():
 
 func ghost_flash(value : bool) -> void:
 	if is_instance_valid(ghost_anim):
-		ghost_anim.play("default")
+		if name == "Margarete":
+			if value:
+				# Start jumpscare timer for 1 second
+				var jumpscare_timer = get_tree().create_timer(1.0)
+				jumpscare_timer.timeout.connect(_on_margarete_jumpscare)
+			else:
+				# If flash stops before 1 second, cancel jumpscare
+				if has_node("MargareteJumpscareTimer"):
+					get_node("MargareteJumpscareTimer").stop()
+		else:
+			# Normal behavior for other ghosts
+			if value:
+				ghost_anim.visible = false
+			else:
+				ghost_anim.visible = true
+
+func _on_margarete_jumpscare():
+	if name == "Margarete" and is_instance_valid(player):
+		ghost_quit_tag = "JUMPSCARE"
+		# Force immediate jumpscare
+		player._jump_scare(name)
 
 func _update_shader_parameter(value: float):
 	if value >= 0.5:

@@ -13,7 +13,7 @@
 height = 7.59416
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ou4ca"]
-radius = 4.76555
+radius = 3.5
 height = 534.341
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_4v151"]
