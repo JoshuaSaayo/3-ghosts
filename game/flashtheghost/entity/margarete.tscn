@@ -42,3 +42,6 @@ surface_material_override/0 = SubResource("ShaderMaterial_3lktp")
 size = Vector2i(350, 850)
 
 [node name="Margarete" parent="SubViewport" index="0" instance=ExtResource("3_8vfaq")]
+
+[node name="MargareteJumpscareTimer" type="Timer" parent="." index="7"]
+one_shot = true

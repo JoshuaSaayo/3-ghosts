@@ -42,6 +42,7 @@ func _on_quit_pressed():
 
 func _new_game():
 	Globals._save_data()
+	Globals._reset_game()
 	Globals.change_scene(Globals.game_scene)
 
 func _load_game():

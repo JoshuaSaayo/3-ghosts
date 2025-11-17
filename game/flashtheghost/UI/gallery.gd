@@ -25,8 +25,6 @@ func _ready() -> void:
 	thumbnail_e.pressed.connect(_on_gallery_pressed.bind(5))
 func _show(_value):
 	if !_value:
-		var data = {"unlock_gallery": Globals.unlock_gallery}
-		Save.save_game(data,"gallery")
 		visible = false
 		
 	else:

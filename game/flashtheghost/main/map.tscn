@@ -321,7 +321,6 @@ speed_scale = 0.3
 [node name="DayEnd" parent="." instance=ExtResource("7_swgx3")]
 
 [node name="DialogBox" parent="." instance=ExtResource("8_vgsql")]
-process_mode = 3
 
 [node name="NextNight" type="Button" parent="."]
 offset_left = 1097.0

@@ -99,4 +99,4 @@ func game_pause(value : bool) -> void:
 	get_tree().paused = value
 
 func _reset_game():
-	day = 1
+	day = 5

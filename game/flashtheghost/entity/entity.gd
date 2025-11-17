@@ -6,6 +6,7 @@ extends Node3D
 @onready var sub_viewport: SubViewport = $SubViewport
 @onready var ghost_quit_timer: Timer = $GhostQuit
 @onready var ghost_jumpscare_timer: Timer = $GhostJumpscare
+@onready var margarete_jumpscare_timer: Timer 
 
 @onready var crawl_sound: AudioStreamPlayer3D = $Sound/CrawlSound
 
@@ -27,6 +28,9 @@ var ghost_anim : AnimatedSprite2D
 var force_death : bool = false
 
 func _ready():
+	margarete_jumpscare_timer = get_node_or_null("MargareteJumpscareTimer")
+	if is_instance_valid(margarete_jumpscare_timer):
+		margarete_jumpscare_timer.timeout.connect(_on_margarete_jumpscare)
 	material = mesh_instance_3d.get_surface_override_material(0)
 	player = get_tree().get_first_node_in_group("player")
 	await get_tree().process_frame
@@ -75,30 +79,22 @@ func remove_entity() -> void:
 func pause_tween():
 	if tween and tween.is_valid() and !force_vanish:
 		tween.pause()
-		ghost_flash(true)
+		ghost_flash(false)
 
 func resume_tween():
 	if tween and tween.is_valid() and !force_vanish:
 		tween.play()
-		ghost_flash(false)
+		ghost_flash(true)
 
 func ghost_flash(value : bool) -> void:
-	if is_instance_valid(ghost_anim):
-		if name == "Margarete":
-			if value:
-				# Start jumpscare timer for 1 second
-				var jumpscare_timer = get_tree().create_timer(1.0)
-				jumpscare_timer.timeout.connect(_on_margarete_jumpscare)
-			else:
-				# If flash stops before 1 second, cancel jumpscare
-				if has_node("MargareteJumpscareTimer"):
-					get_node("MargareteJumpscareTimer").stop()
+	if name == "Margarete" and is_instance_valid(margarete_jumpscare_timer):
+		if value:
+			# Start jumpscare timer for 1 second
+			if margarete_jumpscare_timer.is_stopped():
+				margarete_jumpscare_timer.start()
 		else:
-			# Normal behavior for other ghosts
-			if value:
-				ghost_anim.visible = false
-			else:
-				ghost_anim.visible = true
+			# If flash stops before 1 second, cancel jumpscare
+			margarete_jumpscare_timer.stop()
 
 func _on_margarete_jumpscare():
 	if name == "Margarete" and is_instance_valid(player):
@@ -143,6 +139,9 @@ func move_ghost_to_original_position(delta) -> void:
 		tween.play()
 	
 func move_to_player(delta) -> void:
+	if name == "Margarete":
+		queue_free()
+		return
 	var target_position
 	if is_instance_valid(player):
 		var direction = player.global_position - global_position
@@ -150,7 +149,7 @@ func move_to_player(delta) -> void:
 		target_position = global_position + direction.normalized() * (_get_speed() * 10) * delta
 		global_position = global_position.move_toward(target_position, (_get_speed() * 13) * delta)
 	
-	if target_position:
+	if target_position and name != "Margarete":
 		if global_position.distance_to(target_position) < 0.1:
 			player._jump_scare(name)
 			remove_entity()
