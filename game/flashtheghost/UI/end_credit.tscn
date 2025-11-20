@@ -1,8 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://d0m24qnlr1ywt"]
+[gd_scene load_steps=8 format=3 uid="uid://d0m24qnlr1ywt"]
 
 [ext_resource type="Texture2D" uid="uid://di8cjngmnha1m" path="res://UI/assets/credit_1.png" id="1_4m1wn"]
 [ext_resource type="FontFile" uid="uid://duerwhkfleuh6" path="res://UI/fonts/MomsTypewritter.ttf" id="2_4m1wn"]
 [ext_resource type="FontFile" uid="uid://32dv5eni0vce" path="res://UI/fonts/OldNewspaperTypes.ttf" id="2_5momt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4m1wn"]
+font = ExtResource("2_5momt")
+font_size = 20
 
 [sub_resource type="LabelSettings" id="LabelSettings_5momt"]
 font = ExtResource("2_4m1wn")
@@ -39,8 +43,18 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.741176)
 
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 588.0
+offset_right = 654.0
+offset_bottom = 669.0
+text = "Support indie devs!
+
+We are new developer, so please forgive any bugs you encounter."
+label_settings = SubResource("LabelSettings_4m1wn")
+
 [node name="Credits" type="Control" parent="."]
-visible = false
 anchors_preset = 0
 offset_left = 71.0
 offset_top = 56.0
@@ -123,6 +137,7 @@ text = "DUNCAN"
 label_settings = SubResource("LabelSettings_jd534")
 
 [node name="ThanksCredit" type="Control" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
