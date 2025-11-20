@@ -10,16 +10,26 @@ extends Control
 @onready var prompt: Control = $Prompt
 @onready var gallery_2: Control = $Gallery2
 
+@onready var end_credit: Control = $CanvasLayer/end_credit
+@onready var animation_player: AnimationPlayer = $CanvasLayer/AnimationPlayer
+@onready var timer_credits: Timer = $CanvasLayer/Timer
 
 func _ready():
+	get_tree().paused = false
 	_check_load()
-	
+	timer_credits.timeout.connect(_on_timeout)
 	new_game.pressed.connect(_on_new_game_pressed)
 	load_game.pressed.connect(_on_load_game_pressed)
 	setting.pressed.connect(_on_setting_pressed)
 	quit.pressed.connect(_on_quit_pressed)
 	gallery.pressed.connect(_on_gallery_pressed)
 	
+	if Globals.game_finished:
+		end_credit.visible = true
+		Globals.game_finished = false
+		animation_player.play("open")
+		timer_credits.start()
+
 func _check_load():
 	var valid : Dictionary = Save.load_game("1")
 	load_game.disabled = valid.is_empty()
@@ -56,7 +66,9 @@ func _on_prompt_prompt_response(code: String, result) -> void:
 	if code == "new_game":
 		if result:
 			_new_game()
-
+			
+func _on_timeout():
+	animation_player.play("close")
 
 func _on_instruction_pressed() -> void:
 	var controls_short = """MOUSE: Move screen | F: Flashlight | CTRL: Crouch/Stand

@@ -4,6 +4,8 @@ signal empty_battery
 
 var scene_main_menu = load("res://UI/menu.tscn")
 var game_scene = load("res://main/map.tscn")
+var game_over_scene = load("res://UI/game_over.tscn")
+
 
 @onready var anim: AnimationPlayer = $Anim
 
@@ -14,6 +16,8 @@ var flash_ligt_max_life: int = 100
 
 var day : int = 1
 var max_day : int = 5
+
+var game_finished : bool = false
 
 var unlock_gallery : Array = []
 
@@ -92,8 +96,7 @@ func change_scene(scene):
 	anim.play("show")
 
 func game_end():
-	get_tree().reload_current_scene()
-	game_pause(false)
+	change_scene(game_over_scene)
 
 func game_pause(value : bool) -> void:
 	get_tree().paused = value

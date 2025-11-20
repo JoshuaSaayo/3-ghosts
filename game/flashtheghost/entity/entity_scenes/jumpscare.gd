@@ -7,4 +7,4 @@ func _ready() -> void:
 	animated_sprite_2d.animation_finished.connect(_animation_finished)
 
 func _animation_finished():
-	Globals.change_scene(Globals.game_scene)
+	Globals.game_end()

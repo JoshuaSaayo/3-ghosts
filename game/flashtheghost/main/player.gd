@@ -98,14 +98,7 @@ func _jump_scare(ghost_name) -> void:
 		var I = ghost_manager.ghost_jumpscare[ghost_name].instantiate()
 		sub_viewport.add_child(I)
 		Globals.game_pause(true)
-		connect_jumpscare_anim()
 		freeze_movement = true
-
-func connect_jumpscare_anim():
-	var anim : AnimatedSprite2D  = get_tree().get_first_node_in_group("jumpscare_anim")
-	if anim:
-		anim.animation_finished.connect(Globals.game_end)
-
 
 func _on_battery_life_timer_timeout() -> void:
 	flash_light_life()

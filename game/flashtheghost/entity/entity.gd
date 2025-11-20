@@ -42,8 +42,6 @@ func _ready():
 func _setup_speed():
 	if Globals.days_data.has(Globals.day):
 		movement_speed = Globals.days_data[Globals.day].ghost_movement
-	pass
-
 
 func _process(delta: float) -> void:
 	if ghost_quit_tag == "DEFAULT":
@@ -105,9 +103,9 @@ func _on_margarete_jumpscare():
 func _update_shader_parameter(value: float):
 	if value >= 0.5:
 		material.set_shader_parameter("edgeColor", Color(1.0, 1.0, 1.0))
+		force_death = true
 	
 	material.set_shader_parameter("dissolveSlider", value)
-	force_death = true
 	# force death XD
 	if value >= 0.8:
 		remove_entity()

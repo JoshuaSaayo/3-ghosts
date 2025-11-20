@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://d0m24qnlr1ywt"]
+[gd_scene load_steps=8 format=3 uid="uid://wyv1f5jw040u"]
 
 [ext_resource type="Texture2D" uid="uid://di8cjngmnha1m" path="res://UI/assets/credit_1.png" id="1_4m1wn"]
 [ext_resource type="FontFile" uid="uid://duerwhkfleuh6" path="res://UI/fonts/MomsTypewritter.ttf" id="2_4m1wn"]
@@ -29,9 +29,12 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 1280.0
-offset_bottom = 720.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_4m1wn")
 
 [node name="ColorRect" type="ColorRect" parent="TextureRect"]
@@ -55,20 +58,22 @@ We are new developer, so please forgive any bugs you encounter."
 label_settings = SubResource("LabelSettings_4m1wn")
 
 [node name="Credits" type="Control" parent="."]
-anchors_preset = 0
-offset_left = 71.0
-offset_top = 56.0
-offset_right = 111.0
-offset_bottom = 96.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Label" type="Label" parent="Credits"]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = -30.0
-offset_right = 267.0
-offset_bottom = 30.0
+offset_left = 39.0
+offset_top = -326.0
+offset_right = 306.0
+offset_bottom = -266.0
 grow_vertical = 2
 text = "Producer"
 label_settings = SubResource("LabelSettings_5momt")
@@ -79,9 +84,10 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = 39.0
-offset_right = 202.0
-offset_bottom = 64.0
+offset_left = 39.0
+offset_top = -257.0
+offset_right = 241.0
+offset_bottom = -232.0
 grow_vertical = 2
 text = "Fleurdelis The Witch"
 label_settings = SubResource("LabelSettings_jd534")
@@ -91,9 +97,10 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = 111.0
-offset_right = 747.0
-offset_bottom = 234.0
+offset_left = 39.0
+offset_top = -185.0
+offset_right = 806.0
+offset_bottom = -62.0
 grow_vertical = 2
 text = "Game  Design, Sound, Art,
 Animation and map"
@@ -104,9 +111,10 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = 241.5
-offset_right = 202.0
-offset_bottom = 266.5
+offset_left = 39.0
+offset_top = -54.5
+offset_right = 241.0
+offset_bottom = -29.5
 grow_vertical = 2
 text = "FLEURDELIS"
 label_settings = SubResource("LabelSettings_jd534")
@@ -116,9 +124,10 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = 337.0
-offset_right = 418.0
-offset_bottom = 397.0
+offset_left = 39.0
+offset_top = 41.0
+offset_right = 890.0
+offset_bottom = 101.0
 grow_vertical = 2
 text = "Programming and Debugging"
 label_settings = SubResource("LabelSettings_5momt")
@@ -129,9 +138,10 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = 398.0
-offset_right = 202.0
-offset_bottom = 423.0
+offset_left = 39.0
+offset_top = 102.0
+offset_right = 241.0
+offset_bottom = 127.0
 grow_vertical = 2
 text = "DUNCAN"
 label_settings = SubResource("LabelSettings_jd534")

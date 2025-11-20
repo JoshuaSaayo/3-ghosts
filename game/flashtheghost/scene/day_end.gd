@@ -47,14 +47,18 @@ func _closing_anim():
 		return
 	one_time = true
 	
-	if Globals.day == 5:
-		Globals.change_scene(Globals.scene_main_menu)
-	
-	Globals.day = clamp(Globals.day + 1, 1 , Globals.max_day)
 	if !Globals.unlock_gallery.has(Globals.day):
 		Globals.unlock_gallery.append(Globals.day)
 		data = {"unlock_gallery": Globals.unlock_gallery}
 		Save.save_game(data,"gallery")
+	
+	print("Globals.day: ", Globals.day)
+	if Globals.day >= 5:
+		Globals.game_finished = true
+		Globals.change_scene(Globals.scene_main_menu)
+		return
+	
+	Globals.day = clamp(Globals.day + 1, 1 , Globals.max_day)
 	Globals.change_scene(Globals.game_scene)
 
 func _start_dialog(time : String):
