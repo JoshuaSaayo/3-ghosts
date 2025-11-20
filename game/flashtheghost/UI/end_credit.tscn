@@ -1,0 +1,152 @@
+[gd_scene load_steps=7 format=3 uid="uid://d0m24qnlr1ywt"]
+
+[ext_resource type="Texture2D" uid="uid://di8cjngmnha1m" path="res://UI/assets/credit_1.png" id="1_4m1wn"]
+[ext_resource type="FontFile" uid="uid://duerwhkfleuh6" path="res://UI/fonts/MomsTypewritter.ttf" id="2_4m1wn"]
+[ext_resource type="FontFile" uid="uid://32dv5eni0vce" path="res://UI/fonts/OldNewspaperTypes.ttf" id="2_5momt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5momt"]
+font = ExtResource("2_4m1wn")
+font_size = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_jd534"]
+font = ExtResource("2_5momt")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_v73is"]
+font = ExtResource("2_5momt")
+font_size = 30
+
+[node name="end_credit" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("1_4m1wn")
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.741176)
+
+[node name="Credits" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_left = 71.0
+offset_top = 56.0
+offset_right = 111.0
+offset_bottom = 96.0
+
+[node name="Label" type="Label" parent="Credits"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -30.0
+offset_right = 267.0
+offset_bottom = 30.0
+grow_vertical = 2
+text = "Producer"
+label_settings = SubResource("LabelSettings_5momt")
+horizontal_alignment = 1
+
+[node name="Name" type="Label" parent="Credits"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = 39.0
+offset_right = 202.0
+offset_bottom = 64.0
+grow_vertical = 2
+text = "Fleurdelis The Witch"
+label_settings = SubResource("LabelSettings_jd534")
+
+[node name="Label2" type="Label" parent="Credits"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = 111.0
+offset_right = 747.0
+offset_bottom = 234.0
+grow_vertical = 2
+text = "Game  Design, Sound, Art,
+Animation and map"
+label_settings = SubResource("LabelSettings_5momt")
+
+[node name="Name2" type="Label" parent="Credits"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = 241.5
+offset_right = 202.0
+offset_bottom = 266.5
+grow_vertical = 2
+text = "FLEURDELIS"
+label_settings = SubResource("LabelSettings_jd534")
+
+[node name="Label3" type="Label" parent="Credits"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = 337.0
+offset_right = 418.0
+offset_bottom = 397.0
+grow_vertical = 2
+text = "Programming and Debugging"
+label_settings = SubResource("LabelSettings_5momt")
+horizontal_alignment = 1
+
+[node name="Name3" type="Label" parent="Credits"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = 398.0
+offset_right = 202.0
+offset_bottom = 423.0
+grow_vertical = 2
+text = "DUNCAN"
+label_settings = SubResource("LabelSettings_jd534")
+
+[node name="ThanksCredit" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -572.0
+offset_top = 67.0
+offset_right = -532.0
+offset_bottom = 107.0
+grow_horizontal = 2
+
+[node name="StayTuned" type="Label" parent="ThanksCredit"]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 141.0
+offset_right = 486.0
+offset_bottom = 179.0
+text = "Stay tune for the next update!"
+label_settings = SubResource("LabelSettings_v73is")
+
+[node name="ThanksLabel" type="Label" parent="ThanksCredit"]
+layout_mode = 1
+offset_right = 554.0
+offset_bottom = 243.0
+text = "THANK YOU FOR 
+PLAYING OUR GAME!"
+label_settings = SubResource("LabelSettings_5momt")
+horizontal_alignment = 1
