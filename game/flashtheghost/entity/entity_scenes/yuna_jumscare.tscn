@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://be1aqlomkw4lp"]
+[gd_scene load_steps=24 format=3 uid="uid://be1aqlomkw4lp"]
 
 [ext_resource type="Script" uid="uid://bl2sl0o5o0pa1" path="res://entity/entity_scenes/jumpscare.gd" id="1_gfwst"]
 [ext_resource type="Texture2D" uid="uid://1my2bn8caynk" path="res://entity/entity_assets/ghost1_jumscare/jumpscare/ghost1_jumpscare-animation_00.png" id="1_ob3lc"]
@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://bnclfjuep77c7" path="res://entity/entity_assets/ghost1_jumscare/jumpscare/ghost1_jumpscare-animation_17.png" id="18_4ek32"]
 [ext_resource type="Texture2D" uid="uid://cx62lvbkiyy" path="res://entity/entity_assets/ghost1_jumscare/jumpscare/ghost1_jumpscare-animation_18.png" id="19_0mtlq"]
 [ext_resource type="Texture2D" uid="uid://dn8lqhqg0riva" path="res://entity/entity_assets/ghost1_jumscare/jumpscare/ghost1_jumpscare-animation_19.png" id="20_nvlyt"]
+[ext_resource type="AudioStream" uid="uid://6yjjte3ahkf" path="res://sound/jumpscare/673423__courtneyeck__woman-scream-1.mp3" id="22_7kikp"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_f8c00"]
 animations = [{
@@ -100,3 +101,9 @@ autoplay = "default"
 frame = 19
 frame_progress = 1.0
 speed_scale = 3.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("22_7kikp")
+volume_db = -25.587
+pitch_scale = 1.67
+autoplay = true

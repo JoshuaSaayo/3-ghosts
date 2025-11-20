@@ -225,14 +225,16 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.977
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.74229, 1.7267, 8.92699)
 
 [node name="Marker3D" type="Marker3D" parent="Paths/TablePath"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.92808, 0, 0)
 
 [node name="Marker3D2" type="Marker3D" parent="Paths/TablePath"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.172, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2084, 0, 0)
 
 [node name="WindowPath" type="Node3D" parent="Paths"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0092, 11.2904, -81.7691)
 
 [node name="Marker3D" type="Marker3D" parent="Paths/WindowPath"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.4084, -0.571058, 0)
 
 [node name="Marker3D2" type="Marker3D" parent="Paths/WindowPath"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.23733)
@@ -241,9 +243,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.23733)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0092, 1.86817, -42.0761)
 
 [node name="Marker3D" type="Marker3D" parent="Paths/BedPath"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.1717)
 
 [node name="Marker3D2" type="Marker3D" parent="Paths/BedPath"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10.1788)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.51128)
 
 [node name="Timer" type="Node3D" parent="."]
 
