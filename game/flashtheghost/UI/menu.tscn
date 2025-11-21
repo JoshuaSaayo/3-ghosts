@@ -7,7 +7,7 @@
 [ext_resource type="FontFile" uid="uid://duerwhkfleuh6" path="res://UI/fonts/MomsTypewritter.ttf" id="4_kfjwn"]
 [ext_resource type="PackedScene" uid="uid://d1xxqwwr3p3lu" path="res://UI/prompt/prompt.tscn" id="4_qmqfe"]
 [ext_resource type="PackedScene" uid="uid://dwowobb5amhyj" path="res://UI/gallery.tscn" id="7_dte3n"]
-[ext_resource type="AudioStream" uid="uid://bbi68o82vo5yb" path="res://sound/ambience/534876__szegvari__dark-pyramid-night-ambience-loop.wav" id="8_dhncy"]
+[ext_resource type="AudioStream" uid="uid://bylu8k8t7imoy" path="res://sound/ambience/534876__szegvari__dark-pyramid-night-ambience-loop.wav" id="8_dhncy"]
 [ext_resource type="Script" uid="uid://p88yxdc6gvs1" path="res://UI/main_menu_sound.gd" id="9_cvc1e"]
 [ext_resource type="PackedScene" uid="uid://wyv1f5jw040u" path="res://UI/end_credit.tscn" id="10_re817"]
 

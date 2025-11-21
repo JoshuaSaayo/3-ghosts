@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://wyv1f5jw040u"]
+[gd_scene load_steps=10 format=3 uid="uid://wyv1f5jw040u"]
 
 [ext_resource type="Texture2D" uid="uid://di8cjngmnha1m" path="res://UI/assets/credit_1.png" id="1_4m1wn"]
 [ext_resource type="FontFile" uid="uid://duerwhkfleuh6" path="res://UI/fonts/MomsTypewritter.ttf" id="2_4m1wn"]
 [ext_resource type="FontFile" uid="uid://32dv5eni0vce" path="res://UI/fonts/OldNewspaperTypes.ttf" id="2_5momt"]
+[ext_resource type="AudioStream" uid="uid://bylu8k8t7imoy" path="res://sound/ambience/534876__szegvari__dark-pyramid-night-ambience-loop.wav" id="4_v73is"]
+[ext_resource type="Script" uid="uid://p88yxdc6gvs1" path="res://UI/main_menu_sound.gd" id="5_jd534"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4m1wn"]
 font = ExtResource("2_5momt")
@@ -175,3 +177,9 @@ text = "THANK YOU FOR
 PLAYING OUR GAME!"
 label_settings = SubResource("LabelSettings_5momt")
 horizontal_alignment = 1
+
+[node name="MainMenuSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_v73is")
+volume_db = -10.636
+autoplay = true
+script = ExtResource("5_jd534")
