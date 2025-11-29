@@ -87,9 +87,9 @@ anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_left = 39.0
-offset_top = -257.0
+offset_top = -268.0
 offset_right = 241.0
-offset_bottom = -232.0
+offset_bottom = -243.0
 grow_vertical = 2
 text = "Fleurdelis The Witch"
 label_settings = SubResource("LabelSettings_jd534")
@@ -100,11 +100,12 @@ anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_left = 39.0
-offset_top = -185.0
+offset_top = -202.0
 offset_right = 806.0
-offset_bottom = -62.0
+offset_bottom = -16.0
 grow_vertical = 2
-text = "Game  Design, Sound, Art,
+text = "Game  Design, 
+Sound, Art,
 Animation and map"
 label_settings = SubResource("LabelSettings_5momt")
 
@@ -114,9 +115,9 @@ anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_left = 39.0
-offset_top = -54.5
+offset_top = -20.0
 offset_right = 241.0
-offset_bottom = -29.5
+offset_bottom = 5.0
 grow_vertical = 2
 text = "FLEURDELIS"
 label_settings = SubResource("LabelSettings_jd534")
@@ -127,13 +128,13 @@ anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_left = 39.0
-offset_top = 41.0
-offset_right = 890.0
-offset_bottom = 101.0
+offset_top = 33.0
+offset_right = 494.0
+offset_bottom = 156.0
 grow_vertical = 2
-text = "Programming and Debugging"
+text = "Programming 
+and Debugging"
 label_settings = SubResource("LabelSettings_5momt")
-horizontal_alignment = 1
 
 [node name="Name3" type="Label" parent="Credits"]
 layout_mode = 1
@@ -141,40 +142,42 @@ anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_left = 39.0
-offset_top = 102.0
+offset_top = 157.0
 offset_right = 241.0
-offset_bottom = 127.0
+offset_bottom = 182.0
 grow_vertical = 2
 text = "DUNCAN"
 label_settings = SubResource("LabelSettings_jd534")
 
 [node name="ThanksCredit" type="Control" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -572.0
+offset_left = 71.0
 offset_top = 67.0
-offset_right = -532.0
+offset_right = 111.0
 offset_bottom = 107.0
 grow_horizontal = 2
 
 [node name="StayTuned" type="Label" parent="ThanksCredit"]
 layout_mode = 0
 offset_left = 52.0
-offset_top = 141.0
+offset_top = 194.0
 offset_right = 486.0
-offset_bottom = 179.0
+offset_bottom = 232.0
 text = "Stay tune for the next update!"
 label_settings = SubResource("LabelSettings_v73is")
 
 [node name="ThanksLabel" type="Label" parent="ThanksCredit"]
 layout_mode = 1
-offset_right = 554.0
-offset_bottom = 243.0
+offset_left = -13.0
+offset_top = -33.0
+offset_right = 541.0
+offset_bottom = 210.0
 text = "THANK YOU FOR 
-PLAYING OUR GAME!"
+PLAYING 
+OUR GAME!"
 label_settings = SubResource("LabelSettings_5momt")
 horizontal_alignment = 1
 
