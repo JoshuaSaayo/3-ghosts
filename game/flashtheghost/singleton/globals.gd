@@ -73,10 +73,10 @@ func _save_data():
 	var data : Dictionary = {
 		"day":day
 	}
-	Save.save_game(data,"1")
+	Save.save_game(data,"game_data")
 
 func get_loaded_data():
-	var data : Dictionary = Save.load_game("1")
+	var data : Dictionary = Save.load_game("game_data")
 	if data.is_empty():
 		push_error("missing save")
 	day = data["day"]
@@ -103,3 +103,4 @@ func game_pause(value : bool) -> void:
 
 func _reset_game():
 	day = 1
+	flash_ligt_life =  flash_ligt_max_life

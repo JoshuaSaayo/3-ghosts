@@ -18,53 +18,51 @@ extends Node3D
 @onready var ghost_map : Dictionary = {
 	"margarete_stand" : {
 		"path": door_path, 
-		"spawn_node": margarete , 
-		"char_position": "Stand" , 
-		"instance" : "res://entity/margarete.tscn"},
-		
+		"spawn_node": margarete, 
+		"char_position": Constants.STAND, 
+		"scene": Constants.MARGARETE},
 		
 	"margarete_crawl" : {
 		"path": table_path, 
-		"spawn_node": margarete , 
-		"char_position": "Crawl" , 
-		"instance" : "res://entity/margarete.tscn"},
+		"spawn_node": margarete, 
+		"char_position": Constants.CRAWL, 
+		"scene": Constants.MARGARETE},
 		
 	"margarete_crawl_bed" : {
 		"path": bed_path, 
-		"spawn_node": margarete , 
-		"char_position": "CrawlBed" , 
-		"instance" : "res://entity/margarete.tscn"},
+		"spawn_node": margarete, 
+		"char_position": Constants.CRAWL_BED, 
+		"scene": Constants.MARGARETE},
 	
 	"margarete_window" : {
 		"path": window_path, 
-		"spawn_node": margarete , 
-		"char_position": "Window" , 
-		"instance" : "res://entity/margarete.tscn"},
+		"spawn_node": margarete, 
+		"char_position": Constants.WINDOW, 
+		"scene": Constants.MARGARETE},
 	
 	"yuna_stand" : {
 		"path": door_path, 
-		"spawn_node": yuna , 
-		"char_position": "Stand" , 
-		"instance" : "res://entity/yuna.tscn"},
+		"spawn_node": yuna, 
+		"char_position": Constants.STAND, 
+		"scene": Constants.YUNA},
 		
 	"yuna_crawl" : {
 		"path": table_path, 
-		"spawn_node": yuna , 
-		"char_position": "Crawl" , 
-		"instance" : "res://entity/yuna.tscn"},
+		"spawn_node": yuna, 
+		"char_position": Constants.CRAWL, 
+		"scene": Constants.YUNA},
 		
 	"nino_crawl_bed" : {
 		"path": bed_path, 
-		"spawn_node": nino , 
-		"char_position": "CrawlBed" , 
-		"instance" : "res://entity/nino.tscn"},
+		"spawn_node": nino, 
+		"char_position": Constants.CRAWL_BED, 
+		"scene": Constants.NINO},
 	
 	"nino_window" : {
 		"path": window_path, 
-		"spawn_node": nino , 
-		"char_position": "Window" , 
-		"instance" : "res://entity/nino.tscn"},
-	
+		"spawn_node": nino, 
+		"char_position": Constants.WINDOW, 
+		"scene": Constants.NINO},
 }
 
 var char_pos : Dictionary = {
@@ -98,26 +96,26 @@ func get_available_ghost(day):
 	var selected_ghost = Globals.days_data[day].available_ghosts
 	var selected_keys : Array
 	for key in keys:
-		if ghost_map[key].spawn_node.name in selected_ghost:
+		if ghost_map[key]["spawn_node"].name in selected_ghost:
 			selected_keys.append(key)
 	return selected_keys
 
 func get_rndm_ghost():
 	var crnt_day = Globals.day
 	var keys = get_available_ghost(crnt_day)
-	print(keys)
+	
 	if keys.is_empty():
 		print("error")
+		return
 		
 	keys.shuffle()
 	var rndm_idx = keys.pick_random()
-	
 	return ghost_map[rndm_idx]
 
 func spawn_ghost() -> void:
 	var dict = get_rndm_ghost()
 	var parent = dict.spawn_node
-	var tscn = dict.instance
+	var tscn = dict.scene
 	var path = dict.path
 	var stand = dict.char_position
 	
@@ -130,7 +128,7 @@ func spawn_ghost() -> void:
 	
 	previous_path = path
 	
-	var _tscn = load(tscn)
+	var _tscn = tscn
 	var instance = _tscn.instantiate()
 	
 	parent.add_child(instance)

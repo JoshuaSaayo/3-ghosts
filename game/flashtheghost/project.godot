@@ -11,9 +11,10 @@ config_version=5
 [application]
 
 config/name="FlashTheGhost"
-run/main_scene="uid://cbgkrnpa2ypg8"
+config/version="1.0.0"
+run/main_scene="uid://btpnq7ndljemn"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://dnok5hd428677"
 
 [audio]
 
@@ -23,6 +24,7 @@ buses/default_bus_layout="uid://cgpgkxgihj6dq"
 
 Globals="*res://singleton/globals.tscn"
 Save="*res://UI/singleton/save.tscn"
+Constant="*res://singleton/constant.gd"
 
 [display]
 

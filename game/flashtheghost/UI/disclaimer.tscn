@@ -1,23 +1,14 @@
 [gd_scene load_steps=6 format=3 uid="uid://btpnq7ndljemn"]
 
+[ext_resource type="Script" uid="uid://bp434qa5sqdo4" path="res://UI/disclaimer.gd" id="1_itv7h"]
 [ext_resource type="Texture2D" uid="uid://bgkp2i053t61f" path="res://UI/assets/disclaimer.png" id="1_s7s41"]
-[ext_resource type="FontFile" uid="uid://32dv5eni0vce" path="res://UI/fonts/OldNewspaperTypes.ttf" id="2_itv7h"]
 [ext_resource type="FontFile" uid="uid://duerwhkfleuh6" path="res://UI/fonts/MomsTypewritter.ttf" id="3_itv7h"]
+[ext_resource type="PackedScene" uid="uid://d1xxqwwr3p3lu" path="res://UI/prompt/prompt.tscn" id="3_rrma0"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rrma0"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mdqkj"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
+[sub_resource type="LabelSettings" id="LabelSettings_rrma0"]
+font = ExtResource("3_itv7h")
+font_size = 60
+font_color = Color(0.807632, 0.119828, 0.198245, 1)
 
 [node name="disclaimer" type="Control"]
 layout_mode = 3
@@ -26,6 +17,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_itv7h")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
@@ -33,65 +25,19 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_s7s41")
 
-[node name="disclaimerText" type="Label" parent="."]
+[node name="Prompt" parent="." instance=ExtResource("3_rrma0")]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -433.0
-offset_top = -121.5
-offset_right = 433.0
-offset_bottom = 121.5
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 165.0
+offset_bottom = 238.0
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_itv7h")
-theme_override_font_sizes/font_size = 30
-text = "This game includes flashing lights, jumpscare,
-strong language, horror elements, adult and sexual content 
-intended for players aged 18 and above.
-Viewer discretion is advised.
-All characters in this game are 
-above 18 years of age and fictional."
+text = "Content Warning"
+label_settings = SubResource("LabelSettings_rrma0")
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="DisclaimerBtn" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -197.0
-offset_top = 218.0
-offset_right = 43.0
-offset_bottom = 258.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(1.47649, 1.47649)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_color = Color(0.670689, 0.67069, 0.670689, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_itv7h")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/hover = SubResource("StyleBoxFlat_rrma0")
-theme_override_styles/normal = SubResource("StyleBoxFlat_mdqkj")
-text = "I am over 18 years old"
-
-[node name="Disclaimer" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -165.0
-offset_top = -224.0
-offset_right = 165.0
-offset_bottom = -164.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("3_itv7h")
-theme_override_font_sizes/font_size = 50
-text = "Disclaimer"
+[connection signal="prompt_response" from="Prompt" to="." method="_on_prompt_prompt_response"]

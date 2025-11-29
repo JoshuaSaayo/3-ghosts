@@ -29,12 +29,6 @@ func _on_anim_animation_finished(anim_name: StringName) -> void:
 	pass
 
 func instantiate_anim():
-	if not FileAccess.file_exists(selected_tscn):
-		print("MISSING: ", selected_tscn)
-		return
-	else:
-		print("OK: ", selected_tscn)
-
 	var _selected_tscn = load(selected_tscn)
 	var ls = _selected_tscn.instantiate()
 	ls.closing_anim.connect(_closing_anim)
@@ -51,6 +45,8 @@ func _closing_anim():
 		Globals.unlock_gallery.append(Globals.day)
 		data = {"unlock_gallery": Globals.unlock_gallery}
 		Save.save_game(data,"gallery")
+	
+	Globals._save_data()
 	
 	print("Globals.day: ", Globals.day)
 	if Globals.day >= 5:

@@ -58,7 +58,6 @@ func set_shader_texture() -> void:
 	if material and sub_viewport:
 		var viewport_texture = sub_viewport.get_texture()
 		if viewport_texture:
-			print("SubViewport texture: ", viewport_texture)
 			# Make sure this parameter name matches your shader!
 			material.set_shader_parameter("base_color_texture", viewport_texture)
 		else:
