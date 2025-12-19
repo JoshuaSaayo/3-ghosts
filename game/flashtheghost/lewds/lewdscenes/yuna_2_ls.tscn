@@ -58,7 +58,7 @@
 [ext_resource type="Texture2D" uid="uid://cqv6d5eg4vxt" path="res://lewds/lewd_assets/yuna2_ls/y_back_hair/y_back_hair_01.png" id="54_r51cy"]
 [ext_resource type="Texture2D" uid="uid://dd5tusg7lgpx2" path="res://lewds/lewd_assets/yuna2_ls/y_back_hair/y_back_hair_02.png" id="55_o47n6"]
 [ext_resource type="Texture2D" uid="uid://cxox3as6ek0g4" path="res://lewds/lewd_assets/yuna2_ls/y_back_hair/y_back_hair_03.png" id="56_7k310"]
-[ext_resource type="AudioStream" uid="uid://dksnr6i5c23sm" path="res://lewds/lewd_assets/yuna2_ls/audio/yuna_cum.wav" id="56_tbrbe"]
+[ext_resource type="AudioStream" uid="uid://t67ndyqbk24g" path="res://lewds/lewd_assets/yuna2_ls/audio/yuna_suck.wav" id="56_tbrbe"]
 [ext_resource type="Texture2D" uid="uid://6ufe818vpkqx" path="res://lewds/lewd_assets/yuna2_ls/y_back_hair/y_back_hair_04.png" id="57_tbrbe"]
 [ext_resource type="Texture2D" uid="uid://bbt672np817am" path="res://lewds/lewd_assets/yuna2_ls/y_back_hair/y_back_hair_05.png" id="58_b8jyq"]
 [ext_resource type="Texture2D" uid="uid://b2874h8rqsfak" path="res://lewds/lewd_assets/yuna2_ls/y_back_hair/y_back_hair_06.png" id="59_l7o81"]
@@ -600,8 +600,8 @@ tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
 "clips": [{
-"end_offset": 0.418714,
-"start_offset": 0.380935,
+"end_offset": 0.48007,
+"start_offset": 0.316292,
 "stream": ExtResource("56_tbrbe")
 }],
 "times": PackedFloat32Array(0.3)

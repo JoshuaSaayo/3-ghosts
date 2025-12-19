@@ -156,7 +156,7 @@
 [ext_resource type="Texture2D" uid="uid://cnjsaeo8lywih" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_17.png" id="116_1ruj8"]
 [ext_resource type="Texture2D" uid="uid://nwg44lkqh283" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_18.png" id="117_pxme4"]
 [ext_resource type="Texture2D" uid="uid://cuku2p24rk0sp" path="res://lewds/lewd_assets/nino1_ls/n_l_thigh/n_l_thigh_19.png" id="118_aaeki"]
-[ext_resource type="AudioStream" uid="uid://b5a0onu350a6" path="res://lewds/lewd_assets/nino1_ls/audio/nino_cum.wav" id="119_es6yd"]
+[ext_resource type="AudioStream" uid="uid://bg7qm3fssk3h6" path="res://lewds/lewd_assets/nino1_ls/audio/nino_cum.wav" id="119_es6yd"]
 [ext_resource type="Texture2D" uid="uid://bcl0lg88p6b3g" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_01.png" id="119_vdlbw"]
 [ext_resource type="Texture2D" uid="uid://duxyjjttsto5t" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_02.png" id="120_iec55"]
 [ext_resource type="Texture2D" uid="uid://dlyydcdvt4br7" path="res://lewds/lewd_assets/nino1_ls/n_r_thigh/n_r_thigh_03.png" id="121_8ow1j"]
@@ -902,11 +902,11 @@ tracks/28/interp = 1
 tracks/28/loop_wrap = true
 tracks/28/keys = {
 "clips": [{
-"end_offset": 1.47495,
-"start_offset": 0.10704,
+"end_offset": 0.302338,
+"start_offset": 0.125587,
 "stream": ExtResource("119_es6yd")
 }],
-"times": PackedFloat32Array(0.322781)
+"times": PackedFloat32Array(0.225587)
 }
 tracks/28/use_blend = true
 

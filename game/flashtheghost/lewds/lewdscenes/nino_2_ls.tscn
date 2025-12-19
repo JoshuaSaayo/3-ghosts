@@ -83,7 +83,7 @@
 [ext_resource type="Texture2D" uid="uid://c1bdaub376ivp" path="res://lewds/lewd_assets/nino2_ls/n_back_hair/n_back_hair_19.png" id="78_11hdg"]
 [ext_resource type="Texture2D" uid="uid://cidjcxw606oox" path="res://lewds/lewd_assets/nino2_ls/vines/vines_01.png" id="79_kyg4v"]
 [ext_resource type="Texture2D" uid="uid://f6e6l0ssntbc" path="res://lewds/lewd_assets/nino2_ls/vines/vines_02.png" id="80_4j00e"]
-[ext_resource type="AudioStream" uid="uid://dng6bowjjmdcs" path="res://lewds/lewd_assets/nino2_ls/audio/nino_moan1.mp3" id="81_0hx42"]
+[ext_resource type="AudioStream" uid="uid://msmcjnnqqs46" path="res://lewds/lewd_assets/nino2_ls/audio/nino_moan2.wav" id="81_0hx42"]
 [ext_resource type="Texture2D" uid="uid://c5b2axc23klnj" path="res://lewds/lewd_assets/nino2_ls/vines/vines_03.png" id="81_hqrkh"]
 [ext_resource type="Texture2D" uid="uid://cfejeksg8ei3p" path="res://lewds/lewd_assets/nino2_ls/vines/vines_04.png" id="82_q1d41"]
 [ext_resource type="Texture2D" uid="uid://b6rto4n4dxffs" path="res://lewds/lewd_assets/nino2_ls/vines/vines_05.png" id="83_0hx42"]
@@ -873,8 +873,8 @@ tracks/28/interp = 1
 tracks/28/loop_wrap = true
 tracks/28/keys = {
 "clips": [{
-"end_offset": 0.578682,
-"start_offset": 0.287303,
+"end_offset": 0.0,
+"start_offset": 0.0,
 "stream": ExtResource("81_0hx42")
 }],
 "times": PackedFloat32Array(0.35)

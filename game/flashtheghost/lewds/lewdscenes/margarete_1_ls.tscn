@@ -178,7 +178,7 @@
 [ext_resource type="Texture2D" uid="uid://ccgpdk1dhoael" path="res://lewds/lewd_assets/margarete1_ls/m_back_hair/m_back_hair_17.png" id="133_4aecm"]
 [ext_resource type="Texture2D" uid="uid://drrtgha3iqcrg" path="res://lewds/lewd_assets/margarete1_ls/m_back_hair/m_back_hair_18.png" id="134_xbo6r"]
 [ext_resource type="Texture2D" uid="uid://c3eyib06mhh6s" path="res://lewds/lewd_assets/margarete1_ls/m_back_hair/m_back_hair_19.png" id="135_2jlhr"]
-[ext_resource type="AudioStream" uid="uid://dwdnp5ecf12eb" path="res://lewds/lewd_assets/margarete1_ls/audio/margarete_cum.wav" id="142_jx280"]
+[ext_resource type="AudioStream" uid="uid://c3qlc7lsrpdb4" path="res://lewds/lewd_assets/margarete1_ls/audio/margarete_cum.wav" id="142_jx280"]
 [ext_resource type="AudioStream" uid="uid://24kwn4w2k4md" path="res://lewds/lewd_assets/margarete1_ls/audio/plaps3.wav" id="179_fjjrc"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_d082e"]
@@ -1097,11 +1097,11 @@ tracks/35/interp = 1
 tracks/35/loop_wrap = true
 tracks/35/keys = {
 "clips": [{
-"end_offset": 0.338434,
-"start_offset": 0.0724092,
+"end_offset": 0.743102,
+"start_offset": 0.356142,
 "stream": ExtResource("142_jx280")
 }],
-"times": PackedFloat32Array(0.322693)
+"times": PackedFloat32Array(0.25)
 }
 tracks/35/use_blend = true
 tracks/36/type = "value"

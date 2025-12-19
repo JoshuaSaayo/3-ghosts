@@ -17,8 +17,8 @@ var sounds: Dictionary = {
 		preload("res://lewds/lewd_assets/nino1_ls/audio/nino_moan3.wav")
 	],
 	"nino2": [
-		preload("res://lewds/lewd_assets/nino2_ls/audio/nino_moan1.mp3"),
-		preload("res://lewds/lewd_assets/nino2_ls/audio/nino_moan2.mp3")
+		preload("res://lewds/lewd_assets/nino2_ls/audio/nino_moan1.wav"),
+		preload("res://lewds/lewd_assets/nino2_ls/audio/nino_moan2.wav")
 	],
 	"yuna1": [
 		preload("res://lewds/lewd_assets/yuna1_ls/audio/yuna_moan1.wav"),

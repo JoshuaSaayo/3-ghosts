@@ -139,7 +139,7 @@
 [ext_resource type="Texture2D" uid="uid://2mg1t2bmc18n" path="res://lewds/lewd_assets/yuna1_ls/y_vagina/yuna1_ls-godot_03.png" id="116_2ceef"]
 [ext_resource type="Texture2D" uid="uid://btj5nmiwto3os" path="res://lewds/lewd_assets/yuna1_ls/y_vagina/yuna1_ls-godot_04.png" id="117_cru0j"]
 [ext_resource type="Texture2D" uid="uid://b2oh7ecawwa0h" path="res://lewds/lewd_assets/yuna1_ls/y_vagina/yuna1_ls-godot_05.png" id="118_4ed64"]
-[ext_resource type="AudioStream" uid="uid://dqokilw5ngcf7" path="res://lewds/lewd_assets/yuna1_ls/audio/yuna_cum.wav" id="118_yrknl"]
+[ext_resource type="AudioStream" uid="uid://cdxbxrcq3pb3u" path="res://lewds/lewd_assets/yuna1_ls/audio/yuna_cum.wav" id="118_yrknl"]
 [ext_resource type="Texture2D" uid="uid://rrnj70hu2rfy" path="res://lewds/lewd_assets/yuna1_ls/y_vagina/yuna1_ls-godot_06.png" id="119_nsmyl"]
 [ext_resource type="Texture2D" uid="uid://dls3bu4a5m3i8" path="res://lewds/lewd_assets/yuna1_ls/y_vagina/yuna1_ls-godot_07.png" id="120_s1hrn"]
 [ext_resource type="Texture2D" uid="uid://cq3dqnxg2y18m" path="res://lewds/lewd_assets/yuna1_ls/y_vagina/yuna1_ls-godot_08.png" id="121_rfw24"]
@@ -853,7 +853,7 @@ tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/keys = {
 "clips": [{
-"end_offset": 0.579273,
+"end_offset": 0.279082,
 "start_offset": 0.0,
 "stream": ExtResource("118_yrknl")
 }],
