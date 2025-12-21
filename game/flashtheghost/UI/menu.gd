@@ -5,6 +5,7 @@ extends Control
 @onready var setting: Button = $Setting
 @onready var quit: Button = $Quit
 @onready var gallery: Button = $Gallery
+@onready var credits: Button = $Credits
 
 @onready var setting_tab: Control = $SettingTab
 @onready var prompt: Control = $Prompt
@@ -23,8 +24,17 @@ func _ready():
 	setting.pressed.connect(_on_setting_pressed)
 	quit.pressed.connect(_on_quit_pressed)
 	gallery.pressed.connect(_on_gallery_pressed)
+	credits.pressed.connect(_on_credits_pressed)
 	
 	if Globals.game_finished:
+		_display_credits()
+
+func _on_credits_pressed() -> void:
+	_display_credits()
+
+func _display_credits() -> void:
+	if is_instance_valid(end_credit):
+		end_credit._start_credits()
 		end_credit.visible = true
 		Globals.game_finished = false
 		animation_player.play("open")

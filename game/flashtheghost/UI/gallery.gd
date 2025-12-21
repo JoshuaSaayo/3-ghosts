@@ -15,6 +15,8 @@ extends Control
 @onready var canvas_layer: CanvasLayer = $CanvasLayer
 @onready var lewd_scene: Control = $CanvasLayer/LewdScene
 
+@onready var cover: ColorRect = $Cover
+
 var ls 
 
 func _ready() -> void:
@@ -23,6 +25,7 @@ func _ready() -> void:
 	thumbnail_c.pressed.connect(_on_gallery_pressed.bind(3))
 	thumbnail_d.pressed.connect(_on_gallery_pressed.bind(4))
 	thumbnail_e.pressed.connect(_on_gallery_pressed.bind(5))
+	
 func _show(_value):
 	if !_value:
 		visible = false
@@ -41,21 +44,29 @@ func check_lock():
 		arr[value-1].visible = false
 	
 func _on_gallery_pressed(idx:int):
-	if !Globals.unlock_gallery.has(float(idx)):
+	print("here", idx)
+	if !Globals.unlock_gallery.has(idx):
 		return
 		
 	if Globals.days_data.has(idx):
 		var data = Globals.days_data[idx]
 		var anim = load(Globals.days_data[idx]["day_end_anim"])
 		var a = anim.instantiate()
+		a.closing_anim.connect(_on_anim_finished)
 		lewd_scene.add_child(a)
 		ls = a
 		canvas_layer.visible = true
+		cover.visible = true
+
+func _on_anim_finished() -> void:
+	cover.visible = false
+	
 
 func _on_close_ls_pressed() -> void:
 	if is_instance_valid(ls):
 		canvas_layer.visible = false
 		ls.queue_free()
+	_on_anim_finished()
 
 func _on_close_pressed() -> void:
 	_show(false)

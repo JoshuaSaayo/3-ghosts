@@ -13,7 +13,7 @@ config_version=5
 config/name="FlashTheGhost"
 config/version="1.0.0"
 run/main_scene="uid://btpnq7ndljemn"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="uid://dnok5hd428677"
 
 [audio]

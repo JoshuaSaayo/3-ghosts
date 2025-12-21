@@ -24,6 +24,9 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(1, 1, 1, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pkf84"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_auojw"]
 bg_color = Color(1, 1, 1, 0)
 border_width_left = 1
@@ -36,8 +39,11 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pkf84"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ghkey"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8r80v"]
+bg_color = Color(0, 0, 0, 0.392157)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ucfh"]
 bg_color = Color(0, 0, 0, 0.392157)
@@ -46,12 +52,6 @@ corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8r80v"]
-bg_color = Color(0, 0, 0, 0.392157)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ghkey"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ci53"]
 
@@ -119,13 +119,13 @@ offset_left = 1122.0
 offset_top = -2.0
 offset_right = 1209.0
 offset_bottom = 90.0
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_o8krx")
 theme_override_font_sizes/font_size = 70
-theme_override_styles/hover = SubResource("StyleBoxFlat_auojw")
 theme_override_styles/normal = SubResource("StyleBoxFlat_pkf84")
+theme_override_styles/hover = SubResource("StyleBoxFlat_auojw")
 text = "X"
 
 [node name="ThumbnailF" type="Button" parent="."]
@@ -139,14 +139,14 @@ offset_top = 481.0
 offset_right = 480.0
 offset_bottom = 667.0
 grow_horizontal = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_j006r")
 theme_override_font_sizes/font_size = 20
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
 text = "Coming soon...
 "
 icon = ExtResource("8_04avt")
@@ -169,15 +169,15 @@ offset_top = 171.0
 offset_right = 399.0
 offset_bottom = 356.0
 grow_horizontal = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_j006r")
 theme_override_font_sizes/font_size = 20
-theme_override_styles/disabled = SubResource("StyleBoxFlat_1ci53")
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_1ci53")
 text = "Night 1
 "
 icon = ExtResource("3_mde88")
@@ -219,15 +219,15 @@ offset_top = 171.0
 offset_right = 749.0
 offset_bottom = 356.0
 grow_horizontal = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_j006r")
 theme_override_font_sizes/font_size = 20
-theme_override_styles/disabled = SubResource("StyleBoxFlat_04avt")
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_04avt")
 text = "Night 2
 "
 icon = ExtResource("4_pkf84")
@@ -269,14 +269,14 @@ offset_top = 171.0
 offset_right = 1096.5
 offset_bottom = 355.0
 grow_horizontal = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_j006r")
 theme_override_font_sizes/font_size = 20
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
 text = "Night 3
 "
 icon = ExtResource("5_8ucfh")
@@ -318,14 +318,14 @@ offset_top = 481.0
 offset_right = 399.0
 offset_bottom = 666.0
 grow_horizontal = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_j006r")
 theme_override_font_sizes/font_size = 20
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
 text = "Night 4
 "
 icon = ExtResource("6_ghkey")
@@ -367,14 +367,14 @@ offset_top = 481.0
 offset_right = 751.0
 offset_bottom = 667.0
 grow_horizontal = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_j006r")
 theme_override_font_sizes/font_size = 20
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ghkey")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8r80v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ucfh")
 text = "Night 5
 "
 icon = ExtResource("7_8r80v")
@@ -406,6 +406,16 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("5_6wnc1")
 
+[node name="Cover" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 visible = false
 
@@ -420,13 +430,13 @@ offset_left = 1195.0
 offset_top = -2.0
 offset_right = 1282.0
 offset_bottom = 90.0
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_o8krx")
 theme_override_font_sizes/font_size = 70
-theme_override_styles/hover = SubResource("StyleBoxFlat_auojw")
 theme_override_styles/normal = SubResource("StyleBoxFlat_pkf84")
+theme_override_styles/hover = SubResource("StyleBoxFlat_auojw")
 text = "X"
 
 [connection signal="pressed" from="Close" to="." method="_on_close_pressed"]

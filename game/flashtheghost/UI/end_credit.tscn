@@ -1,9 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://wyv1f5jw040u"]
+[gd_scene load_steps=12 format=3 uid="uid://wyv1f5jw040u"]
 
 [ext_resource type="Texture2D" uid="uid://di8cjngmnha1m" path="res://UI/assets/credit_1.png" id="1_4m1wn"]
+[ext_resource type="Script" uid="uid://xg334y2xky1j" path="res://UI/end_credit.gd" id="1_pqhbd"]
 [ext_resource type="FontFile" uid="uid://duerwhkfleuh6" path="res://UI/fonts/MomsTypewritter.ttf" id="2_4m1wn"]
 [ext_resource type="FontFile" uid="uid://32dv5eni0vce" path="res://UI/fonts/OldNewspaperTypes.ttf" id="2_5momt"]
 [ext_resource type="AudioStream" uid="uid://bylu8k8t7imoy" path="res://sound/ambience/534876__szegvari__dark-pyramid-night-ambience-loop.wav" id="4_v73is"]
+[ext_resource type="PackedScene" path="res://UI/sound_credits.tscn" id="5_2c0ek"]
 [ext_resource type="Script" uid="uid://p88yxdc6gvs1" path="res://UI/main_menu_sound.gd" id="5_jd534"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4m1wn"]
@@ -29,6 +31,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_pqhbd")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -180,6 +183,9 @@ PLAYING
 OUR GAME!"
 label_settings = SubResource("LabelSettings_5momt")
 horizontal_alignment = 1
+
+[node name="end_credit" parent="." instance=ExtResource("5_2c0ek")]
+layout_mode = 1
 
 [node name="MainMenuSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_v73is")
