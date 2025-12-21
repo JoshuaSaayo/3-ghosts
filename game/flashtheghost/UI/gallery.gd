@@ -44,8 +44,7 @@ func check_lock():
 		arr[value-1].visible = false
 	
 func _on_gallery_pressed(idx:int):
-	print("here", idx)
-	if !Globals.unlock_gallery.has(idx):
+	if !Globals.unlock_gallery.has(float(idx)):
 		return
 		
 	if Globals.days_data.has(idx):

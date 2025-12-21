@@ -19,7 +19,7 @@ var max_day : int = 5
 
 var game_finished : bool = false
 
-var unlock_gallery : Array = [1,2,3,4,5]
+var unlock_gallery : Array = []
 
 var days_data = {
 	1: {
