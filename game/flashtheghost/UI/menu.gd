@@ -33,7 +33,9 @@ func _on_credits_pressed() -> void:
 	_display_credits()
 
 func _display_credits() -> void:
+	print("here0")
 	if is_instance_valid(end_credit):
+		print("hgere1")
 		end_credit._start_credits()
 		end_credit.visible = true
 		Globals.game_finished = false
@@ -41,7 +43,7 @@ func _display_credits() -> void:
 		timer_credits.start()
 
 func _check_load():
-	var valid : Dictionary = Save.load_game("1")
+	var valid : Dictionary = Save.load_game("game_data")
 	load_game.disabled = valid.is_empty()
 	return valid.is_empty()
 	
