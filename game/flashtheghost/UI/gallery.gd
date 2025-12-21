@@ -46,11 +46,14 @@ func check_lock():
 func _on_gallery_pressed(idx:int):
 	if !Globals.unlock_gallery.has(float(idx)):
 		return
-		
+
 	if Globals.days_data.has(idx):
 		var data = Globals.days_data[idx]
-		var anim = load(Globals.days_data[idx]["day_end_anim"])
+		var anim = load(data["day_end_anim"])
 		var a = anim.instantiate()
+
+		a.sound_key = data["sound_key"]  # ✅ THIS IS THE FIX
+
 		a.closing_anim.connect(_on_anim_finished)
 		lewd_scene.add_child(a)
 		ls = a

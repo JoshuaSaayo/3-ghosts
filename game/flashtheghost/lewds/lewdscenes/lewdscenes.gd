@@ -5,6 +5,7 @@ signal closing_anim
 @onready var lewdscenes: AnimationPlayer = $Node2D/lewdscenes
 @onready var moan: AudioStreamPlayer
 
+var sound_key: String
 var sounds: Dictionary = {
 	"margarete1": [
 		preload("res://lewds/lewd_assets/margarete1_ls/audio/margarete_moan1.wav"),
@@ -47,7 +48,9 @@ func _process(delta):
 		play_random_sound()
 
 func play_random_sound():
-	var sound_key = Globals.days_data[Globals.day]["sound_key"]
+	if not sounds.has(sound_key):
+		return
+	
 	var random_sound = sounds[sound_key].pick_random()
 	moan.stream = random_sound
 	moan.play()
