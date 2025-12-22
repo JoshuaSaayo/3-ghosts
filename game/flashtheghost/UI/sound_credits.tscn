@@ -12,7 +12,6 @@ font_size = 50
 
 [sub_resource type="LabelSettings" id="LabelSettings_jd534"]
 font = ExtResource("2_1l6v2")
-font_size = 20
 
 [node name="end_credit" type="Control"]
 layout_mode = 3
@@ -77,6 +76,9 @@ Dark Pyramid Night Ambience Loop.wav by szegvari -- https://freesound.org/s/5348
 
 Bedroom sound:
 grandfather_clock_chime_one_quarter.wav by joedeshon -- https://freesound.org/s/163371/ -- License: Attribution 4.0
+
+Jumpscare sound:
+Woman Scream 1 by courtneyeck -- https://freesound.org/s/673423/ -- License: Creative Commons 0
 
 Yuna1
 Hentai Girl.m4a by guinefurrie -- https://freesound.org/s/447841/ -- License: Creative Commons 0
