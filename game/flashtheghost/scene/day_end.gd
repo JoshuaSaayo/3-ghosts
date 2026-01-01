@@ -48,7 +48,6 @@ func _closing_anim():
 	
 	Globals._save_data()
 	
-	print("Globals.day: ", Globals.day)
 	if Globals.day >= 5:
 		Globals.game_finished = true
 		Globals.change_scene(Globals.scene_main_menu)

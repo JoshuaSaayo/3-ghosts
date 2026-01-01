@@ -8,6 +8,7 @@ func _ready() -> void:
 	night_counts.text = "Night Counts: "+ str(Globals.day)
 	battery_bar.value = 0
 	battery_percentage.text = "O%"
+	
 func _process(delta: float) -> void:
 	display_battery()
 	setup_flash_light()

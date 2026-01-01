@@ -333,10 +333,12 @@ speed_scale = 0.3
 [node name="DialogBox" parent="." instance=ExtResource("8_vgsql")]
 
 [node name="NextNight" type="Button" parent="."]
+visible = false
 offset_left = 1097.0
 offset_top = 26.0
 offset_right = 1262.0
 offset_bottom = 67.0
+disabled = true
 text = "Next night "
 
 [node name="Pause" parent="." instance=ExtResource("10_45brn")]
