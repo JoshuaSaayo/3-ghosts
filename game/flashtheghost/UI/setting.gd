@@ -191,12 +191,15 @@ func _load_settings():
 	# Load display settings
 	if config.has_section_key("display", "windowed"):
 		settings_data["display"]["windowed"] = config.get_value("display", "windowed")
-	if config.has_section_key("display", "borderless"):
-		settings_data["display"]["borderless"] = config.get_value("display", "borderless")
-	if config.has_section_key("display", "fullscreen"):
-		settings_data["display"]["fullscreen"] = config.get_value("display", "fullscreen")
+		
+	#if config.has_section_key("display", "borderless"):
+		#settings_data["display"]["borderless"] = config.get_value("display", "borderless")
+
 	if config.has_section_key("display", "resolution"):
 		settings_data["display"]["resolution"] = config.get_value("display", "resolution")
+	
+	if config.has_section_key("display", "fullscreen"):
+		settings_data["display"]["fullscreen"] = config.get_value("display", "fullscreen")
 	
 	print("Settings loaded successfully!")
 
@@ -234,20 +237,19 @@ func _apply_settings_to_ui():
 	AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), 
 		settings_data["audio"]["muted"])
 	
-	# Apply display settings to window
+	 #Apply display settings to window
 	if settings_data["display"]["fullscreen"]:
 		get_window().mode = Window.MODE_FULLSCREEN
 	else:
 		get_window().mode = Window.MODE_WINDOWED
+		#get_window().borderless = settings_data["display"]["borderless"]
 	
-	get_window().borderless = settings_data["display"]["borderless"]
-	
-	# Apply resolution to window
-	var parts = settings_data["display"]["resolution"].split("x")
-	if parts.size() == 2:
-		var width = int(parts[0])
-		var height = int(parts[1])
-		get_window().size = Vector2i(width, height)
+	## Apply resolution to window
+	#var parts = settings_data["display"]["resolution"].split("x")
+	#if parts.size() == 2:
+		#var width = int(parts[0])
+		#var height = int(parts[1])
+		#get_window().size = Vector2i(width, height)
 
 # Manual save function
 func save_settings_manual():

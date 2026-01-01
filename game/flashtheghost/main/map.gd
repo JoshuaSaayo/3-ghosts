@@ -75,6 +75,10 @@ var previous_path
 func _ready() -> void:
 	randomize()
 	setup_end_timer()
+	_reset_flashlight()
+
+func _reset_flashlight() -> void:
+	Globals.set_flash_ligt_life(Globals.flash_ligt_max_life)
 
 func setup_end_timer():
 	if Globals.days_data.has(Globals.day):

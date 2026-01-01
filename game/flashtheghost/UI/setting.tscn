@@ -9,6 +9,15 @@
 [ext_resource type="Script" uid="uid://d23maiayphew8" path="res://UI/resolution.gd" id="7_36jyd"]
 [ext_resource type="Texture2D" uid="uid://dhrjjhw1y1ao4" path="res://UI/assets/check-mark.png" id="7_gb4v8"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6w8i2"]
+bg_color = Color(1, 1, 1, 0)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color(0, 0, 0, 0)
+shadow_size = 5
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ymdbj"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 border_width_left = 1
@@ -20,15 +29,6 @@ corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6w8i2"]
-bg_color = Color(1, 1, 1, 0)
-corner_radius_top_left = 4
-corner_radius_top_right = 4
-corner_radius_bottom_right = 4
-corner_radius_bottom_left = 4
-shadow_color = Color(0, 0, 0, 0)
-shadow_size = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_irhm8"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -50,6 +50,9 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(1, 1, 1, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ovs0n"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lfsxt"]
 bg_color = Color(1, 1, 1, 0)
 border_width_left = 1
@@ -61,9 +64,6 @@ corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ovs0n"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7iqql"]
 bg_color = Color(1, 1, 1, 0)
@@ -122,13 +122,13 @@ offset_top = 98.0
 offset_right = 175.0
 offset_bottom = 152.0
 scale = Vector2(1.47649, 1.47649)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("4_ymdbj")
 theme_override_font_sizes/font_size = 30
-theme_override_styles/hover = SubResource("StyleBoxFlat_ymdbj")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6w8i2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ymdbj")
 text = "Audio"
 
 [node name="Display" type="Button" parent="."]
@@ -138,13 +138,13 @@ offset_top = 190.0
 offset_right = 176.0
 offset_bottom = 244.0
 scale = Vector2(1.47649, 1.47649)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("4_ymdbj")
 theme_override_font_sizes/font_size = 30
-theme_override_styles/hover = SubResource("StyleBoxFlat_ymdbj")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6w8i2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ymdbj")
 text = "Display"
 
 [node name="Restore" type="Button" parent="."]
@@ -161,13 +161,13 @@ offset_bottom = -87.0
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(1.33403, 1.33403)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("4_ymdbj")
 theme_override_font_sizes/font_size = 25
-theme_override_styles/hover = SubResource("StyleBoxFlat_irhm8")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6w8i2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_irhm8")
 text = "Restore Default
 "
 
@@ -217,13 +217,13 @@ offset_left = -101.0
 offset_right = -14.0
 offset_bottom = 92.0
 grow_horizontal = 0
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0.670588, 0.670588, 0.670588, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("5_36jyd")
 theme_override_font_sizes/font_size = 70
-theme_override_styles/hover = SubResource("StyleBoxFlat_lfsxt")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ovs0n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lfsxt")
 text = "X"
 
 [node name="AudioTab" type="Control" parent="."]
@@ -342,11 +342,11 @@ offset_left = 117.0
 offset_top = -7.0
 offset_right = 174.0
 offset_bottom = 56.0
-theme_override_styles/focus = SubResource("StyleBoxFlat_8yq3x")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_8yq3x")
-theme_override_styles/hover = SubResource("StyleBoxFlat_8yq3x")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8yq3x")
 theme_override_styles/normal = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/focus = SubResource("StyleBoxFlat_8yq3x")
 theme_override_icons/checked = ExtResource("7_gb4v8")
 theme_override_icons/unchecked = SubResource("ImageTexture_lfsxt")
 
@@ -385,10 +385,10 @@ offset_left = 164.0
 offset_top = -12.0
 offset_right = 221.0
 offset_bottom = 51.0
-theme_override_styles/focus = SubResource("StyleBoxFlat_8yq3x")
-theme_override_styles/hover = SubResource("StyleBoxFlat_8yq3x")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8yq3x")
 theme_override_styles/normal = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/focus = SubResource("StyleBoxFlat_8yq3x")
 theme_override_icons/checked = ExtResource("7_gb4v8")
 theme_override_icons/unchecked = SubResource("ImageTexture_gb4v8")
 alignment = 1
@@ -396,6 +396,7 @@ clip_text = true
 icon_alignment = 1
 
 [node name="Borderless" type="Label" parent="DisplayTab"]
+visible = false
 layout_mode = 0
 offset_left = 671.0
 offset_top = 207.0
@@ -412,18 +413,18 @@ offset_left = 164.0
 offset_top = -6.0
 offset_right = 221.0
 offset_bottom = 57.0
-theme_override_styles/focus = SubResource("StyleBoxFlat_8yq3x")
-theme_override_styles/hover = SubResource("StyleBoxFlat_8yq3x")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8yq3x")
 theme_override_styles/normal = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/focus = SubResource("StyleBoxFlat_8yq3x")
 theme_override_icons/checked = ExtResource("7_gb4v8")
 theme_override_icons/unchecked = SubResource("ImageTexture_gb4v8")
 
 [node name="Fullscreen" type="Label" parent="DisplayTab"]
 layout_mode = 0
-offset_left = 948.0
+offset_left = 645.0
 offset_top = 207.0
-offset_right = 1103.0
+offset_right = 800.0
 offset_bottom = 252.0
 theme_override_fonts/font = ExtResource("4_ymdbj")
 theme_override_font_sizes/font_size = 30
@@ -436,14 +437,15 @@ offset_left = 164.0
 offset_top = -6.0
 offset_right = 221.0
 offset_bottom = 57.0
-theme_override_styles/focus = SubResource("StyleBoxFlat_8yq3x")
-theme_override_styles/hover = SubResource("StyleBoxFlat_8yq3x")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8yq3x")
 theme_override_styles/normal = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8yq3x")
+theme_override_styles/focus = SubResource("StyleBoxFlat_8yq3x")
 theme_override_icons/checked = ExtResource("7_gb4v8")
 theme_override_icons/unchecked = SubResource("ImageTexture_gb4v8")
 
 [node name="Resolution" type="MenuButton" parent="DisplayTab"]
+visible = false
 layout_mode = 0
 offset_left = 368.0
 offset_top = 315.0
