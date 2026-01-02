@@ -76,6 +76,8 @@ func _ready() -> void:
 	randomize()
 	setup_end_timer()
 	_reset_flashlight()
+	#reset cursor
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 func _reset_flashlight() -> void:
 	Globals.set_flash_ligt_life(Globals.flash_ligt_max_life)
